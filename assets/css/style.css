@@ -948,6 +948,10 @@ input[type=color] {
 /*----------------------------------------*/
 /*  02. HEADER CSS START
 /*----------------------------------------*/
+.header-sticky {
+  background-color: blue;
+}
+
 .header__transparent {
   position: absolute !important;
   left: 0;
@@ -1163,13 +1167,13 @@ input[type=color] {
   right: 0;
 }
 .hero__area .hero__content {
-  padding-left: 380px;
+  padding-left: 310px;
   background-color: var(--tp-theme-purple);
   height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-right: 15px;
+  padding-right: 72px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .hero__area .hero__content {
@@ -1201,7 +1205,7 @@ input[type=color] {
   font-size: 20px;
   font-weight: 400;
   color: white;
-  padding-right: 198px;
+  padding-right: 190px;
   line-height: 1.6;
 }
 .hero__area .hero__content h2 {
