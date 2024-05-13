@@ -1,0 +1,61 @@
+@use '../utils' as *;
+
+.testimonial__area{
+    padding:132px 0;
+    background-color: var(--tp-theme-purple); 
+    & .testimonial__heading{  
+        & span{
+            color:white;
+            text-transform: uppercase;
+            font-size:20px;
+            font-weight:bold;
+            letter-spacing: 2px;
+           
+        }
+        & p{
+            color:white;
+            font-size: 20px;
+            font-weight: 400;
+            padding:0 380px ;
+            margin-bottom: 68px;
+            margin-top: 20px;
+        }
+        & h2{
+            color:white;
+            margin-top: 20px;
+            font-weight: 700;
+            font-size: 64px;
+        }
+    }
+    & .testimonial__content{ 
+        & .testimonial__box{
+            background-color:white;
+            text-align: center;
+            padding:60px 50px;
+            border-radius:20px
+        }
+        & p{
+            font-size: 16px;
+            font-weight: 400;
+            color:#494949;
+            margin-top: 30px;
+        }
+        & button{
+            padding:10px 20px;
+            border-radius:20px;
+            color:white;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        & .orange{
+            background-color:#F4C676
+        }
+        & .purple{
+            background-color:#E082BA
+        }
+        & .green{
+            background-color:#87CCA9
+        }
+    }
+
+}

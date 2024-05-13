@@ -1,0 +1,41 @@
+@use '../utils' as *;
+
+.newsletter__area{
+    padding: 68px 0;
+    background-color: var(--tp-theme-green);
+    & h3{
+        color:white;
+        font-size: 40px;
+        font-weight: 700;
+
+    }
+    & .newsletter__form input{
+        width:384px;
+        height:40px;
+        line-height: 40px;
+        background-color: transparent;
+        border:1px solid white;
+        border-radius: 20px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 16px;
+        color:white;
+
+        &::placeholder{
+            color:white;
+            text-align: center;
+        font-weight: 700;
+        font-size: 16px;
+        }
+    
+    }
+    & button{
+        font-size: 16px;
+        font-weight: 700;
+        padding:10px 20px;
+        color:var(--tp-theme-green);
+        background-color: #fff;
+        border-radius:20px;
+        margin-left: 18px;
+    }
+}

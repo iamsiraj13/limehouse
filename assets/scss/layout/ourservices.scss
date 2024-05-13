@@ -1,0 +1,110 @@
+@use '../utils' as *;
+
+
+
+.our{
+    &__services{
+        padding:140px 0;
+        background-color: white;
+    }
+    &__content{
+        padding:0 250px;
+        & h2{
+            margin-bottom: 16px;
+            text-transform: capitalize;
+            font-weight: 700;
+        }
+        & span{
+            display:block;
+            color:var(--tp-theme-purple);
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+        & p{
+            font-size: 20px;
+            font-weight: 400;
+            color:#494949;
+        }
+    }
+}
+
+
+.service{
+   &__area{
+
+    background-color: #F5F5F5;
+    padding:170px 0;
+   }
+
+    &__card{
+        background-color:white;
+        border-radius:30px;
+        margin-bottom: 30px;
+        
+        &-content{
+            margin:auto;
+            width:564px;
+            text-align: center;
+            padding:70px 60px;
+            & h3{
+                font-size: 36px;
+                font-weight: 700;
+                margin-bottom: 30px; 
+            }
+            & p{
+                font-size: 20px;
+                font-weight: 400;
+                color:#494949;
+                line-height:1.4;
+            }
+            & a{
+                padding:12px 24px;
+                border-radius:30px;
+                font-size: 16px;
+                font-weight: 600;
+                text-transform: capitalize;
+                margin-top: 30px;
+                display:inline-block;
+            }
+        }
+    }
+
+
+
+}
+
+.purple{
+    color:var(--tp-theme-purple)
+}
+.purple-bg{
+    background-color:var(--tp-theme-purple)
+}
+.pink{
+     color:#E082BA;
+}
+.pink-bg{
+    background-color:#E082BA;
+}
+.text-black{
+    color:#494949;
+}
+ 
+.green{
+    color:var(--tp-theme-green);
+}
+.green-bg{
+    background-color:var(--tp-theme-green)
+}
+.orange{
+    color:var(--tp-theme-orange)
+}
+.orange-bg{
+   background-color:var(--tp-theme-orange)
+}
+.blue{
+    color:var(--tp-theme-blue)
+}
+.blue-bg{
+   background-color:var(--tp-theme-blue)
+}

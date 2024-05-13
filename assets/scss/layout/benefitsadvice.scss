@@ -1,0 +1,116 @@
+@use '../utils' as *;
+
+
+.benefits{
+    &__area{
+        padding:140px 0;
+        background-color:white;
+        & .benefits__content{ 
+            padding-right: 40px;
+            & h2{
+                margin-bottom: 40px;
+            }
+
+            & span{
+                display:inline-block;
+                color:var(--tp-theme-purple);
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 40px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+            }
+            & p{
+                font-size: 20px;
+                font-weight: 400;
+                color:#494949;
+                margin-bottom: 16px;
+                line-height:1.5;
+            }
+        }
+        & .benefits__img{
+            img{
+                width:100%;
+                height:auto;
+            }
+        }
+    }
+}
+
+.benefits__contacts{
+   
+    padding:80px 0;
+    text-align: center;
+    & .benefits__contacts-content{
+      
+        & h3{
+            font-size: 36px;
+            font-weight: 700;
+            color:white;
+            margin-bottom: 40px;
+        }
+        & a{
+            padding:12px 24px;
+            background-color: #fff;
+            font-size: 16px;
+            font-weight: 400; 
+            text-transform: capitalize;
+            border-radius: 30px;
+        }
+    }
+
+}
+
+
+.benefits__quote{
+    padding:132px 0;
+    text-align: center;
+
+    & .benefits__quote-card{
+        background-color: var(--tp-theme-purple);
+        padding:53px 10px; 
+        margin-top: 70px;
+        border-radius: 30px;
+        & p{
+            color:white;
+            font-size: 20px;
+            font-weight: 400;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            line-height: 1.4;
+            padding:0 26px; 
+        }
+    }
+
+}
+
+ 
+.green{
+    background-color: var(--tp-theme-green);
+}
+.text-green{
+     color: var(--tp-theme-green);
+}
+.pink{
+    background-color: var(--tp-theme-pink);
+}
+
+.text-pink{
+    color:var(--tp-theme-pink)
+}
+.orange{
+    background-color: var(--tp-theme-orange);
+
+}
+.text-orange{
+    color:var(--tp-theme-orange)
+}
+.blue{
+    background-color: var(--tp-theme-blue);
+
+}
+.text-blue{
+    color:var(--tp-theme-blue)
+}
+
+ 
