@@ -156,6 +156,11 @@ button:focus{
     border:0
 }
 
+button{
+	padding:10px 20px;
+	font-size: 16px;
+	font-weight: 600;
+}
 .uppercase {
 	text-transform: uppercase;
 }
@@ -364,4 +369,29 @@ input[type="color"] {
 	font-size:20px;
 	font-weight:700;
 	
+}
+
+.text-purple{
+	color:var(--tp-theme-purple);
+}
+.purple-bg{
+	background-color: var(--tp-theme-purple);
+}
+.text-pink{
+	color:var(--tp-theme-pink);
+}
+.pink-bg{
+	background-color: var(--tp-theme-pink);
+}
+.text-green{
+	color:var(--tp-theme-green);
+}
+.green-bg{
+	background-color: var(--tp-theme-green);
+}
+.text-orange{
+	color:var(--tp-theme-orange);
+}
+.orange-bg{
+	background-color: var(--tp-theme-orange);
 }

@@ -16,6 +16,20 @@
     $("#loading").fadeOut(500);
   });
 
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      } else {
+        dropdownContent.style.display = "block";
+      }
+    });
+  }
   // const colorInput = document.querySelector('input[type=color]');
   // const colorVariable = '--tp-theme-1';
 
@@ -64,9 +78,9 @@
   windowOn.on("scroll", function () {
     var scroll = $(window).scrollTop();
     if (scroll < 100) {
-      $("#header-sticky").removeClass("header-sticky");
+      $("#header-sticky").removeClass("header__transparent");
     } else {
-      $("#header-sticky").addClass("header-sticky");
+      $("#header-sticky").addClass("header__transparent");
     }
   });
 

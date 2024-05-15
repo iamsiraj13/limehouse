@@ -129,10 +129,10 @@
    </header> -->
    <!-- header area end -->
 
-
-   <header class="header__area header__sticky  ">
+   <!-- desktop header  -->
+   <header class="header__area d-none d-md-block " id="header-sticky">
       <div class="container">
-         <div class="header__menu header-sticky">
+         <div class="header__menu ">
             <div class="row align-items-center">
                <div class="col-xl-2">
                   <div class="logo">
@@ -143,7 +143,21 @@
                <div class="col-xl-7 text-center">
                   <nav>
                      <ul>
-                        <li><a href="#">About Us</a></li>
+                        <li class="has-dropdown"><a href="#">About Us</a>
+                           <ul class="submenu">
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">Home</a>
+                                 <!-- <ul class="submenu">
+                                    <li><a href="#">tube</a></li>
+                                    <li><a href="#">tube</a></li>
+                                    <li><a href="#">tube</a></li>
+                                    <li><a href="#">tube</a></li>
+                                 </ul> -->
+                              </li>
+                              <li><a href="#">Home</a></li>
+                           </ul>
+                        </li>
                         <li><a href="#">Our Services</a></li>
                         <li><a href="#">Support Us</a></li>
                         <li><a href="#">Blogs & Reports</a></li>
@@ -160,13 +174,69 @@
             </div>
          </div>
       </div>
+
    </header>
+
+   <!-- mobile header  -->
+   <header class="mobile__menu d-block d-md-none">
+
+      <div class="mobile__menu-header">
+         <div>
+            <img src="./assets/img/logo/logo_white.png" alt="">
+         </div>
+         <button class="menu__btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+            aria-controls="offcanvasScrolling">menu</button>
+      </div>
+
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+         id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+         <div class="offcanvas-header">
+            <div>
+               <img src="./assets/img/logo/logo_white.png" alt="">
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas">
+               <i class="fa-regular fa-xmark-large"></i>
+
+            </button>
+
+
+         </div>
+         <div class="offcanvas-body">
+            <div class="sidenav">
+               <a href="#about">About</a>
+               <a href="#services">Services</a>
+               <a href="#clients">Clients</a>
+               <button class="dropdown-btn">Videos
+               </button>
+               <div class="dropdown-container">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+               </div>
+               <a href="#contact">Contact</a>
+               <button class="dropdown-btn">Dropdown
+               </button>
+               <div class="dropdown-container">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+               </div>
+               <a href="#contact">Search</a>
+            </div>
+
+            <div class="sidenav__button">
+               <button>Donate</button>
+            </div>
+         </div>
+      </div>
+   </header>
+
 
 
    <main>
 
       <!-- hero area start  -->
-      <section class="hero__area">
+      <section class="hero__area ">
          <img src="./assets/img/banner/shape.png" class="shape" alt="">
          <div class="container-fluid p-0">
 
@@ -248,7 +318,7 @@
                </div>
                <div class="col-12 p-3">
                   <div class="service__card">
-                     <img src="./assets/img/services/1.png" alt="">
+                     <img src="./assets/img/services/2.png" alt="">
                      <div class="service__content">
                         <h3>benefits advice</h3>
                         <p>We can help you to maximise your income by claiming your full entitlement.</p>
@@ -259,11 +329,11 @@
                </div>
                <div class="col-12 p-3">
                   <div class="service__card">
-                     <img src="./assets/img/services/1.png" alt="">
+                     <img src="./assets/img/services/3.png" alt="">
                      <div class="service__content">
-                        <h3>benefits advice</h3>
+                        <h3 class="text-purple">benefits advice</h3>
                         <p>We can help you to maximise your income by claiming your full entitlement.</p>
-                        <button>learn more</button>
+                        <button class="purple-bg">learn more</button>
                      </div>
                   </div>
 
@@ -466,7 +536,7 @@
             <div class="row align-items-center">
                <div class="col-lg-4">
                   <div class="logo">
-                     <img src="./assets/img/footer/logo.png" alt="">
+                     <img src="./assets/img/logo/logo_black.png" alt="">
                   </div>
                </div>
                <div class="col-lg-4">
