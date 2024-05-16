@@ -44,6 +44,7 @@ body {
 	font-weight: normal;
 	color: var(--tp-text-body);
 	line-height: 26px;
+	overflow-x: hidden;
 }
 
 a{
@@ -101,7 +102,9 @@ p {
 	margin-bottom: 15px;
 	line-height: 26px;
 }
-
+.mt-200{
+	margin-top: 200px;
+}
 
 a,
 .btn,

@@ -2,13 +2,50 @@
 
 .newsletter__area{
     padding: 68px 0;
-    background-color: var(--tp-theme-green);
+    background-color: var(--tp-theme-blue);
+    text-align: center;
+    @media #{$xs}{
+        padding: 20px 0;
+      }
+    @media #{$sm}{
+        padding: 20px 0;
+      }
     & h3{
         color:white;
         font-size: 40px;
         font-weight: 700;
+        @media #{$xs}{
+            font-size: 20px;
+          }
+        @media #{$sm}{
+           font-size: 20px;
+          }
 
     }
+    & .newsletter__form{
+        justify-content: end;
+        @media #{$xs}{
+            justify-content: center;
+          }
+        @media #{$sm}{
+            justify-content: center;
+          }
+
+        & .input__box{
+            @media #{$xs}{
+                display:flex;
+                align-items: center;
+                
+              }
+            @media #{$sm}{
+                justify-content: center;
+                display:flex;
+                align-items: center;
+                
+              }
+        }
+    }
+ 
     & .newsletter__form input{
         width:384px;
         height:40px;
@@ -20,6 +57,12 @@
         font-weight: 700;
         font-size: 16px;
         color:white;
+        @media #{$xs}{
+            width:276px;
+          }
+        @media #{$sm}{
+           font-size: 20px;
+          }
 
         &::placeholder{
             color:white;
@@ -37,5 +80,16 @@
         background-color: #fff;
         border-radius:20px;
         margin-left: 18px;
+    }
+    & .arr{
+        width:30px;
+        height:30px;
+        border-radius:50%;
+        line-height:30px;
+        font-size: 14px;
+        text-align: center;
+        display: block;
+        background-color: #fff;
+        margin-left: 5px;
     }
 }

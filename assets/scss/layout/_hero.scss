@@ -23,7 +23,7 @@
 
     & .hero__content{
         // padding-left: 332px;
-        padding-left: 36%;
+        padding-left: 32%;
         background-color: var(--tp-theme-purple);
         height:100%;
         display:flex;
@@ -112,14 +112,88 @@
 }
  
  
+
+// hero area for mobile 
+
+.hero__mobile{
+    margin-top:100px;
+    padding-top: 326px;
+    padding-left: 68px;
+    padding-right: 68px;
+    padding-bottom: 44px;
+    background-position: top left;
+    background-size: cover;
+    position:relative;
+    &::after{
+        content:'';
+        width:100%;
+        height:100%; 
+        position:absolute;
+        left:0;
+        top:0;
+        right:0;
+        z-index:2;
+        background: linear-gradient(180deg, rgba(120, 44, 157, 0) 21.54%, #782C9D 79.65%);
+
+        z-index:5
+    }
+
+    & .hero__mobile-content{
+        position: relative;
+        color:white;
+        z-index: 9;
+        
+        text-align: center;
+        & h2{
+            font-size: 32px;
+            font-weight: 700;
+            color:white;
+        }
+        & p{
+            font-size: 12px;
+            font-weight: 400;
+            color:white;
+        }
+        & button{
+            background-color: #fff;
+            border-radius:30px;
+            font-size: 13px;
+            font-weight: 800;
+            color:var(--tp-theme-purple)
+        }
+    }
+}
+
 // about area 
  .understand__area{
     padding:160px 0;
     background-color: white;
+    @media #{$sm}{
+        padding:27px 0;
+        text-align: center;
+    }
+    @media #{$xs}{
+        padding:27px 0;
+        text-align: center;
+    }
     .understand__content{
+        @media #{$sm}{
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        @media #{$xs}{
+            padding-left: 16px;
+            padding-right: 16px;
+        }
         span{ 
             text-transform: uppercase; 
             margin-bottom: 20px;
+            @media #{$sm}{
+                font-size: 14px;
+            }
+            @media #{$xs}{
+                font-size: 14px;
+            }
         }
         & h2{
             color:var(--tp-heading-primary);
@@ -128,15 +202,43 @@
             margin-top: 20px;
             font-weight:700;
             margin-bottom: 45px;
+            @media #{$xs}{
+                font-size: 32px;
+            }
+            @media #{$sm}{
+                font-size: 32px;
+            }
         }
-        p{
+       & p{
             color:var(--tp-text-body);
             font-weight:400;
             font-size:20px;
+
+            @media #{$sm}{
+                font-size: 12px;
+            }
+            @media #{$xs}{
+                font-size: 12px;
+            }
+        }
+        & button{
+            border-radius:30px;
+            background-color: var(--tp-theme-purple);
+            font-size: 14px;
+            font-weight: 700;
+            color:white;
         }
     }
     .understand__img {
-        padding-left: 60px;
+        padding-left: 60px; 
+        @media #{$sm}{
+            padding-left: 15px;
+            margin-bottom: 33px;
+        }
+        @media #{$xs}{
+            padding-left: 15px;
+            margin-bottom: 33px;
+        }
         & img{
             width:100%;  
         }
@@ -189,11 +291,21 @@
 
          h3{
             font-size:20px;
-            font-weight:700;
-            color:var(--tp-theme-purple);
+            font-weight:700; 
             margin-bottom: 30px;
             text-transform: uppercase;
             padding:0 20%
+         }
+         & p{
+            color:#494949;
+            font-size: 16px;
+            font-weight: 400;
+         }
+         & button{
+            text-transform: capitalize;
+            border-radius:30px;
+            font-size: 16px;
+            font-weight: 800;
          }
 
         
@@ -202,7 +314,17 @@
 .slider-active img{
     width:100%;
 }
-
+.slick-prev{
+    display:none;
+}
+.slick-next {
+    position: absolute; 
+    color:var(--tp-theme-purple);
+    top: 50%;
+    right: -43%;
+    z-index: 99999;
+    font-size: 24px;
+}
 }
 .ml-150{
     margin-left: 280px;

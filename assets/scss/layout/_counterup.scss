@@ -4,13 +4,33 @@
 .counter__area{
     background-color: var(--tp-theme-green);
     padding:80px 0;
-    & h2{
-        color:white;
-        font-weight: bold;
+    & .counter-box{
+        @media #{$sm}{
+          margin-bottom: 35px;
+        }
+        @media #{$xs}{
+          margin-bottom: 35px;
+          text-align: center;
+        }
+        & h2{
+            color:white;
+            font-weight: bold;
+            font-weight: 700;
+            @media #{$sm}{
+                font-size: 35px;
+              }
+              @media #{$xs}{
+                font-size: 35px;
+              }
+
+        }
+        & p{
+            color:white;
+            font-size:16px;
+            margin-top:-10px
+        }
     }
-    & p{
-        color:white;
-        font-size:16px;
-        margin-top:-10px
-    }
+    
+   
 }
+

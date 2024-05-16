@@ -50,84 +50,6 @@
    </div>
    <!-- back to top end -->
 
-   <!-- header area start -->
-   <!-- <header>
-      <div class="header__area">
-
-      </div>
-      <div class="header__bottom" id="header-sticky">
-         <div class="container pt-30 pb-30">
-            <div class="row align-items-center">
-               <div class="col-xl-2 col-lg-2 col-md-6 col-6">
-                  <div class="logo">
-                     <a href="index.html">
-                        <img src="assets/img/logo/logo.png" alt="logo">
-                     </a>
-                  </div>
-               </div>
-               <div class="col-xl-5 col-lg-6 text-center d-none d-lg-block">
-                  <div class="main-menu">
-                     <nav id="mobile-menu">
-                        <ul>
-                           <li class="has-dropdown">
-                              <a href="#">Home</a>
-                              <ul class="submenu">
-                                 <li>
-                                    <a href="#">Home Style 1</a>
-                                    <ul class="submenu">
-                                       <li>
-                                          <a href="#">Home Style 1</a>
-                                       </li>
-                                       <li><a href="#">Home Style 2</a></li>
-                                       <li><a href="#">Home Style 3</a></li>
-                                    </ul>
-                                 </li>
-                                 <li><a href="#">Home Style 2</a></li>
-                                 <li><a href="#">Home Style 3</a></li>
-                              </ul>
-                           </li>
-                           <li>
-                              <a href="#">Courses</a>
-                           </li>
-                           <li>
-                              <a href="#">Features</a>
-                           </li>
-                           <li>
-                              <a href="#">Events</a>
-                           </li>
-                           <li>
-                              <a href="#">Blog</a>
-                           </li>
-                           <li>
-                              <a href="#">Contact</a>
-                           </li>
-                        </ul>
-                     </nav>
-                  </div>
-               </div>
-               <div class="col-xl-5 col-lg-4 col-md-6 col-6">
-                  <div class="header__bottom-right d-flex justify-content-end align-items-center pl-30">
-                     <div class="header__button d-none d-xl-block">
-                        <a href="#" class="tp-btn">donate</a>
-                        <a href="#" class="tp-btn">contact us</a>
-                        <a href="#" class="tp-btn"><i class="fa-sharp fa-light fa-phone"></i></a>
-                     </div>
-                     <div class="header__hamburger ml-50 d-xl-none">
-                        <button type="button" data-bs-toggle="modal" data-bs-target="#offcanvasmodal"
-                           class="hamurgetp-btn">
-                           <span></span>
-                           <span></span>
-                           <span></span>
-                        </button>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      </div>
-   </header> -->
-   <!-- header area end -->
 
    <!-- desktop header  -->
    <header class="header__area d-none d-md-block " id="header-sticky">
@@ -147,18 +69,19 @@
                            <ul class="submenu">
                               <li><a href="#">Home</a></li>
                               <li><a href="#">Home</a></li>
-                              <li><a href="#">Home</a>
-                                 <!-- <ul class="submenu">
-                                    <li><a href="#">tube</a></li>
-                                    <li><a href="#">tube</a></li>
-                                    <li><a href="#">tube</a></li>
-                                    <li><a href="#">tube</a></li>
-                                 </ul> -->
-                              </li>
+                              <li><a href="#">Home</a></li>
                               <li><a href="#">Home</a></li>
                            </ul>
                         </li>
-                        <li><a href="#">Our Services</a></li>
+                        <li class="has-dropdown"><a href="our-services.html">Our Services</a>
+                           <ul class="submenu">
+                              <li><a href="benefits-advice.html">Benefits Advice</a></li>
+                              <li><a href="debt-advice.html">DEBT Advice</a></li>
+                              <li><a href="employment-and-training.html">Employment & Training</a></li>
+                              <li><a href="immigration-advice.html">Immigration Advice</a></li>
+                              <li><a href="bussiness-startup-support.html">Bussiness Startup Support</a></li>
+                           </ul>
+                        </li>
                         <li><a href="#">Support Us</a></li>
                         <li><a href="#">Blogs & Reports</a></li>
                      </ul>
@@ -225,7 +148,9 @@
             </div>
 
             <div class="sidenav__button">
-               <button>Donate</button>
+               <button class="donate">Donate</button>
+               <button class="contact">Contact Us</button>
+               <a class="phone"><i class="fa-sharp fa-light fa-phone"></i></a>
             </div>
          </div>
       </div>
@@ -236,7 +161,7 @@
    <main>
 
       <!-- hero area start  -->
-      <section class="hero__area ">
+      <section class="hero__area d-none d-md-block ">
          <img src="./assets/img/banner/shape.png" class="shape" alt="">
          <div class="container-fluid p-0">
 
@@ -261,11 +186,38 @@
       </section>
       <!-- hero area end  -->
 
+      <!-- hero area for mobile start  -->
+      <section class="hero__mobile d-block d-md-none" data-background="./assets/img/banner/banner.png">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <div class="hero__mobile-content">
+                     <div>
+                        <span>welcome</span>
+                        <h2>Do you need help with your benefits?</h2>
+                        <p>We specialise in helping people in East London with benefit advice, debt advice, and more.
+                        </p>
+                        <button>Get help now</button>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- hero area for mobile end  -->
+
       <!-- about area start  -->
       <section class="understand__area">
          <div class="container">
             <div class="row">
-               <div class="col-lg-6">
+               <div class="col-lg-6 order-md-1">
+                  <div class="understand__img">
+                     <img src="./assets/img/banner/understand.png" alt="">
+                  </div>
+               </div>
+               <div class="col-lg-6 order-md-0">
                   <div class="understand__content">
                      <span class="sub_heading">we understand</span>
                      <h2>Guiding Ethnic Communities Through Challenges</h2>
@@ -277,11 +229,7 @@
                      <button>Get help now</button>
                   </div>
                </div>
-               <div class="col-lg-6">
-                  <div class="understand__img">
-                     <img src="./assets/img/banner/understand.png" alt="">
-                  </div>
-               </div>
+
             </div>
          </div>
 
@@ -309,9 +257,9 @@
                   <div class="service__card">
                      <img src="./assets/img/services/1.png" alt="">
                      <div class="service__content">
-                        <h3>benefits advice</h3>
+                        <h3 class="text-purple">benefits advice</h3>
                         <p>We can help you to maximise your income by claiming your full entitlement.</p>
-                        <button>learn more</button>
+                        <button class="purple-bg text-white">learn more</button>
                      </div>
                   </div>
 
@@ -320,9 +268,9 @@
                   <div class="service__card">
                      <img src="./assets/img/services/2.png" alt="">
                      <div class="service__content">
-                        <h3>benefits advice</h3>
+                        <h3 class="text-pink">benefits advice</h3>
                         <p>We can help you to maximise your income by claiming your full entitlement.</p>
-                        <button>learn more</button>
+                        <button class="pink-bg text-white">learn more</button>
                      </div>
                   </div>
 
@@ -331,9 +279,9 @@
                   <div class="service__card">
                      <img src="./assets/img/services/3.png" alt="">
                      <div class="service__content">
-                        <h3 class="text-purple">benefits advice</h3>
+                        <h3 class="text-green">benefits advice</h3>
                         <p>We can help you to maximise your income by claiming your full entitlement.</p>
-                        <button class="purple-bg">learn more</button>
+                        <button class="green-bg text-white">learn more</button>
                      </div>
                   </div>
 
@@ -342,34 +290,33 @@
                   <div class="service__card">
                      <img src="./assets/img/services/1.png" alt="">
                      <div class="service__content">
-                        <h3>benefits advice</h3>
+                        <h3 class="text-orange">benefits advice</h3>
                         <p>We can help you to maximise your income by claiming your full entitlement.</p>
-                        <button>learn more</button>
+                        <button class="orange-bg text-white">learn more</button>
                      </div>
                   </div>
-
                </div>
                <div class="col-12 p-3">
                   <div class="service__card">
                      <img src="./assets/img/services/1.png" alt="">
                      <div class="service__content">
-                        <h3>benefits advice</h3>
+                        <h3 class="text-orange">benefits advice</h3>
                         <p>We can help you to maximise your income by claiming your full entitlement.</p>
-                        <button>learn more</button>
+                        <button class="orange-bg text-white">learn more</button>
                      </div>
                   </div>
-
                </div>
                <div class="col-12 p-3">
                   <div class="service__card">
                      <img src="./assets/img/services/1.png" alt="">
                      <div class="service__content">
-                        <h3>benefits advice</h3>
+                        <h3 class="text-orange">benefits advice</h3>
                         <p>We can help you to maximise your income by claiming your full entitlement.</p>
-                        <button>learn more</button>
+                        <button class="orange-bg text-white">learn more</button>
                      </div>
                   </div>
                </div>
+
             </div>
 
 
@@ -382,7 +329,7 @@
       <section class="counter__area">
          <div class="container">
             <div class="row">
-               <div class="col-xl-3">
+               <div class="col-xl-3 col-md-6">
                   <div class="counter-box">
                      <h2>
                         <span class="counter">390</span>+
@@ -390,7 +337,7 @@
                      <p>Project initiated</p>
                   </div>
                </div>
-               <div class="col-xl-3">
+               <div class="col-xl-3 col-md-6">
                   <div class="counter-box">
                      <h2>
                         <span class="counter">142</span>+
@@ -398,7 +345,7 @@
                      <p>Jobs created</p>
                   </div>
                </div>
-               <div class="col-xl-3">
+               <div class="col-xl-3 col-md-6">
                   <div class="counter-box">
                      <h2>
                         $
@@ -407,7 +354,7 @@
                      <p>Funds raised in events</p>
                   </div>
                </div>
-               <div class="col-xl-3">
+               <div class="col-xl-3 col-md-6">
                   <div class="counter-box">
                      <h2>
                         <span class="counter">99</span>%
@@ -469,11 +416,12 @@
                   <h3>Stay in the loop</h3>
                </div>
                <div class="col-lg-6">
-                  <div class="newsletter__form d-flex justify-content-end">
+                  <div class="newsletter__form d-flex ">
                      <form action="#">
-                        <div>
+                        <div class="input__box">
                            <input type="text" placeholder="Enter your email here">
-                           <button>Subscribe</button>
+                           <button class="d-none d-md-block">Subscribe</button>
+                           <span class="d-block d-md-none arr"><i class="fa-light fa-arrow-right"></i></span>
                         </div>
                      </form>
                   </div>

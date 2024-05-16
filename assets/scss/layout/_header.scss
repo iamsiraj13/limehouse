@@ -6,7 +6,16 @@
 
  
  
-
+.other__page{ 
+    width: 100%;
+    height: 200px;
+    background-color: var(--tp-theme-purple);
+    top: 0 !important;
+    padding-top: 40px;  
+    position:fixed;
+    z-index: 1;
+    clip-path: ellipse(67% 60% at 49% 33%);
+}
 .header{
      &__area{
         position: fixed;
@@ -40,43 +49,54 @@
                 @media #{$xs}{
                     flex-direction: column;
                 }
+                & .has-dropdown{ 
+                    transition: all 0.5s;
+                    position: relative;
+                    display:flex;
+
+                    &::after{
+                        content:"\f107";
+                        font-family: var(--tp-ff-fontawesome);
+                        margin-left: 5px;
+                    }
+
+                    &:hover , &:active{
+                        color:var(--tp-theme-purple);
+                        &::after{ 
+                            content:"\f106";
+                            color:var(--tp-theme-purple); 
+                        }
+                    }
+                    
+                }
                 & li{
                     display:inline-block;
                     position: relative;
-                    &.has-dropdown{ 
-                        transition: all 0.5s;
-                        position: relative;
-                        display:flex;
-
-                        &::after{
-                            content:"\f107";
-                            font-family: var(--tp-ff-fontawesome);
-                            margin-left: 5px;
-                        }
-
-                        &:hover , &:active{
-                            color:var(--tp-theme-purple);
-                            &::after{ 
-                                content:"\f106";
-                                color:var(--tp-theme-purple); 
-                            }
-                        }
-                        
+                    margin-right: 15px;
+                    &:hover{ 
+                        border-bottom: 1px solid var(--tp-theme-purple); 
                     }
+                   
                     & .submenu{
                         position: absolute;
-                        top:240%;
+                        top:238%;
                         display:flex;
                         flex-direction: column;
                         background-color: white;
-                        min-width: 250px;
+                         min-width:250px;
+                         width: fit-content;
                         text-align: left;
                         border-radius: 30px;
                         padding:20px;
                         transition: all 0.3s;
                         visibility: hidden;
                         opacity: 0;
+                        z-index:99999; 
                         @include box-shadow(0px 30px 70px 0px rgba(11, 6, 70, 0.08));
+                        & .submenu{
+                            left:100%;
+                            top:-10px;
+                        }
                         
                         & li{
                             display:block;
@@ -105,7 +125,7 @@
                         }
                     }
                     &:hover > .submenu{
-                        top:100%;
+                        top:102%;
                         visibility: visible;
                         opacity: 1;
                         & li{
@@ -119,8 +139,7 @@
                         font-size: 16px;
                         color:#494949;
                         font-weight: 700;
-                        margin-left: 15px;
-                        margin-right: 15px;
+                         
                         position: relative;  
                         border-bottom: 1px solid transparent;
                         transition: all 0.5s;
@@ -128,7 +147,7 @@
                         
                         &:hover, &:active{
                             color:var(--tp-theme-purple);
-                            border-bottom: 1px solid var(--tp-theme-purple); 
+                           
                         
                             
                         }
@@ -236,10 +255,13 @@
                     color:var(--tp-theme-purple); 
                 }
                 & .header__phone{
-                    width:40px;
-                    height:40px;
-                    border:1px solid var(--tp-theme-purple); 
-                    border-radius: 50%;
+                     padding:0;
+                     width:40px;
+                     height:40px;
+                     line-height:40px;
+                     text-align: center;
+                     border-radius:50%;
+                     border:1px solid var(--tp-theme-purple)
                 }
         }
 
@@ -305,7 +327,7 @@
         padding-left: 15px;
         padding-right: 15px;
         padding-bottom:60px;
-        position:absolute;
+        position:fixed;
         top:0;
         left:0;
         right:0;
@@ -442,5 +464,35 @@
   .sidenav__button{
     position:absolute;
     bottom: 0;
-    left:0;
+    left:20;
+  }
+  .sidenav__button{
+    margin-bottom: 22px;
+    & button{
+        font-size:12px;
+        padding:2px 12px;
+        border-radius:30px;
+    }
+    & .donate{
+        background-color: var(--tp-theme-green);
+        color:white;
+        border-radius:30px;
+    }
+    & .contact{
+        background-color: var(--tp-theme-purple);
+        color:white;
+        margin-left: 9px;
+    }
+    & .phone{
+        width:24px;
+        height:24px;
+        border:1px solid var(--tp-theme-purple);
+        border-radius:50%;
+        line-height:24px;
+        display:inline-block;
+        font-size:12px;
+        text-align: center;
+        margin-left: 9px;
+    }
+
   }
