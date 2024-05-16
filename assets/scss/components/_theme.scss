@@ -371,13 +371,14 @@ input[type="color"] {
 	color:var(--tp-theme-purple);
 	font-size:20px;
 	font-weight:700;
+	text-transform: uppercase ;
 	
 }
 
 .text-purple{
 	color:var(--tp-theme-purple);
 }
-.purple-bg{
+.purple-bg{ 
 	background-color: var(--tp-theme-purple);
 }
 .text-pink{
