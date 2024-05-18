@@ -222,6 +222,45 @@
       },
     ],
   });
+  $(".footer-class").slick({
+    dots: false,
+    infinite: true,
+    speed: 200,
+    autoPlay: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoPlaySpeed: 1000,
+    draggable: true,
+    centerPadding: "111px",
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          dots: false,
+          arrows: false,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
 
   ////////////////////////////////////////////////////
   // 08. slider__active Slider Js

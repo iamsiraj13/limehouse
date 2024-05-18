@@ -69,6 +69,12 @@
         & h2{
             font-weight: 700;
             color:white;
+            padding-right: 10px;
+            & span{
+                font-size: inherit;
+                text-transform: inherit;
+                display:inline-block;
+            }
 
             @media #{$xl}{
                 font-size:30px;

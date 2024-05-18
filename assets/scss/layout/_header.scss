@@ -73,6 +73,7 @@
                     display:inline-block;
                     position: relative;
                     margin-right: 15px;
+                    border-bottom:1px solid transparent;
                     &:hover{ 
                         border-bottom: 1px solid var(--tp-theme-purple); 
                     }
@@ -101,6 +102,9 @@
                         & li{
                             display:block;
                             padding:5px 0;
+                            &:hover{
+                                border-bottom:none;
+                            }
                             & a{
                                 display:block;
                                 transition: all 0.3s;

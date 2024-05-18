@@ -24,6 +24,12 @@
     }
     & .newsletter__form{
         justify-content: end;
+        @media #{$lg}{
+            justify-content: center;
+          }
+        @media #{$md}{
+            justify-content: center;
+          }
         @media #{$xs}{
             justify-content: center;
           }
@@ -32,10 +38,18 @@
           }
 
         & .input__box{
+          display:flex;
+            @media #{$lg}{
+                display:flex;
+                align-items: center; 
+              }
+            @media #{$md}{
+                display:flex;
+                align-items: center; 
+              }
             @media #{$xs}{
                 display:flex;
-                align-items: center;
-                
+                align-items: center; 
               }
             @media #{$sm}{
                 justify-content: center;

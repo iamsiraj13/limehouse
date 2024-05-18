@@ -3,17 +3,27 @@
 .footer__area{
     padding:88px 0 97px 0;
     background-color: #FFFFFF;
+    @media #{$xs}{ 
+        padding-top: 23px;
+     }
 
     // footer top 
     & .footer__top{
         padding-bottom: 48px;
         border-bottom:1px solid #BCBCBC;
+        @media #{$xs}{ 
+            padding-bottom: 23px;
+         }
 
         & h3{
             color:#494949; 
             margin-bottom: 36px;
             font-size: 40px;
             font-weight: 700;
+             @media #{$xs}{ 
+                font-size:12px;
+                margin-bottom: 5px;
+             }
         }
         & button{
             padding:10px 20px;
@@ -22,9 +32,16 @@
             border-radius:20px;
             font-weight: 700;
             font-size: 24px;
+            @media #{$xs}{ 
+                font-size:12px;
+             }
         }
     }
 
+    // @media #{$xl}{
+    //     padding-right: 90px;
+    //     font-size:14px;
+    // }
 
     // footer center 
 
@@ -62,6 +79,18 @@
                 text-align: right;
                 padding-left: 297px; 
                 margin-bottom: 60px;
+                @media #{$md}{ 
+                    padding-left: 0;
+                    text-align: center;
+                 }
+                @media #{$sm}{ 
+                    padding-left: 0;
+                    text-align: center;
+                 }
+                @media #{$xs}{ 
+                    padding-left: 0;
+                    text-align: center;
+                 }
             }
             & img{
                 
@@ -78,6 +107,24 @@
             font-size: 14px;
             font-weight: 400;
             color:#494949;
+            @media #{$sm}{
+                text-align: center; 
+                margin-top: 24px;
+             }
+            @media #{$xs}{
+                text-align: center; 
+                margin-top: 24px;
+             }
+            & span{
+                @media #{$sm}{
+                    text-align: center;
+                    margin-top: 24px;
+                 }
+                @media #{$xs}{
+                    text-align: center;
+                    margin-top: 24px;
+                 }
+            }
 
         }
         &-social{ 
