@@ -5,7 +5,7 @@
     Theme Name:Limehouse project
     Author: Limehouse
     Support: sirajul.dev@gmail.com
-    Description: Template Name  – HTML5 Template
+    Description: Limehouse project – HTML5 Template
     Version: 1.0
 
 -----------------------------------------------------------------------------------
@@ -33,6 +33,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	outline:none;
 }
 
 /*---------------------------------
@@ -310,62 +311,8 @@ input[type="color"] {
 }
 
 
-// basic pagination
-
-.basic-pagination{
-	& ul{
-		& li{
-			display: inline-block;
-			&:not(:last-child){
-				margin-right: 10px;
-			}
-			& a,
-			& span{
-				display: inline-block;
-				width: 50px;
-				height: 50px;
-				line-height: 46px;
-				text-align: center;
-				@include border-radius(7px);
-				border: 2px solid #f1f1f1;
-				font-size: 18px;
-				font-weight: 600;
-				&:hover,
-				&.current{
-					background: var(--tp-theme-1);
-					border-color: var(--tp-theme-1);
-					color: var(--tp-common-white);
-				}
-			}
-		}
-	}
-}
-
-
-// nice select arrow
-
-.nice-select{
-	&::after{
-		border: none;
-		background-color: transparent;
-		@include transform(translateY(-50%));
-		margin-top: 0;
-		right: 0;
-		content: '\f107';
-		font-family: var(--tp-ff-fontawesome);
-		transform-origin: center;
-		color: var(--tp-common-white);
-		font-weight: 500;
-		height: auto;
-		width: auto;
-	}
-	&.open{
-		&::after{
-			@include transform(translateY(-50%) rotate(-180deg));
-			;
-		}
-	}
-}
+ 
+ 
 
 .sub_heading{
 	color:var(--tp-theme-purple);
@@ -398,4 +345,19 @@ input[type="color"] {
 }
 .orange-bg{
 	background-color: var(--tp-theme-orange);
+}
+.pl-15{
+	padding-left: 15px;
+}
+.pr-15{
+	padding-right: 15px;
+}
+.pb-15{
+	padding-bottom: 15px;
+}
+.border-orange{
+	border:1px solid var(--tp-theme-orange)
+}
+.border-green{
+	border:1px solid var(--tp-theme-green)
 }

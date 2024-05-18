@@ -30,21 +30,6 @@
       }
     });
   }
-  // const colorInput = document.querySelector('input[type=color]');
-  // const colorVariable = '--tp-theme-1';
-
-  // colorInput.addEventListener('change', function(e){
-  // 	var clr = e.target.value;
-  // 	document.documentElement.style.setProperty(colorVariable, clr);
-  // })
-
-  ////////////////////////////////////////////////////
-  // 02. Mobile Menu Js
-  $("#mobile-menu").meanmenu({
-    meanMenuContainer: ".mobile-menu",
-    meanScreenWidth: "991",
-    meanExpand: ['<i class="fal fa-plus"></i>'],
-  });
 
   ////////////////////////////////////////////////////
   // 03. Sidebar Js
@@ -200,6 +185,43 @@
       },
     ],
   });
+  $(".donar-class").slick({
+    dots: false,
+    infinite: true,
+    speed: 200,
+    autoPlay: true,
+    slidesToShow: 4,
+    slidesToScroll: 3,
+    autoplaySpeed: 1000,
+    draggable: true,
+    centerPadding: "111px",
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
 
   ////////////////////////////////////////////////////
   // 08. slider__active Slider Js
@@ -306,37 +328,6 @@
     },
   });
 
-  var postboxSlider = new Swiper(".postbox__slider", {
-    slidesPerView: 1,
-    spaceBetween: 0,
-    loop: true,
-    autoplay: {
-      delay: 3000,
-    },
-    // Navigation arrows
-    navigation: {
-      nextEl: ".postbox-slider-button-next",
-      prevEl: ".postbox-slider-button-prev",
-    },
-    breakpoints: {
-      1200: {
-        slidesPerView: 1,
-      },
-      992: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 1,
-      },
-      576: {
-        slidesPerView: 1,
-      },
-      0: {
-        slidesPerView: 1,
-      },
-    },
-  });
-
   ////////////////////////////////////////////////////
   // 13. Masonary Js
   $(".grid").imagesLoaded(function () {
@@ -380,47 +371,6 @@
   ////////////////////////////////////////////////////
   // 14. Wow Js
   new WOW().init();
-
-  ////////////////////////////////////////////////////
-  // 16. Cart Quantity Js
-  $(".cart-minus").click(function () {
-    var $input = $(this).parent().find("input");
-    var count = parseInt($input.val()) - 1;
-    count = count < 1 ? 1 : count;
-    $input.val(count);
-    $input.change();
-    return false;
-  });
-  $(".cart-plus").click(function () {
-    var $input = $(this).parent().find("input");
-    $input.val(parseInt($input.val()) + 1);
-    $input.change();
-    return false;
-  });
-
-  ////////////////////////////////////////////////////
-  // 17. Show Login Toggle Js
-  $("#showlogin").on("click", function () {
-    $("#checkout-login").slideToggle(900);
-  });
-
-  ////////////////////////////////////////////////////
-  // 18. Show Coupon Toggle Js
-  $("#showcoupon").on("click", function () {
-    $("#checkout_coupon").slideToggle(900);
-  });
-
-  ////////////////////////////////////////////////////
-  // 19. Create An Account Toggle Js
-  $("#cbox").on("click", function () {
-    $("#cbox_info").slideToggle(900);
-  });
-
-  ////////////////////////////////////////////////////
-  // 20. Shipping Box Toggle Js
-  $("#ship-box").on("click", function () {
-    $("#ship-box-info").slideToggle(1000);
-  });
 
   ////////////////////////////////////////////////////
   // 21. Counter Js

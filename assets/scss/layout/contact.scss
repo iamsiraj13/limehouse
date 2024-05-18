@@ -1,0 +1,52 @@
+@use '../utils' as *;
+
+
+.contact__area{
+     
+    & .contact__form{
+        padding:85px 95px 65px 95px;
+        border:1px solid var(--tp-theme-purple);
+        border-radius:30px;
+        margin-bottom: 65px;
+
+        & .contact__title{
+            width:300px; 
+            & h3{
+                font-size: 48px;
+                font-weight: 700;
+                margin-bottom: 43px;
+            }
+            & span{
+                font-size: 24px;
+                color:var(--tp-theme-purple);
+                font-weight: 700;
+
+            }
+        }
+        & input{
+            width:100%;
+            border-radius:30px;
+            border:1px solid #494949;
+            padding:5px 10px;
+            font-size:16px;
+
+        }
+        & textarea{
+            width:100%;
+            border-radius:30px;
+            border:1px solid #494949;
+            padding:5px 10px;
+            font-size:16px;
+
+        }
+        & button{
+            font-size:16px;
+            color:white;
+            border-radius:30px;
+            margin-top: 39px;
+        }
+    }
+}
+.mb-15{
+    margin-bottom: 15px;
+}

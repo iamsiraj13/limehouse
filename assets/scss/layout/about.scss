@@ -1,0 +1,80 @@
+@use '../utils' as *;
+
+
+.about__area{
+    padding:140px 0;
+    & .about__heading{
+        margin-bottom: 107px;
+        & h2{
+            position:relative; 
+           
+            span{
+                   
+                background-position: 5px 58px;
+              background-repeat: no-repeat;
+              background-size: contain;
+            }
+        }
+        & p{
+            padding:0 80px; 
+        }
+    }
+
+    & .about__content{
+
+        & .about__img{  
+            & img{
+                width:100%;
+            }
+        }
+
+        & .about__info{
+            padding:44px 50px;
+            border-radius:30px;
+            color:white;
+            margin-bottom: 40px;
+            border:1px solid var(--tp-theme-purple);
+            transition: 0.3s;
+            &:last-child{
+                position:relative;
+                & button{
+                    position: absolute;
+                    right:-62px;
+                    top:62px;
+                    transform: rotate(-90deg);
+                }
+            }
+            &:hover{
+                background-color:var(--tp-theme-blue);
+                border:1px solid transparent;
+                & h3{
+                    color:white;
+                }
+                & p{
+                    color:white;
+                }
+            }
+            & h3{
+                font-weight: 700;
+                text-transform: uppercase;
+                color:white;
+                color:var(--tp-theme-purple);
+              
+            }
+            & p{
+                font-size: 16px;
+                font-weight: 400;
+                color:white;
+                line-height:1.1;
+                color:var(--tp-theme-purple);
+               
+            }
+            & button{
+                border-radius:30px;
+            }
+
+        }
+    
+    }
+
+}

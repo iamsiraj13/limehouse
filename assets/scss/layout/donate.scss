@@ -1,0 +1,112 @@
+@use '../utils' as *;
+
+
+.donate__content{
+    & .donate__donation{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding:45px 0;
+        border-radius:30px;
+        margin-bottom: 92px;
+        gap:40px;
+        & h3{
+            font-size: 36px;
+            color:white;
+            font-weight: 700;
+        }
+        & button{
+            font-size: 16px;
+            font-weight: 7100;
+            background-color: #fff;
+            border-radius:30px;
+
+        }
+    }
+
+    & .donate__service{
+
+        & .donate__service-img{
+            padding-right:15px;
+            & img{
+                width:100%;
+            }
+        }
+
+    & .lim_card{
+        padding:60px;
+        border:1px solid var(--tp-theme-purple);
+        border-radius:30px;
+        & h3{
+            font-size: 48px;
+            font-weight: 700;
+            color:#494949;
+            margin-bottom: 45px;
+        }
+        & p{
+            font-size: 20px;
+            font-weight: 400;
+            color:#494949;
+            margin-bottom: 4 0px;
+            line-height:35px;
+        }
+        & button{
+            font-size: 16px;
+            font-weight: 700;
+            border-radius:30px;
+            color:white;
+            background-color: var(--tp-theme-purple);
+        }
+
+    }
+    }
+
+
+
+}
+
+
+.donars__area{
+    padding:80px 0;
+    background-color: var(--tp-theme-purple);
+    & h3{
+        color:white;
+        font-size: 36px;
+        font-weight: 700;
+    }
+    & .donars__slider{
+        & .donars__slider-item{
+            padding:50px;
+            & img{
+                width:100%;
+                
+            }
+        }
+    }
+
+}
+
+.donate__contact{
+    display:flex;
+    justify-content: space-between;
+    padding:60px 107px; 
+    align-items: center;
+    border-radius:30px;
+    margin-bottom: 30px;
+     
+    & h4{
+        color:white;
+        font-size: 36px;font-weight: 700;
+    }
+    & button{
+        background-color: white;
+        border-radius:30px;
+        font-size: 16px;
+         
+    }
+}
+.mb-45{
+    margin-bottom: 45px;
+    display:block;
+}
