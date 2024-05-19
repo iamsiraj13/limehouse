@@ -89,20 +89,50 @@
 
 .donate__contact{
     display:flex;
+
     justify-content: space-between;
     padding:60px 107px; 
     align-items: center;
     border-radius:30px;
     margin-bottom: 30px;
+    @media #{$sm}{
+        display:block; 
+        padding: 30px 50px;
+        text-align: center;
+     
+
+    }
+    @media #{$xs}{
+        display:block;
+        justify-content: center;
+        padding: 30px 50px;
+        text-align: center;
+    }
      
     & h4{
         color:white;
-        font-size: 36px;font-weight: 700;
+        font-size: 36px;
+        font-weight: 700;
+        @media #{$sm}{
+            font-size: 12px;
+        }
+        @media #{$xs}{
+            font-size: 12px;
+        }
+
     }
     & button{
         background-color: white;
         border-radius:30px;
         font-size: 16px;
+        @media #{$sm}{
+            font-size: 12px;
+            padding:8px 15px;
+        }
+        @media #{$xs}{
+            font-size: 12px;
+            padding:8px 15px;
+        }
          
     }
 }

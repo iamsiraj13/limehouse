@@ -6,8 +6,33 @@
         padding-top: 140px;
         padding-bottom: 108px;
         text-align: center;
+        @media #{$md}{
+            padding:0;
+        }
+        @media #{$sm}{
+            padding:0;
+        }
+        @media #{$xs}{
+            padding:0;
+        }
     }
     &__content{
+        & h2{
+            @media #{$md}{
+                font-size: 32px;
+            }
+            @media #{$sm}{
+                font-size: 32px;
+            }
+            @media #{$xs}{
+                font-size: 32px;
+            }
+            & span{
+                display:inline-block;
+                margin: 0;
+            }
+
+        }
         & span{
             margin: 43px;
             display:block;

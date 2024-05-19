@@ -43,57 +43,54 @@
 
 
    <!-- desktop header  -->
-   <header class="d-none d-xl-block">
-      <div class="other__page"></div>
-      <div class="header__area  ">
-         <div class="container">
-            <div class="header__menu ">
-               <div class="row align-items-center">
-                  <div class="col-xl-2">
-                     <div class="logo">
-                        <a href="index.html">
-                           <img src="./assets/img/logo/logo.png" alt="" class="d-none d-lg-block">
-                        </a>
+   <header class="header__area d-none d-xl-block " id="header-sticky">
+      <div class="container">
+         <div class="header__menu ">
+            <div class="row align-items-center">
+               <div class="col-xl-2">
+                  <div class="logo">
+                     <a href="index.html">
+                        <img src="./assets/img/logo/logo.png" alt="" class="d-none d-lg-block">
+                     </a>
 
-                     </div>
                   </div>
-                  <div class="col-xl-7 col-lg-6 text-center">
-                     <nav>
-                        <ul>
-                           <li class="has-dropdown"><a href="about-us.html">About Us</a>
-                              <ul class="submenu">
-                                 <li><a href="story.html">Our Story</a></li>
-                                 <li><a href="impact.html">Our Impact</a></li>
-                                 <li><a href="people.html">Our People</a></li>
-                              </ul>
-                           </li>
-                           <li class="has-dropdown"><a href="our-services.html">Our Services</a>
-                              <ul class="submenu">
-                                 <li><a href="debt-advice.html">Debt Advice</a></li>
-                                 <li><a href="benefits-advice.html">Benefits Advice</a></li>
-                                 <li><a href="employment-and-training.html">Employment & Training</a></li>
-                                 <li><a href="immigration-advice.html">Immigration Advice</a></li>
-                                 <li><a href="bussiness-startup-support.html">Bussiness Startup Support</a></li>
-                              </ul>
-                           </li>
-                           <li class="has-dropdown"><a href="#">Support Us</a>
-                              <ul class="submenu">
-                                 <li><a href="donate.html">Donate</a></li>
-                                 <li><a href="fund.html">Fund our Work</a></li>
-                                 <li><a href="partner.html">Partner with us</a></li>
-                                 <li><a href="volunteer.html">Volunteer</a></li>
-                              </ul>
-                           </li>
-                           <li><a href="blog.html">Blogs & Reports</a></li>
-                        </ul>
-                     </nav>
-                  </div>
-                  <div class="col-xl-3 col-lg-4">
-                     <div class="header__button d-flex justify-content-end gap-2">
-                        <button class="header__donate">Donate</button>
-                        <button class="header__contact">Contact Us</button>
-                        <button class="header__phone"><i class="fa-sharp fa-light fa-phone"></i></button>
-                     </div>
+               </div>
+               <div class="col-xl-7 text-center">
+                  <nav>
+                     <ul>
+                        <li class="has-dropdown"><a href="about-us.html">About Us</a>
+                           <ul class="submenu">
+                              <li><a href="story.html">Our Story</a></li>
+                              <li><a href="impact.html">Our Impact</a></li>
+                              <li><a href="people.html">Our People</a></li>
+                           </ul>
+                        </li>
+                        <li class="has-dropdown"><a href="our-services.html">Our Services</a>
+                           <ul class="submenu">
+                              <li><a href="debt-advice.html">Debt Advice</a></li>
+                              <li><a href="benefits-advice.html">Benefits Advice</a></li>
+                              <li><a href="employment-and-training.html">Employment & Training</a></li>
+                              <li><a href="immigration-advice.html">Immigration Advice</a></li>
+                              <li><a href="bussiness-startup-support.html">Bussiness Startup Support</a></li>
+                           </ul>
+                        </li>
+                        <li class="has-dropdown"><a href="#">Support Us</a>
+                           <ul class="submenu">
+                              <li><a href="donate.html">Donate</a></li>
+                              <li><a href="fund.html">Fund our Work</a></li>
+                              <li><a href="partner.html">Partner with us</a></li>
+                              <li><a href="volunteer.html">Volunteer</a></li>
+                           </ul>
+                        </li>
+                        <li><a href="blog.html">Blogs & Reports</a></li>
+                     </ul>
+                  </nav>
+               </div>
+               <div class="col-xl-3 ">
+                  <div class="header__button d-flex justify-content-end gap-2">
+                     <button class="header__donate">Donate</button>
+                     <button class="header__contact">Contact Us</button>
+                     <button class="header__phone"><i class="fa-sharp fa-light fa-phone"></i></button>
                   </div>
                </div>
             </div>
@@ -104,10 +101,9 @@
 
    <!-- mobile header  -->
    <header class="mobile__menu d-block d-xl-none">
-
       <div class="mobile__menu-header">
          <div>
-            <a href="index.html"> <img src="./assets/img/logo/logo_white.png" alt=""></a>
+            <a href=""> <img src="./assets/img/logo/logo_white.png" alt=""></a>
          </div>
          <button class="menu__btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
             aria-controls="offcanvasScrolling">menu</button>
@@ -172,8 +168,8 @@
    <main>
 
       <!-- hero area start  -->
-      <section class="hero__area d-none d-md-block ">
-         <img src="./assets/img/banner/shape.png" class="shape" alt="">
+      <section class="hero__area d-none d-xl-block ">
+         <img src="./assets/img/banner/shape.png" class="shape d-none d-xxl-block" alt="">
          <div class="container-fluid p-0">
 
             <div class="row no-gutters p-0">
@@ -199,7 +195,7 @@
       <!-- hero area end  -->
 
       <!-- hero area for mobile start  -->
-      <section class="hero__mobile d-block d-md-none" data-background="./assets/img/banner/banner.png">
+      <section class="hero__mobile d-block d-xl-none" data-background="./assets/img/banner/banner.png">
          <div class="container">
             <div class="row">
                <div class="col-12">
@@ -226,7 +222,8 @@
                <div class="col-12 col-md-8 mx-auto">
                   <div class="blog__heading">
                      <span class="sub_heading">our blog</span>
-                     <h2>Explore, engage, and be inspired</h2>
+                     <h2>Explore, engage, and be <span class="shape_u"
+                           data-background="./assets/img/blog/blog_u.png">inspired!</span></h2>
                   </div>
                </div>
             </div>

@@ -4,10 +4,45 @@
     
         padding-top:127px;
         padding-bottom: 198px;
+        @media #{$md}{
+            padding-top:53px;
+        padding-bottom: 53px;
+        }
+        @media #{$sm}{
+            padding-top:53px;
+        padding-bottom: 53px;
+        }
+        @media #{$xs}{
+            padding-top:53px;
+        padding-bottom: 53px;
+        }
     
     & .blog__heading{
         text-align: center;
         margin-bottom: 230px;
+        @media #{$md}{
+            margin-bottom: 66px;
+        }
+        @media #{$sm}{
+            margin-bottom: 66px;
+        }
+        @media #{$xs}{
+            margin-bottom: 66px; 
+        }
+        & h2{
+            @media #{$md}{
+                font-size: 32px;
+                margin-top: 15px; 
+            }
+            @media #{$sm}{
+                font-size: 32px;
+                margin-top: 15px; 
+            }
+            @media #{$xs}{
+                font-size: 32px;
+                  margin-top: 15px; 
+            }
+        }
     }
     & .blog__card{
         border-radius: 30px;

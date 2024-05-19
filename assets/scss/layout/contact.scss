@@ -8,19 +8,64 @@
         border:1px solid var(--tp-theme-purple);
         border-radius:30px;
         margin-bottom: 65px;
+        @media #{$sm}{
+            padding: 40px;
+        }
+        @media #{$xs}{
+            padding: 40px;
+        }
 
         & .contact__title{
             width:300px; 
+            @media #{$md}{
+                width:100%;
+                text-align: center;
+                margin-bottom: 22px;
+
+            }
+            @media #{$sm}{
+                width:100%;
+                text-align: center;
+                margin-bottom: 22px;
+            }
+            @media #{$xs}{
+                width:100%;
+                text-align: center;
+                margin-bottom: 22px;
+            }
             & h3{
                 font-size: 48px;
                 font-weight: 700;
                 margin-bottom: 43px;
+                @media #{$sm}{
+                    font-size: 16px;
+                    margin-bottom: 8px;
+                }
+                @media #{$xs}{
+                    font-size: 16px;
+                    margin-bottom: 8px;
+                }
+
             }
             & span{
                 font-size: 24px;
                 color:var(--tp-theme-purple);
                 font-weight: 700;
+                @media #{$sm}{
+                    font-size: 10px;
+                }
+                @media #{$xs}{
+                    font-size: 10px;
+                }
 
+            }
+        }
+        & label{
+            @media #{$sm}{
+                font-size: 10px;
+            }
+            @media #{$xs}{
+                font-size: 10px;
             }
         }
         & input{
@@ -50,3 +95,33 @@
 .mb-15{
     margin-bottom: 15px;
 }
+
+.form__btn{ 
+    display:flex ;
+    justify-content: end;
+
+    @media #{$sm}{
+        display: block;
+        justify-content: start;
+        width:100%; 
+    }
+    @media #{$xs}{
+        display: block;
+        justify-content: start;
+        width:100%; 
+    }
+
+    & button{
+        text-align: end;
+         @media #{$sm}{
+         width:100%;
+         text-align: center;
+    }
+         @media #{$xs}{
+         width:100%;
+         text-align: center;
+    }
+
+    }
+}
+
