@@ -32,15 +32,7 @@
       <![endif]-->
 
 
-   <!-- pre loader area start -->
-   <div id="loading">
-      <div id="loading-center">
-         <div id="loading-center-absolute">
-            <!-- loading content here -->
-         </div>
-      </div>
-   </div>
-   <!-- pre loader area end -->
+
 
    <!-- back to top start -->
    <div class="progress-wrap">
@@ -51,7 +43,7 @@
    <!-- back to top end -->
 
    <!-- desktop header  -->
-   <header class="d-none d-md-block">
+   <header class="d-none d-xl-block">
       <div class="other__page"></div>
       <div class="header__area  ">
          <div class="container">
@@ -59,36 +51,44 @@
                <div class="row align-items-center">
                   <div class="col-xl-2">
                      <div class="logo">
-                        <img src="./assets/img/logo/logo.png" alt="" class="d-none d-lg-block">
-                        <img src="./assets/img/logo/logo_white.png" alt="" class="d-block d-lg-none">
+                        <a href="index.html">
+                           <img src="./assets/img/logo/logo.png" alt="" class="d-none d-lg-block">
+                        </a>
+
                      </div>
                   </div>
-                  <div class="col-xl-7 text-center">
+                  <div class="col-xl-7 col-lg-6 text-center">
                      <nav>
                         <ul>
-                           <li class="has-dropdown"><a href="#">About Us</a>
+                           <li class="has-dropdown"><a href="about-us.html">About Us</a>
                               <ul class="submenu">
-                                 <li><a href="#">Home</a></li>
-                                 <li><a href="#">Home</a></li>
-                                 <li><a href="#">Home</a></li>
-                                 <li><a href="#">Home</a></li>
+                                 <li><a href="story.html">Our Story</a></li>
+                                 <li><a href="impact.html">Our Impact</a></li>
+                                 <li><a href="people.html">Our People</a></li>
                               </ul>
                            </li>
                            <li class="has-dropdown"><a href="our-services.html">Our Services</a>
                               <ul class="submenu">
+                                 <li><a href="debt-advice.html">Debt Advice</a></li>
                                  <li><a href="benefits-advice.html">Benefits Advice</a></li>
-                                 <li><a href="debt-advice.html">DEBT Advice</a></li>
                                  <li><a href="employment-and-training.html">Employment & Training</a></li>
                                  <li><a href="immigration-advice.html">Immigration Advice</a></li>
                                  <li><a href="bussiness-startup-support.html">Bussiness Startup Support</a></li>
                               </ul>
                            </li>
-                           <li><a href="#">Support Us</a></li>
-                           <li><a href="#">Blogs & Reports</a></li>
+                           <li class="has-dropdown"><a href="#">Support Us</a>
+                              <ul class="submenu">
+                                 <li><a href="donate.html">Donate</a></li>
+                                 <li><a href="fund.html">Fund our Work</a></li>
+                                 <li><a href="partner.html">Partner with us</a></li>
+                                 <li><a href="volunteer.html">Volunteer</a></li>
+                              </ul>
+                           </li>
+                           <li><a href="blog.html">Blogs & Reports</a></li>
                         </ul>
                      </nav>
                   </div>
-                  <div class="col-xl-3 ">
+                  <div class="col-xl-3 col-lg-4">
                      <div class="header__button d-flex justify-content-end gap-2">
                         <button class="header__donate">Donate</button>
                         <button class="header__contact">Contact Us</button>
@@ -103,11 +103,11 @@
    </header>
 
    <!-- mobile header  -->
-   <header class="mobile__menu d-block d-md-none">
+   <header class="mobile__menu d-block d-xl-none">
 
       <div class="mobile__menu-header">
          <div>
-            <img src="./assets/img/logo/logo_white.png" alt="">
+            <a href="index.html"> <img src="./assets/img/logo/logo_white.png" alt=""></a>
          </div>
          <button class="menu__btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
             aria-controls="offcanvasScrolling">menu</button>
@@ -128,25 +128,33 @@
          </div>
          <div class="offcanvas-body">
             <div class="sidenav">
-               <a href="#about">About</a>
-               <a href="#services">Services</a>
-               <a href="#clients">Clients</a>
-               <button class="dropdown-btn">Videos
+               <Button class="dropdown-btn">About</button>
+               <div class="dropdown-container">
+                  <a href="about-us.html">About Us</a>
+                  <a href="story.html">Our Story</a>
+                  <a href="impact.html">Our Impact</a>
+                  <a href="people.html">Our People</a>
+               </div>
+               <Button class="dropdown-btn">Our Services</button>
+               <div class="dropdown-container">
+                  <a href="our-services.html">Our Services</a>
+                  <a href="benefits-advice.html">Benefits Advice</a>
+                  <a href="debt-advice.html">Debt Advice</a>
+                  <a href="immigration-advice.html">Immigration Advice</a>
+                  <a href="employment-and-training.html">Employment & Training</a>
+                  <a href="bussiness-startup-support.html">Bussiness Startup Support</a>
+               </div>
+               <button href="" class="dropdown-btn">Support Us
                </button>
                <div class="dropdown-container">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
+                  <a href="support-us.html">Support Us</a>
+                  <a href="donate.html">Donate</a>
+                  <a href="fund.html">Fund our work</a>
+                  <a href="partner.html">Partner with us</a>
+                  <a href="volunteer.html">Volunteer</a>
                </div>
-               <a href="#contact">Contact</a>
-               <button class="dropdown-btn">Dropdown
-               </button>
-               <div class="dropdown-container">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
-               </div>
-               <a href="#contact">Search</a>
+               <a href="blog.html">Blog & Reports</a>
+
             </div>
 
             <div class="sidenav__button">
@@ -165,15 +173,17 @@
 
       <!-- our services area start  -->
 
-      <section class="about__area mt-200">
+      <section class="story__area__title mt-200">
          <div class="container">
             <div class="row">
                <div class="col-12 col-md-8 mx-auto">
                   <div class="about__heading text-center">
                      <span class="sub_heading">THE HISTORY
                      </span>
-                     <h2>Our <span class="" data-background="./assets/img/about/story.png">Story</span></h2>
-                     <p>We're here to guide you through difficult times, providing expert advice and support tailored to
+                     <h2 class="section__title">Our <span class="shape_u"
+                           data-background="./assets/img/about/story.png">Story</span></h2>
+                     <p class="pera">We're here to guide you through difficult times, providing expert advice and
+                        support tailored to
                         your unique needs.
                      </p>
                   </div>
@@ -196,43 +206,52 @@
             </div>
             <div class="container">
                <div class="row mb-90">
-                  <div class="col-lg-5">
+                  <div class="col-lg-5 d-none d-lg-block">
                      <div class="story__img ">
                         <img src="./assets/img/story/1.png " alt="">
                      </div>
                   </div>
                   <div class="col-lg-7">
                      <div class="story__content ml-30">
-                        <img src="./assets/img/story/1.png " alt="" class="d-none">
-                        <span>Building The Limehouse Project</span>
-                        <h3>A Community's Vision</h3>
-                        <p>
-                           In the heart of East London, a story of community-driven change and empowerment began in
-                           1984. The Limehouse Project (LHP) was born not from distant boardrooms or external agencies
-                           but from the local community it sought to serve. Founded by visionary locals who understood
-                           our diverse community's unique challenges and potential, LHP is a testament to the power of
-                           community action.
-                        </p>
+                        <img src="./assets/img/story/sm1.png " alt="" class="d-block d-lg-none">
+                        <div class="story__inner">
+                           <span>Building The Limehouse Project</span>
+                           <h3>A Community's Vision</h3>
+                           <p>
+                              In the heart of East London, a story of community-driven change and empowerment began in
+                              1984. The Limehouse Project (LHP) was born not from distant boardrooms or external
+                              agencies
+                              but from the local community it sought to serve. Founded by visionary locals who
+                              understood
+                              our diverse community's unique challenges and potential, LHP is a testament to the power
+                              of
+                              community action.
+                           </p>
+                        </div>
                      </div>
                   </div>
                </div>
                <div class="row mb-90">
-                  <div class="col-lg-7">
+                  <div class="col-lg-7 ">
                      <div class="story__content mr-30">
-                        <img src="./assets/img/story/1.png " alt="" class="d-none">
-                        <span>THE COMMUNITY TREE</span>
-                        <h3>From Local Roots to Widespread Branches</h3>
-                        <p>
-                           LHP's journey started with a simple yet powerful objective: to address the immediate housing
-                           needs of homeless families in our area. Spearheaded by three local social pioneers – a
-                           teacher, a councillor, and a social worker – the organisation quickly evolved. Recognising
-                           the broader issues faced by ethnic minorities, including financial difficulties, social
-                           isolation, and language barriers, LHP expanded its focus. Today, we offer a suite of services
-                           ranging from benefits advice to employment training, all designed to uplift and empower.
-                        </p>
+                        <img src="./assets/img/story/sm2.png " alt="" class=" d-block d-lg-none">
+                        <div class="story__inner">
+                           <span>THE COMMUNITY TREE</span>
+                           <h3>From Local Roots to Widespread Branches</h3>
+                           <p>
+                              LHP's journey started with a simple yet powerful objective: to address the immediate
+                              housing
+                              needs of homeless families in our area. Spearheaded by three local social pioneers – a
+                              teacher, a councillor, and a social worker – the organisation quickly evolved. Recognising
+                              the broader issues faced by ethnic minorities, including financial difficulties, social
+                              isolation, and language barriers, LHP expanded its focus. Today, we offer a suite of
+                              services
+                              ranging from benefits advice to employment training, all designed to uplift and empower.
+                           </p>
+                        </div>
                      </div>
                   </div>
-                  <div class="col-lg-5">
+                  <div class="col-lg-5 d-none d-lg-block">
                      <div class="story__img ">
                         <img src="./assets/img/story/2.png " alt="">
                      </div>
@@ -240,42 +259,49 @@
 
                </div>
                <div class="row mb-90">
-                  <div class="col-lg-5">
+                  <div class="col-lg-5 d-none d-lg-block">
                      <div class="story__img ">
                         <img src="./assets/img/story/3.png " alt="">
                      </div>
                   </div>
                   <div class="col-lg-7">
                      <div class="story__content ml-30">
-                        <img src="./assets/img/story/1.png " alt="" class="d-none">
-                        <span>WHEN WE’RE TOGETHER</span>
-                        <h3>The Power of Local Knowledge & Networks</h3>
-                        <p>
-                           Our unparalleled local knowledge and networks are at the core of LHP's ethos. We are more
-                           than just a service provider; we are an integral part of the fabric of East London. Our team,
-                           primarily composed of local residents, brings an intimate understanding of the community's
-                           unique needs and dynamics. This insider perspective allows us to know things other
-                           organisations might not and to reach people others can't, making our services exceptionally
-                           effective and relevant.
+                        <img src="./assets/img/story/sm3.png " alt="" class="d-block d-lg-none">
+                        <div class="story__inner">
+                           <span>WHEN WE’RE TOGETHER</span>
+                           <h3>The Power of Local Knowledge & Networks</h3>
+                           <p>
+                              Our unparalleled local knowledge and networks are at the core of LHP's ethos. We are more
+                              than just a service provider; we are an integral part of the fabric of East London. Our
+                              team,
+                              primarily composed of local residents, brings an intimate understanding of the community's
+                              unique needs and dynamics. This insider perspective allows us to know things other
+                              organisations might not and to reach people others can't, making our services
+                              exceptionally
+                              effective and relevant.
 
-                        </p>
+                           </p>
+                        </div>
                      </div>
                   </div>
                </div>
                <div class="row mb-90">
                   <div class="col-lg-7">
                      <div class="story__content mr-30">
-                        <img src="./assets/img/story/1.png " alt="" class="d-none">
-                        <span>Empowering from Within</span>
-                        <h3>A Community-Centric Workforce</h3>
-                        <p>LHP is not just supportive of the community as a charity; we are interwoven with it as an
-                           employer. By hiring from within the community, we create a cycle of empowerment and economic
-                           prosperity. Our lived experience and deep-rooted connections enhance our work's impact,
-                           ensuring that every initiative is informed by genuine insight and empathy.
-                        </p>
+                        <img src="./assets/img/story/sm4.png " alt="" class="d-block d-lg-none">
+                        <div class="story__inner">
+                           <span>Empowering from Within</span>
+                           <h3>A Community-Centric Workforce</h3>
+                           <p>LHP is not just supportive of the community as a charity; we are interwoven with it as an
+                              employer. By hiring from within the community, we create a cycle of empowerment and
+                              economic
+                              prosperity. Our lived experience and deep-rooted connections enhance our work's impact,
+                              ensuring that every initiative is informed by genuine insight and empathy.
+                           </p>
+                        </div>
                      </div>
                   </div>
-                  <div class="col-lg-5">
+                  <div class="col-lg-5 d-none d-lg-block">
                      <div class="story__img ">
                         <img src="./assets/img/story/4.png " alt="">
                      </div>
@@ -283,49 +309,57 @@
 
                </div>
                <div class="row mb-90">
-                  <div class="col-lg-5">
+                  <div class="col-lg-5 d-none d-lg-block">
                      <div class="story__img ">
                         <img src="./assets/img/story/5.png " alt="">
                      </div>
                   </div>
                   <div class="col-lg-7">
                      <div class="story__content ml-30">
-                        <img src="./assets/img/story/1.png " alt="" class="d-none">
-                        <span>LISTENING IS APPRECIATION</span>
-                        <h3>A Legacy of Listening </h3>
-                        <p>We are proud of our heritage as a charity emerging from a grass-roots local campaign to
-                           address homelessness and a rise in racial attacks.
-                        </p>
-                        <p>
-                           LHP delivers diverse services for local people whose feedback and insights help identify
-                           emerging and unmet needs in light of evolving demographic and social trends. This, in turn,
-                           informs future strategies to identify further gaps in local services to meet the needs of
-                           minority communities in East London through innovative, accessible and sustainable services.
-                        </p>
-                        <p>
-                           Our work responds to local issues as they arise to ensure our services remain relevant and
-                           practical and respond to the changing needs of local people. 
+                        <img src="./assets/img/story/sm5.png " alt="" class="d-block d-lg-none">
+                        <div class="story__inner">
+                           <span>LISTENING IS APPRECIATION</span>
+                           <h3>A Legacy of Listening </h3>
+                           <p>We are proud of our heritage as a charity emerging from a grass-roots local campaign to
+                              address homelessness and a rise in racial attacks.
+                           </p>
+                           <p>
+                              LHP delivers diverse services for local people whose feedback and insights help identify
+                              emerging and unmet needs in light of evolving demographic and social trends. This, in
+                              turn,
+                              informs future strategies to identify further gaps in local services to meet the needs of
+                              minority communities in East London through innovative, accessible and sustainable
+                              services.
+                           </p>
+                           <p>
+                              Our work responds to local issues as they arise to ensure our services remain relevant and
+                              practical and respond to the changing needs of local people. 
 
 
-                        </p>
+                           </p>
+                        </div>
                      </div>
                   </div>
                </div>
                <div class="row mb-90">
                   <div class="col-lg-7">
                      <div class="story__content mr-30">
-                        <img src="./assets/img/story/1.png " alt="" class="d-none">
-                        <span>WE WORK AS ONE</span>
-                        <h3>A Network of Trust and Influence</h3>
-                        <p>Our local roots grant us a unique advantage: a network of trust and influence that extends
-                           across East London. This network enables us to mobilise resources, disseminate information,
-                           and offer support in ways others cannot. Our deep community ties mean we can engage with
-                           people on a personal level, creating a ripple effect of positive change that is both profound
-                           and sustainable.
-                        </p>
+                        <img src="./assets/img/story/sm6.png " alt="" class="d-block d-lg-none">
+                        <div class="story__inner">
+                           <span>WE WORK AS ONE</span>
+                           <h3>A Network of Trust and Influence</h3>
+                           <p>Our local roots grant us a unique advantage: a network of trust and influence that extends
+                              across East London. This network enables us to mobilise resources, disseminate
+                              information,
+                              and offer support in ways others cannot. Our deep community ties mean we can engage with
+                              people on a personal level, creating a ripple effect of positive change that is both
+                              profound
+                              and sustainable.
+                           </p>
+                        </div>
                      </div>
                   </div>
-                  <div class="col-lg-5">
+                  <div class="col-lg-5 d-none d-lg-block">
                      <div class="story__img ">
                         <img src="./assets/img/story/6.png " alt="">
                      </div>
@@ -334,22 +368,25 @@
                </div>
 
                <div class="row mb-90">
-                  <div class="col-lg-5">
+                  <div class="col-lg-5 d-none d-lg-block">
                      <div class="story__img ">
                         <img src="./assets/img/story/7.png " alt="">
                      </div>
                   </div>
                   <div class="col-lg-7">
                      <div class="story__content ml-30">
-                        <img src="./assets/img/story/1.png " alt="" class="d-none">
-                        <span>Forward Together</span>
-                        <h3>Our Legacy and Vision </h3>
-                        <p>Reflecting on our journey, we take pride in how our local initiative has flourished into a
-                           pillar of support for East London's ethnic minorities. Our story is one of resilience,
-                           community collaboration, and a steadfast commitment to those we serve </p>
-                        <p>As we look to the future, our roots in the community remain our guiding force, ensuring that
-                           every step forward is taken together, harnessing the power of local knowledge and networks
-                           for the continued prosperity of East London’s ethnic minorities. </p>
+                        <img src="./assets/img/story/sm4.png " alt="" class="d-block d-lg-none">
+                        <div class="story__inner">
+                           <span>Forward Together</span>
+                           <h3>Our Legacy and Vision </h3>
+                           <p>Reflecting on our journey, we take pride in how our local initiative has flourished into a
+                              pillar of support for East London's ethnic minorities. Our story is one of resilience,
+                              community collaboration, and a steadfast commitment to those we serve </p>
+                           <p>As we look to the future, our roots in the community remain our guiding force, ensuring
+                              that
+                              every step forward is taken together, harnessing the power of local knowledge and networks
+                              for the continued prosperity of East London’s ethnic minorities. </p>
+                        </div>
 
                      </div>
                   </div>
@@ -366,15 +403,16 @@
       <section class="newsletter__area">
          <div class="container">
             <div class="row">
-               <div class="col-lg-6">
+               <div class="col-xl-6">
                   <h3>Stay in the loop</h3>
                </div>
-               <div class="col-lg-6">
-                  <div class="newsletter__form d-flex justify-content-end">
+               <div class="col-xl-6">
+                  <div class="newsletter__form d-flex ">
                      <form action="#">
-                        <div>
+                        <div class="input__box">
                            <input type="text" placeholder="Enter your email here">
-                           <button>Subscribe</button>
+                           <button class="d-none d-md-block">Subscribe</button>
+                           <span class="d-block d-md-none arr"><i class="fa-light fa-arrow-right"></i></span>
                         </div>
                      </form>
                   </div>
@@ -402,7 +440,7 @@
          <!-- footer center  -->
          <div class="footer__center">
             <div class="row">
-               <div class="col-lg-5">
+               <div class="col-md-12 col-lg-5 d-none d-lg-block">
                   <div class="footer__center-left">
                      <h4>navigation</h4>
                      <ul>
@@ -414,14 +452,35 @@
                      </ul>
                   </div>
                </div>
-               <div class="col-lg-7 ">
+               <div class="col-md-12 col-lg-7 col-12 ">
                   <div class="footer__center-right d-flex  align-items-end">
                      <div>
                         <p>The Limehouse Project is a
                            registered charity (no. 295857) and company limited by guarantee (no. 01817676).</p>
 
                      </div>
-                     <div class="flex align-items-center">
+
+                     <div class="col-12 d-md-none d-block">
+                        <div class="row footer-class">
+                           <div class="col-12">
+                              <img src="./assets/img/footer/1.png" alt="">
+                           </div>
+                           <div class="col-12">
+                              <img src="./assets/img/footer/2.png" alt="">
+                           </div>
+                           <div class="col-12">
+                              <img src="./assets/img/footer/3.png" alt="">
+                           </div>
+                           <div class="col-12">
+                              <img src="./assets/img/footer/4.png" alt="">
+                           </div>
+                           <div class="col-12">
+                              <img src="./assets/img/footer/5.png" alt="">
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="flex  align-items-center d-none d-md-block">
                         <img src="./assets/img/footer/1.png" alt="">
                         <img src="./assets/img/footer/2.png" alt="">
                         <img src="./assets/img/footer/3.png" alt="">
@@ -435,17 +494,18 @@
          <!-- footer bottom  -->
          <div class="footer__bottom">
             <div class="row align-items-center">
-               <div class="col-lg-4">
+               <div class="col-lg-4 d-none d-lg-block">
                   <div class="logo">
-                     <img src="./assets/img/footer/logo.png" alt="">
+                     <img src="./assets/img/logo/logo_black.png" alt="">
                   </div>
                </div>
-               <div class="col-lg-4">
-                  <div class="copyright">
+               <div class="col-12 col-md-6 col-lg-4 order-1 order-md-0">
+                  <div class="copyright ">
                      <span>© 2024 Limehouse Project. All Rights Reserved. </span>
                   </div>
                </div>
-               <div class="col-lg-4 d-flex justify-content-end">
+               <div
+                  class="col-12 col-md-6 col-lg-4 d-flex justify-content-center justify-content-md-end order-0 order-md-1">
                   <div class="footer__bottom-social">
                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>

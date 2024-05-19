@@ -109,9 +109,8 @@
       }
     );
     BasicSlider.slick({
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 3000,
-      // centerMode: true,
       slidesToShow: 4,
       centerPadding: "15px",
       dots: false,
@@ -119,14 +118,33 @@
       sliderPerView: 4,
       arrows: true,
       prevArrow:
-        '<button type="button" class="slick-prev"><i class="fa-sharp fa-light fa-circle-arrow-left"></i></button>',
+        '<button type="button" class="slick-prev d-none"><i class="fa-sharp fa-light fa-circle-arrow-left"></i></button>',
       nextArrow:
         '<button type="button" class="slick-next"><i class="fa-light fa-circle-arrow-right"></i></button>',
       responsive: [
         {
-          breakpoint: 767,
+          breakpoint: 1250,
           settings: {
+            slidesToShow: 3,
             sliderPerView: 3,
+            dots: false,
+            arrows: false,
+          },
+        },
+        {
+          breakpoint: 1000,
+          settings: {
+            sliderPerView: 2,
+            slidesToShow: 2,
+            dots: false,
+            arrows: false,
+          },
+        },
+        {
+          breakpoint: 575,
+          settings: {
+            sliderPerView: 2,
+            slidesToShow: 2,
             dots: false,
             arrows: false,
           },

@@ -1,5 +1,10 @@
 @use '../utils' as *;
 
+.p_img {
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+}
 
 .people__area{
 
@@ -9,12 +14,31 @@
         border-radius:30px;
         text-align: center;
 
+        @media #{$md}{
+            margin-bottom: 30px;
+        }
+        @media #{$sm}{
+            margin-bottom: 30px;
+        }
+        @media #{$xs}{
+            margin-bottom: 30px;
+        }
+
         & h3{ 
             font-size: 48px;
             font-weight: 700;
             color:#494949;
             margin-bottom: 53px;
             line-height: 1.5;
+            @media #{$md}{
+               font-size: 16px;
+            }
+            @media #{$sm}{
+               font-size: 16px;
+            }
+            @media #{$xs}{
+                font-size: 16px;
+            }
         }
         & p{
             margin-bottom: 53px;
@@ -22,10 +46,28 @@
             font-weight: 400;
             padding-left: 15px;
             padding-right: 15px;
+            @media #{$md}{
+                font-size: 10px;
+             }
+             @media #{$sm}{
+                font-size: 10px;
+             }
+             @media #{$xs}{
+                 font-size: 10px;
+             }
         }
         & button{
             color:white;
             border-radius:30px;
+            @media #{$md}{
+                font-size: 13px;
+             }
+             @media #{$sm}{
+                font-size: 13px;
+             }
+             @media #{$xs}{
+                 font-size: 13px;
+             }
         }
     }
 
@@ -33,9 +75,23 @@
 
 .board__area{
     padding:142px 0;
+     & .board__content{
+        margin-top: 40px;
+     }
 
     & .section_heading{
+        padding-bottom: 6px;
         & h2{
+            color:white;
+            @media #{$md}{
+                font-size: 32px;
+            }
+            @media #{$sm}{
+                font-size: 32px;
+            }
+            @media #{$xs}{
+                font-size: 32px;
+            }
             & span{
                 background-repeat: no-repeat;
                 background-position:bottom center;
@@ -43,6 +99,93 @@
         }
     }
 
+}
+.auth{
+    
+    & span{
+        font-size: 20px;
+        color:var(--tp-theme-green);
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+        @media #{$md}{
+            font-size: 10px;
+        }
+        @media #{$sm}{
+            font-size: 10px;
+        }
+        @media #{$xs}{
+            font-size: 10px;
+        }
+    }
+    & h3{
+        font-size: 56px;
+        font-weight: 700;color:#494949;
+        text-transform: capitalize;
+
+        @media #{$md}{
+            font-size: 16px;
+        }
+        @media #{$sm}{
+            font-size: 16px;
+        }
+        @media #{$xs}{
+            font-size: 16px;
+        }
+    }
+
+}
+
+.board__btn {
+    a{
+        padding:12px 20px;
+        background-color: var(--tp-theme-green);
+        color:white;
+        font-size: 14px;
+        border-radius: 30px;
+        @media #{$md}{
+            font-size: 10px;
+        }
+        @media #{$sm}{
+            font-size: 10px;
+        }
+        @media #{$xs}{
+            font-size: 10px;
+        }
+
+    }
+}
+.accordion-body{
+    font-size: 20px;
+    color:#494949;
+    font-weight: 400;
+    line-height: 1.4;
+    @media #{$md}{
+        font-size: 10px;
+    }
+    @media #{$sm}{
+        font-size: 10px;
+    }
+    @media #{$xs}{
+        font-size: 10px;
+    }
+}
+.accordion-button{
+    border-radius:30px !important;
+    border:0;
+    & .collapsed{
+        border:0;
+        &:focus{
+            outline:none;
+        }
+    }
+    &:focus{
+        outline: none;
+    }
+}
+.accordion-item{
+    border-radius:30px !important;
+    margin-bottom: 30px;
 }
 
 .board__content{
@@ -57,17 +200,43 @@
     align-items: center;
     width:100%;
     outline: none;
+
     
     & .board__title{
         gap:30px;
         display:flex;
         align-items: center;
+        @media #{$md}{
+            gap:15px;
+        }
+        @media #{$sm}{
+            gap:15px;
+        }
+        @media #{$xs}{
+            gap:15px;
+        }
+
         & .profile{
             width:110px;
             height:110px;
             border-radius:30px;
             background-color:white;
             border:2px solid var(--tp-theme-green);
+            @media #{$md}{
+                width:60px;
+                height:60px;
+                border-radius:20px;
+            }
+            @media #{$sm}{
+                width:60px;
+                height:60px;
+                border-radius:20px;
+            }
+            @media #{$xs}{
+                width:60px;
+                height:60px;
+                border-radius:20px;
+            }
         }
     }
 }

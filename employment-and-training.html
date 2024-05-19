@@ -32,15 +32,7 @@
       <![endif]-->
 
 
-   <!-- pre loader area start -->
-   <div id="loading">
-      <div id="loading-center">
-         <div id="loading-center-absolute">
-            <!-- loading content here -->
-         </div>
-      </div>
-   </div>
-   <!-- pre loader area end -->
+
 
    <!-- back to top start -->
    <div class="progress-wrap">
@@ -51,44 +43,52 @@
    <!-- back to top end -->
 
    <!-- desktop header  -->
-   <header class="">
+   <header class="d-none d-xl-block">
       <div class="other__page"></div>
-      <div class="header__area d-none d-md-block ">
+      <div class="header__area  ">
          <div class="container">
             <div class="header__menu ">
                <div class="row align-items-center">
                   <div class="col-xl-2">
                      <div class="logo">
-                        <img src="./assets/img/logo/logo.png" alt="" class="d-none d-lg-block">
-                        <img src="./assets/img/logo/logo_white.png" alt="" class="d-block d-lg-none">
+                        <a href="index.html">
+                           <img src="./assets/img/logo/logo.png" alt="" class="d-none d-lg-block">
+                        </a>
+
                      </div>
                   </div>
-                  <div class="col-xl-7 text-center">
+                  <div class="col-xl-7 col-lg-6 text-center">
                      <nav>
                         <ul>
-                           <li class="has-dropdown"><a href="#">About Us</a>
+                           <li class="has-dropdown"><a href="about-us.html">About Us</a>
                               <ul class="submenu">
-                                 <li><a href="#">Home</a></li>
-                                 <li><a href="#">Home</a></li>
-                                 <li><a href="#">Home</a></li>
-                                 <li><a href="#">Home</a></li>
+                                 <li><a href="story.html">Our Story</a></li>
+                                 <li><a href="impact.html">Our Impact</a></li>
+                                 <li><a href="people.html">Our People</a></li>
                               </ul>
                            </li>
                            <li class="has-dropdown"><a href="our-services.html">Our Services</a>
                               <ul class="submenu">
+                                 <li><a href="debt-advice.html">Debt Advice</a></li>
                                  <li><a href="benefits-advice.html">Benefits Advice</a></li>
-                                 <li><a href="debt-advice.html">DEBT Advice</a></li>
                                  <li><a href="employment-and-training.html">Employment & Training</a></li>
                                  <li><a href="immigration-advice.html">Immigration Advice</a></li>
                                  <li><a href="bussiness-startup-support.html">Bussiness Startup Support</a></li>
                               </ul>
                            </li>
-                           <li><a href="#">Support Us</a></li>
-                           <li><a href="#">Blogs & Reports</a></li>
+                           <li class="has-dropdown"><a href="#">Support Us</a>
+                              <ul class="submenu">
+                                 <li><a href="donate.html">Donate</a></li>
+                                 <li><a href="fund.html">Fund our Work</a></li>
+                                 <li><a href="partner.html">Partner with us</a></li>
+                                 <li><a href="volunteer.html">Volunteer</a></li>
+                              </ul>
+                           </li>
+                           <li><a href="blog.html">Blogs & Reports</a></li>
                         </ul>
                      </nav>
                   </div>
-                  <div class="col-xl-3 ">
+                  <div class="col-xl-3 col-lg-4">
                      <div class="header__button d-flex justify-content-end gap-2">
                         <button class="header__donate">Donate</button>
                         <button class="header__contact">Contact Us</button>
@@ -103,11 +103,11 @@
    </header>
 
    <!-- mobile header  -->
-   <header class="mobile__menu d-block d-md-none">
+   <header class="mobile__menu d-block d-xl-none">
 
       <div class="mobile__menu-header">
          <div>
-            <img src="./assets/img/logo/logo_white.png" alt="">
+            <a href="index.html"> <img src="./assets/img/logo/logo_white.png" alt=""></a>
          </div>
          <button class="menu__btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
             aria-controls="offcanvasScrolling">menu</button>
@@ -128,25 +128,33 @@
          </div>
          <div class="offcanvas-body">
             <div class="sidenav">
-               <a href="#about">About</a>
-               <a href="#services">Services</a>
-               <a href="#clients">Clients</a>
-               <button class="dropdown-btn">Videos
+               <Button class="dropdown-btn">About</button>
+               <div class="dropdown-container">
+                  <a href="about-us.html">About Us</a>
+                  <a href="story.html">Our Story</a>
+                  <a href="impact.html">Our Impact</a>
+                  <a href="people.html">Our People</a>
+               </div>
+               <Button class="dropdown-btn">Our Services</button>
+               <div class="dropdown-container">
+                  <a href="our-services.html">Our Services</a>
+                  <a href="benefits-advice.html">Benefits Advice</a>
+                  <a href="debt-advice.html">Debt Advice</a>
+                  <a href="immigration-advice.html">Immigration Advice</a>
+                  <a href="employment-and-training.html">Employment & Training</a>
+                  <a href="bussiness-startup-support.html">Bussiness Startup Support</a>
+               </div>
+               <button href="" class="dropdown-btn">Support Us
                </button>
                <div class="dropdown-container">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
+                  <a href="support-us.html">Support Us</a>
+                  <a href="donate.html">Donate</a>
+                  <a href="fund.html">Fund our work</a>
+                  <a href="partner.html">Partner with us</a>
+                  <a href="volunteer.html">Volunteer</a>
                </div>
-               <a href="#contact">Contact</a>
-               <button class="dropdown-btn">Dropdown
-               </button>
-               <div class="dropdown-container">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
-               </div>
-               <a href="#contact">Search</a>
+               <a href="blog.html">Blog & Reports</a>
+
             </div>
 
             <div class="sidenav__button">
@@ -161,64 +169,32 @@
 
 
 
-   <header class="header__area  d-none ">
-      <div class="container">
-         <div class="header__menu">
-            <div class="row align-items-center">
-               <div class="col-xl-2">
-                  <div class="logo">
-                     <img src="./assets/img/logo/logo.png" alt="" class="d-none d-lg-block">
-                     <img src="./assets/img/logo/logo_white.png" alt="" class="d-block d-lg-none">
-                  </div>
-               </div>
-               <div class="col-xl-7 text-center">
-                  <nav>
-                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Our Services</a></li>
-                        <li><a href="#">Support Us</a></li>
-                        <li><a href="#">Blogs & Reports</a></li>
-                     </ul>
-                  </nav>
-               </div>
-               <div class="col-xl-3 ">
-                  <div class="header__button d-flex justify-content-end gap-2">
-                     <button class="header__donate">Donate</button>
-                     <button class="header__contact">Contact Us</button>
-                     <button class="header__phone"><i class="fa-sharp fa-light fa-phone"></i></button>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </header>
-
-   <!-- header area end -->
-
-
    <main>
 
 
 
       <!-- our services area start  -->
 
-      <section class="benefits__area">
+      <section class="benefits__area mt-200">
          <div class="container">
             <div class="row">
                <div class="col-lg-6">
                   <div class="benefits__content">
-                     <h2>Employment & Training</h2>
-                     <span>Enhance Your Career Prospects with Our Employment & Training Services
-                     </span>
-                     <p>Navigating the job market can be challenging. That's where the Limehouse Project comes in. </p>
-                     <p>Our Employment and Training services are designed to help you develop the skills and confidence
-                        needed to thrive in the workplace. From CV writing to vocational training courses, our experts
-                        are here to guide you, with support also available in Bangla/Sylheti.</p>
+                     <h2> Employment & Training</h2>
+                     <span>Enhance Your Career Prospects with Our Employment & Training Services</span>
+                     <img src="./assets/img/benefits/debt_sm.png " class=" d-block d-lg-none" alt="">
+                     <p>Dealing with debt can feel overwhelming, but you're not alone. The Limehouse Project offers
+                        practical Debt Advice to help you manage and overcome your financial burdens.</p>
+                     <p>Our compassionate advisors provide simple, effective strategies tailored to your situation. And
+                        if you're more comfortable speaking Bangla/Sylheti, we have support available in these languages
+                        too.</p>
+
+
                   </div>
                </div>
-               <div class="col-lg-6">
+               <div class="col-lg-6 d-none d-lg-block">
                   <div class="benefits__img">
-                     <img src="./assets/img/benefits/4.png" alt="">
+                     <img src="./assets/img/benefits/2.png" alt="">
                   </div>
                </div>
             </div>
@@ -227,14 +203,14 @@
       <!-- our services area end  -->
 
       <!-- benefits contact area start -->
-      <section class="benefits__contacts blue">
+      <section class="benefits__contacts orange">
 
          <div class="container">
             <div class="row">
                <div class="col-12 col-md-7 mx-auto">
                   <div class="benefits__contacts-content">
                      <h3>Contact us now for more information or to arrange an appointment.</h3>
-                     <a href="#" class="text-blue bg-white"> contact us</a>
+                     <a href="#" class="text-pink"> contact us</a>
                   </div>
                </div>
             </div>
@@ -251,7 +227,10 @@
                <div class="col-12 col-md-10 mx-auto">
                   <div class=" benefits__quote-content">
                      <div class="benefits__quote-title">
-                        <h2>Here’s what Ayesha had to say:</h2>
+                        <h2><span class="quote1">Here’s what</span>
+                           <span class="shape_u" data-background="./assets/img/benefits/aye_u.png">Ayesha</span>
+                           <span class="quote1">had to say:</span>
+                        </h2>
                      </div>
                      <div class="benefits__quote-card">
                         <img src="./assets/img/benefits/quote.png" alt="">
@@ -274,18 +253,19 @@
 
 
       <!-- newsletter area start  -->
-      <section class=" newsletter__area">
+      <section class="newsletter__area">
          <div class="container">
             <div class="row">
-               <div class="col-lg-6">
+               <div class="col-xl-6">
                   <h3>Stay in the loop</h3>
                </div>
-               <div class="col-lg-6">
-                  <div class="newsletter__form d-flex justify-content-end">
+               <div class="col-xl-6">
+                  <div class="newsletter__form d-flex ">
                      <form action="#">
-                        <div>
+                        <div class="input__box">
                            <input type="text" placeholder="Enter your email here">
-                           <button>Subscribe</button>
+                           <button class="d-none d-md-block">Subscribe</button>
+                           <span class="d-block d-md-none arr"><i class="fa-light fa-arrow-right"></i></span>
                         </div>
                      </form>
                   </div>
@@ -313,7 +293,7 @@
          <!-- footer center  -->
          <div class="footer__center">
             <div class="row">
-               <div class="col-lg-5">
+               <div class="col-md-12 col-lg-5 d-none d-lg-block">
                   <div class="footer__center-left">
                      <h4>navigation</h4>
                      <ul>
@@ -325,14 +305,35 @@
                      </ul>
                   </div>
                </div>
-               <div class="col-lg-7 ">
+               <div class="col-md-12 col-lg-7 col-12 ">
                   <div class="footer__center-right d-flex  align-items-end">
                      <div>
                         <p>The Limehouse Project is a
                            registered charity (no. 295857) and company limited by guarantee (no. 01817676).</p>
 
                      </div>
-                     <div class="flex align-items-center">
+
+                     <div class="col-12 d-md-none d-block">
+                        <div class="row footer-class">
+                           <div class="col-12">
+                              <img src="./assets/img/footer/1.png" alt="">
+                           </div>
+                           <div class="col-12">
+                              <img src="./assets/img/footer/2.png" alt="">
+                           </div>
+                           <div class="col-12">
+                              <img src="./assets/img/footer/3.png" alt="">
+                           </div>
+                           <div class="col-12">
+                              <img src="./assets/img/footer/4.png" alt="">
+                           </div>
+                           <div class="col-12">
+                              <img src="./assets/img/footer/5.png" alt="">
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="flex  align-items-center d-none d-md-block">
                         <img src="./assets/img/footer/1.png" alt="">
                         <img src="./assets/img/footer/2.png" alt="">
                         <img src="./assets/img/footer/3.png" alt="">
@@ -346,17 +347,18 @@
          <!-- footer bottom  -->
          <div class="footer__bottom">
             <div class="row align-items-center">
-               <div class="col-lg-4">
+               <div class="col-lg-4 d-none d-lg-block">
                   <div class="logo">
-                     <img src="./assets/img/footer/logo.png" alt="">
+                     <img src="./assets/img/logo/logo_black.png" alt="">
                   </div>
                </div>
-               <div class="col-lg-4">
-                  <div class="copyright">
+               <div class="col-12 col-md-6 col-lg-4 order-1 order-md-0">
+                  <div class="copyright ">
                      <span>© 2024 Limehouse Project. All Rights Reserved. </span>
                   </div>
                </div>
-               <div class="col-lg-4 d-flex justify-content-end">
+               <div
+                  class="col-12 col-md-6 col-lg-4 d-flex justify-content-center justify-content-md-end order-0 order-md-1">
                   <div class="footer__bottom-social">
                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>

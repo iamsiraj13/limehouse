@@ -105,6 +105,9 @@ p {
 }
 .mt-200{
 	margin-top: 200px;
+ 
+ 
+ 
 }
 
 a,
@@ -314,13 +317,7 @@ input[type="color"] {
  
  
 
-.sub_heading{
-	color:var(--tp-theme-purple);
-	font-size:20px;
-	font-weight:700;
-	text-transform: uppercase ;
-	
-}
+
 
 .text-purple{
 	color:var(--tp-theme-purple);
@@ -366,4 +363,46 @@ input[type="color"] {
 .shape_u{
 	background-repeat: no-repeat;
 	background-position:bottom;
+	font-size: inherit;
+	color:inherit;
+}
+.section__title{
+	font-size: 64px;
+	@media #{$md}{
+		font-size: 32px;
+	}
+	@media #{$sm}{
+		font-size: 32px;
+	}
+	@media #{$xs}{
+		font-size: 32px;
+	}
+}
+
+.sub_heading{
+	color:var(--tp-theme-purple);
+	font-size:20px;
+	font-weight:700;
+	text-transform: uppercase ;
+	@media #{$md}{
+		font-size: 14px;
+	}
+	@media #{$sm}{
+		font-size: 14px;
+	}
+	@media #{$xs}{
+		font-size: 14px;
+	}
+}
+.pera{
+	font-size: 20px;
+	@media #{$md}{
+		font-size: 12px;
+	}
+	@media #{$sm}{
+		font-size: 12px;
+	}
+	@media #{$xs}{
+		font-size: 12px;
+	}
 }

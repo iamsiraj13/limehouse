@@ -194,6 +194,7 @@
         span{ 
             text-transform: uppercase; 
             margin-bottom: 20px;
+            
             @media #{$sm}{
                 font-size: 14px;
             }
@@ -208,11 +209,20 @@
             margin-top: 20px;
             font-weight:700;
             margin-bottom: 45px;
+            @media #{$md}{
+                font-size: 32px;
+            }
             @media #{$xs}{
                 font-size: 32px;
             }
             @media #{$sm}{
                 font-size: 32px;
+            }
+            & span{
+                font-size: inherit;
+            font-weight: inherit;
+        
+
             }
         }
        & p{
@@ -220,6 +230,9 @@
             font-weight:400;
             font-size:20px;
 
+            @media #{$md}{
+                font-size: 12px;
+            }
             @media #{$sm}{
                 font-size: 12px;
             }
@@ -237,12 +250,16 @@
     }
     .understand__img {
         padding-left: 60px; 
+        @media #{$md}{
+            padding-left: 0;
+            margin-bottom: 33px;
+        }
         @media #{$sm}{
-            padding-left: 15px;
+            padding-left: 0;
             margin-bottom: 33px;
         }
         @media #{$xs}{
-            padding-left: 15px;
+            padding-left: 0;
             margin-bottom: 33px;
         }
         & img{
@@ -258,22 +275,61 @@
         background-color: #F5F5F5;
         padding:130px 0;
 
+       
         & .services__heading{
             span{
             text-transform: uppercase;
             display: block;
             margin-bottom: 20px;
             letter-spacing: 4px;
+            @media #{$md}{
+                font-size: 12px;
+            }
+            @media #{$sm}{
+                font-size: 12px;
+            }
+            @media #{$xs}{
+                font-size: 12px;
+            }
         }
         h2{
             margin-bottom: 45px;
+            @media #{$md}{
+                font-size: 32px;
+            }
+            @media #{$sm}{
+                font-size: 32px;
+            }
+            @media #{$xs}{
+                font-size: 32px;
+            }
         }
         p{
         width:40%;
         margin: 0 auto;
+        @media #{$md}{
+            font-size: 12px;
+        }
+        @media #{$sm}{
+            font-size: 12px;
+            width:100%
+        }
+        @media #{$xs}{
+            font-size: 12px;
+            width:100%;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
         }
          
+        button.slick-prev.slick-arrow {
+            display: none;
+        }
         & .slider-active   { 
+            padding-left: 280px;
+           @media #{$lg}{
+            padding-left: 0;
+           }
            & .slick-list{
             
                & .slick-track{
@@ -301,6 +357,7 @@
             margin-bottom: 30px;
             text-transform: uppercase;
             padding:0 20%
+
          }
          & p{
             color:#494949;
@@ -316,13 +373,14 @@
 
         
       }
+
+
+    
 }
 .slider-active img{
     width:100%;
 }
-.slick-prev{
-    display:none;
-}
+
 .slick-next {
     position: absolute; 
     color:var(--tp-theme-purple);
@@ -341,6 +399,39 @@
     // margin-right: 100px;
 }
 
+ .service__mobile{
+    padding-top: 40px;
+ }
+   .service__mobile__card{
+            display:flex;
+            align-items: center;
+            width:310px;
+            margin:auto;
+            border-radius:30px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            height:189px;
+            margin-bottom: 30px;
+    & .service__mobile__content{
+        padding:15px;
+
+        & h3{
+            font-size: 16px;
+
+        }
+        & p{
+            font-size: 10px;
+            line-height:1.1;
+        }
+        & button{
+            font-size: 10px;
+            color:white;
+            border-radius:30px;
+            padding:8px 15px;
+        }
+    }
+
+   }
+ 
  
 .slider-active{
     position: relative;

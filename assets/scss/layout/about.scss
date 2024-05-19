@@ -3,10 +3,37 @@
 
 .about__area{
     padding:140px 0;
+    margin-top: 200px;
+    @media #{$lg}{
+        padding: 0;
+        margin-top: 28px;
+    }
+    @media #{$md}{
+        padding: 0;
+        margin-top: 28px;
+    }
+    @media #{$sm}{
+        padding: 0;
+        margin-top: 28px;
+    }
+    @media #{$xs}{
+        padding: 0;
+        margin-top: 28px;
+    }
     & .about__heading{
         margin-bottom: 107px;
         & h2{
             position:relative; 
+            font-size: 64px;
+            @media #{$md}{
+                font-size: 32px;
+            }
+            @media #{$sm}{
+                font-size: 32px;
+            }
+            @media #{$xs}{
+                font-size: 32px;
+            }
            
             span{
                    
@@ -42,6 +69,20 @@
                     right:-62px;
                     top:62px;
                     transform: rotate(-90deg);
+
+
+                    @media #{$sm}{ 
+                        bottom: -19px;
+                        left: 50%;
+                        top:81%;
+                        transform: translateX(-50%);
+                    }
+                    @media #{$xs}{ 
+                        bottom: -19px;
+                        left: 50%;
+                        top:81%;
+                        transform: translateX(-50%);
+                    }
                 }
             }
             &:hover{

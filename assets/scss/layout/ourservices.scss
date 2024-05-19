@@ -9,10 +9,34 @@
     }
     &__content{
         padding:0 250px;
+        @media #{$md}{
+          padding: 0;
+        }
+        @media #{$sm}{
+            padding: 0;
+        }
+        @media #{$xs}{
+            padding: 0;
+        }
         & h2{
             margin-bottom: 16px;
             text-transform: capitalize;
             font-weight: 700;
+            & span{
+                font-size: inherit;
+                font-weight: inherit;
+                display:inline-block;
+                color:inherit
+            }
+            @media #{$md}{
+                font-size: 32px;
+            }
+            @media #{$sm}{
+                font-size: 32px;
+            }
+            @media #{$xs}{
+                font-size: 32px;
+            }
         }
         & span{
             display:block;
@@ -25,6 +49,15 @@
             font-size: 20px;
             font-weight: 400;
             color:#494949;
+            @media #{$md}{
+                padding: 0;
+              }
+              @media #{$sm}{
+                  padding: 0;
+              }
+              @media #{$xs}{
+                  padding: 0;
+              }
         }
     }
 }
@@ -47,6 +80,15 @@
             width:564px;
             text-align: center;
             padding:70px 60px;
+            @media #{$md}{
+                width:100%;
+            }
+            @media #{$sm}{
+                width:100%;
+            }
+            @media #{$xs}{
+                width:100%;
+            }
             & h3{
                 font-size: 36px;
                 font-weight: 700;

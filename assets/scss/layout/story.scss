@@ -1,5 +1,38 @@
 @use '../utils' as *;
 
+
+ .story__area__title {
+    padding-top: 140px;
+    padding-bottom: 90px;
+    @media #{$md}{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    @media #{$sm}{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    @media #{$xs}{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    & h2{
+        margin-top: 20px;
+        margin-bottom: 40px;
+        @media #{$md}{
+            margin-top: 10px;
+        margin-bottom: 20px;
+        }
+        @media #{$sm}{
+            margin-top: 10px;
+        margin-bottom: 20px;
+        }
+        @media #{$xs}{
+            margin-top: 10px;
+        margin-bottom: 20px;
+        }
+    }
+}
  
 .story__area{
     & .story__bg{
@@ -46,7 +79,52 @@
             padding-left: 62px;
             padding-right: 62px;
             background-color: #ffffff92;
-            
+            @media #{$md}{
+                border:none;
+                padding-top: 0;
+                padding-left: 0;
+                padding-right: 0;
+                text-align: center;
+            }
+            @media #{$sm}{
+                border:none;
+                padding-top: 0;
+                padding-left: 0;
+                padding-right: 0;
+                text-align: center;
+            }
+            @media #{$xs}{
+                border:none;
+                padding-top: 0;
+                padding-left: 0;
+                padding-right: 0;
+                text-align: center;
+            }
+            & .story__inner{
+              
+                
+                @media #{$md}{
+                    border:1px solid var(--tp-theme-purple);
+                    border-bottom-left-radius: 30px;
+                    border-bottom-right-radius: 30px;
+                    padding:40px 20px;
+                }
+                @media #{$sm}{
+                    border:1px solid var(--tp-theme-purple);
+                    border-bottom-left-radius: 30px;
+                    border-bottom-right-radius: 30px;
+                    padding:40px 20px;
+                }
+                @media #{$xs}{
+                    border:1px solid var(--tp-theme-purple);
+                    border-bottom-left-radius: 30px;
+                    border-bottom-right-radius: 30px;
+                    padding:40px 20px;
+                }
+            }
+            & img{
+                width:100%;
+            }
             & span{
                 margin-bottom: 20px;
                 display:block;
@@ -54,6 +132,15 @@
                 color:#494949;
                 font-weight: 700;
                 text-transform: uppercase;
+                @media #{$md}{
+                   font-size: 10px;
+                }
+                @media #{$sm}{
+                  font-size: 10px;
+                }
+                @media #{$xs}{
+                    font-size: 10px;
+                }
             }
 
             & h3{
@@ -61,10 +148,37 @@
                 font-size: 48px;
                 font-weight: 700;
                 color:#494949;
+                @media #{$md}{
+                    font-size: 16px;
+                    text-align: center;
+                 }
+                 @media #{$sm}{
+                   font-size: 16px;
+                   text-align: center;
+                 }
+                 @media #{$xs}{
+                     font-size: 16px;
+                     text-align: center;
+                 }
             }
             & p{
                 line-height: 1.6;
                 padding-right: 100px;
+                @media #{$md}{
+                    font-size: 10px;
+                    text-align: center;
+                    padding-right: 0;
+                 }
+                 @media #{$sm}{
+                   font-size: 10px;
+                   text-align: center;
+                   padding-right: 0;
+                 }
+                 @media #{$xs}{
+                     font-size: 10px;
+                     text-align: center;
+                     padding-right: 0;
+                 }
             }
         }
 
@@ -73,6 +187,15 @@
 
 .mb-90{
     margin-bottom: 90px;
+    @media #{$md}{
+        margin-bottom: 30px;
+     }
+     @media #{$sm}{
+       margin-bottom: 30px;
+     }
+     @media #{$xs}{
+      margin-bottom: 30px;
+     }
 }
 .ml-30{
     margin-left: 30px;
@@ -85,21 +208,124 @@
     padding:167px 0;
     background: rgba(224, 130, 186, 0.1);
 
+    @media #{$md}{
+        padding:55px;
+    }
+    @media #{$sm}{
+        padding:55px;
+    }
+    @media #{$xs}{
+        padding:55px;
+    }
     & .impact__content{
+      text-align: start;
+        @media #{$sm}{
+            text-align: center;
+          
+        }
+        @media #{$xs}{
+            text-align: center;
+           
+        }
+        & span{
+            
+            @media #{$sm}{
+                text-align: center;
+                display:block
+            }
+            @media #{$xs}{
+                text-align: center;
+                display:block
+            }
+        }
 
         & h2{
             margin-top: 20px;
             margin-bottom: 46px;
             font-weight: 700;
+            @media #{$md}{
+                font-size: 32px;
+                margin-top: 15px;
+            margin-bottom: 29px;
+             
+            }
+            @media #{$sm}{
+                font-size: 32px;
+                margin-top: 15px;
+            margin-bottom: 29px;
+            text-align: center;
+            }
+            @media #{$xs}{
+                font-size: 32px;
+                margin-top: 15px;
+            margin-bottom: 29px;
+            text-align: center;
+            }
         }
         & p{
             font-size: 20px;
             font-weight: 400;
             line-height:1.5;
+            @media #{$md}{
+                font-size: 12px;
+                text-align: center;
+            }
+            @media #{$sm}{
+                font-size: 12px;
+                text-align: center;
+            }
+            @media #{$xs}{
+                font-size: 12px;
+                text-align: center;
+            }
         }
         & button{
             border-radius:30px;
             margin-top:100px ;
+            @media #{$md}{
+                border-radius: 30px;
+                margin-top: 17px;
+                text-align: center;
+                 
+            }
+            @media #{$sm}{
+                border-radius: 30px;
+                margin-top: 17px;
+                text-align: center;
+               
+                 
+            }
+            @media #{$xs}{
+                border-radius: 30px;
+                margin-top: 17px;
+                text-align: center;
+                
+                 
+            }
+        }
+    }
+    & .impact__img{
+        text-align: right;
+        & img{
+            width:100%;
+            @media #{$md}{
+                margin-bottom: 48px;
+            }
+            @media #{$sm}{
+                margin-bottom: 48px;
+            }
+            @media #{$xs}{
+                margin-bottom: 48px;
+            }
+        }
+        @media #{$md}{
+            text-align: center;
+        }
+        @media #{$sm}{
+            text-align: center;
+        }
+        @media #{$xs}{
+            text-align: center;
         }
     }
 }
