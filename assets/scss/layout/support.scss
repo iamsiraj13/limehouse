@@ -17,6 +17,7 @@
         }
     }
     &__content{
+        
         & h2{
             @media #{$md}{
                 font-size: 32px;
@@ -34,13 +35,23 @@
 
         }
         & span{
-            margin: 43px;
+            // margin: 43px;
             display:block;
+            @media #{$md}{
+                margin: 8px;
+             }
+            @media #{$sm}{
+                margin: 8px;
+             }
+            @media #{$xs}{
+                margin: 8px;
+             }
         }
         & p{
             padding:0 122px;
             margin-bottom: 20px;
         }
+       
     }
 }
 
@@ -74,4 +85,11 @@
             border-radius:30px;
         }
     }
+}
+
+.donate_btn{
+    border-radius:30px;
+    margin-bottom: 30px;
+    color:white;
+
 }

@@ -106,7 +106,7 @@
                             display:block;
                             padding:5px 0;
                             &:hover{
-                                border-bottom:none;
+                                border-bottom:0;
                             }
                             & a{
                                 display:block;
@@ -122,6 +122,7 @@
                                     display: inline-block;
                                 }
                                 &:hover{
+                                    border-bottom:0;
                                     &::after{
                                         margin-left:20px;
                                     }
@@ -154,88 +155,14 @@
                         
                         &:hover, &:active{
                             color:var(--tp-theme-purple);
+                            border:0;
                            
                         
                             
                         }
                       
                     }
-                  
-                    // & .submenu{ 
-                    //     position: absolute;
-                    //     padding: 10px 16px 45px 29px;
-                    //     border-radius: 30px;
-                    //     top: 100%; 
-                    //     left: 0;
-                    //     min-width: 200px; 
-                    //     background: var(--tp-common-white);
-                    //     z-index: 99;
-                    //     @include transition(.3s);
-                    //     visibility: hidden;
-                    //     opacity: 0;
-                    //     @include box-shadow(0px 30px 70px 0px rgba(11, 6, 70, 0.08));
-                    //     &  ul{
-                    //         position:absolute;
-                    //         left:100%;
-                    //         top:0;
-                    //         visibility: hidden;
-                    //         opacity: 0;
-                    //     }
-                    //     & li:hover{
-                    //         & ul{
-                    //             visibility: visible;
-                    //             opacity: 1;
-                    //         }
-                    //     }
-                       
-                    //     &:hover{
-                           
-                    //         &> a{
-                    //             color: var(--tp-theme-purple);
-                    //             &::after{
-                    //                 color: var(--tp-theme-purple);
-                    //             }
-                    //         }
-                           
-                    //     }
-                    //     & li{
-                    //         display:block;
-                    //         border-bottom:0;
-                    //         & a{
-                    //             padding:12px 0px;
-                    //             text-align: left;
-                    //             position:relative;
-                    //             border-bottom:0;
-                    //             &:hover{
-                    //                 border-bottom: 0;
-                                    
-                    //             }
-
-                    //             &::after{
-                    //                 content: '\f105';
-                    //                 @include transform(translateY(0px));
-                    //                 font-size: 14px;
-                    //                 color: var(--tp-common-black);
-                    //                 font-family: var(--tp-ff-fontawesome);
-                    //                 font-weight: 400;
-                    //                 margin-left: 15px;
-                    //                 display: inline-block;
-                    //             }
-                    //             &:hover{
-                    //                 &::after{
-                    //                     @include transform(translateX(10px)); 
-                    //                 }
-                    //             }
-                    //             & > .submenu{
-                    //                 top: 120%;
-                    //                 visibility: visible;
-                    //                 opacity: 1; 
-                    //             }
-
-                    //         }
-                    //     }
-                  
-                    // }
+                   
                     
                 }
             }

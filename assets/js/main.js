@@ -32,33 +32,6 @@
   }
 
   ////////////////////////////////////////////////////
-  // 03. Sidebar Js
-  $(".offcanvas-toggle-btn").on("click", function () {
-    $(".offcanvas__area").addClass("opened");
-    $(".body-overlay").addClass("opened");
-  });
-  $(".offcanvas__close-btn").on("click", function () {
-    $(".offcanvas__area").removeClass("opened");
-    $(".body-overlay").removeClass("opened");
-  });
-
-  ////////////////////////////////////////////////////
-  // 04. Body overlay Js
-  $(".body-overlay").on("click", function () {
-    $(".offcanvas__area").removeClass("opened");
-    $(".body-overlay").removeClass("opened");
-  });
-
-  ////////////////////////////////////////////////////
-  // 05. Search Js
-  $(".search-toggle").on("click", function () {
-    $(".search__area").addClass("opened");
-  });
-  $(".search-close-btn").on("click", function () {
-    $(".search__area").removeClass("opened");
-  });
-
-  ////////////////////////////////////////////////////
   // 06. Sticky Header Js
   windowOn.on("scroll", function () {
     var scroll = $(window).scrollTop();
@@ -85,10 +58,6 @@
   $("[data-bg-color]").each(function () {
     $(this).css("background-color", $(this).attr("data-bg-color"));
   });
-
-  ////////////////////////////////////////////////////
-  // 07. Nice Select Js
-  $("select").niceSelect();
 
   // mainSlider
   function mainSlider() {
@@ -234,7 +203,7 @@
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },

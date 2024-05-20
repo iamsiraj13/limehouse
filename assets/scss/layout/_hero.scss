@@ -458,3 +458,32 @@
 
 }
 
+
+
+.social_content{
+    position:fixed;
+    z-index: 99999;
+    top:500px;
+    right:0;
+    & ul{
+        list-style: none;
+         
+        padding:10px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        & li{
+            display:block;
+            & a{
+                width:30px;
+                height:30px;
+                border:1px solid white;
+                border-radius:50%;
+                display:inline-block;
+                font-size: 12px;
+                text-align: center;
+                color:white;
+                margin-bottom: 7px;
+            }
+        }
+    }
+}

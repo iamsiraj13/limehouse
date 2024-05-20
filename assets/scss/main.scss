@@ -1,15 +1,13 @@
 @forward 'components/theme';
-@forward 'components/background'; 
+ 
 @forward 'components/buttons';
 @forward 'components/carousel';
-@forward 'components/modal';
-@forward 'components/section-title';
-@forward 'components/breadcrumb';
+  
+ 
 @forward 'components/animation';
 @forward 'components/preloader';
 @forward 'layout/header';
-@forward 'layout/hero'; 
-@forward 'layout/meanmenu';
+@forward 'layout/hero';  
 @forward 'layout/counterup';
 @forward 'layout/testimonials';
 @forward 'layout/newsletter';
