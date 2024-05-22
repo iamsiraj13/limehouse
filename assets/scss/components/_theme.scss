@@ -106,7 +106,12 @@ p {
 .mt-200{
 	margin-top: 200px;
  
- 
+	@media #{$sm}{
+		margin-top: 100px;
+	}
+	@media #{$xs}{
+		margin-top: 100px;
+	}
  
 }
 
@@ -345,9 +350,21 @@ input[type="color"] {
 }
 .pl-15{
 	padding-left: 15px;
+	@media #{$sm}{
+		padding-left: 0;
+	}
+	@media #{$xs}{
+		padding-left: 0;
+	}
 }
 .pr-15{
 	padding-right: 15px;
+	@media #{$sm}{
+		padding-right: 0;
+	}
+	@media #{$xs}{
+		padding-right: 0;
+	}
 }
 .pb-15{
 	padding-bottom: 15px;

@@ -16,12 +16,15 @@
 
         @media #{$md}{
             margin-bottom: 30px;
+            padding:20px;
         }
         @media #{$sm}{
             margin-bottom: 30px;
+            padding:21px;
         }
         @media #{$xs}{
             margin-bottom: 30px;
+            padding:21px;
         }
 
         & h3{ 
@@ -31,13 +34,16 @@
             margin-bottom: 53px;
             line-height: 1.5;
             @media #{$md}{
-               font-size: 16px;
+               font-size: 32px;
+               margin-bottom: 10px;
             }
             @media #{$sm}{
                font-size: 16px;
+               margin-bottom: 0;
             }
             @media #{$xs}{
                 font-size: 16px;
+                margin-bottom: 10px;
             }
         }
         & p{
@@ -47,13 +53,20 @@
             padding-left: 15px;
             padding-right: 15px;
             @media #{$md}{
-                font-size: 10px;
+                font-size: 16px;
+                padding: 0;
+                margin-bottom: 0;
              }
              @media #{$sm}{
                 font-size: 10px;
+                padding: 0;
+                margin-bottom: 0;
              }
              @media #{$xs}{
                  font-size: 10px;
+                 padding: 0;
+                 margin-bottom: 10px;
+                 line-height:1.7;
              }
         }
         & button{
@@ -61,6 +74,7 @@
             border-radius:30px;
             @media #{$md}{
                 font-size: 13px;
+                margin-top: 15px;
              }
              @media #{$sm}{
                 font-size: 13px;

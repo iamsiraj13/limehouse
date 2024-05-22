@@ -92,7 +92,7 @@
         '<button type="button" class="slick-next"><i class="fa-light fa-circle-arrow-right"></i></button>',
       responsive: [
         {
-          breakpoint: 1250,
+          breakpoint: 1400,
           settings: {
             slidesToShow: 3,
             sliderPerView: 3,
@@ -112,8 +112,8 @@
         {
           breakpoint: 575,
           settings: {
-            sliderPerView: 2,
-            slidesToShow: 2,
+            sliderPerView: 1,
+            slidesToShow: 1,
             dots: false,
             arrows: false,
           },
@@ -214,8 +214,8 @@
     infinite: true,
     speed: 200,
     autoPlay: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 2,
+    slidesToScroll: 2,
     autoPlaySpeed: 1000,
     draggable: true,
     centerPadding: "111px",
@@ -242,7 +242,7 @@
         settings: {
           dots: false,
           arrows: false,
-          slidesToShow: 4,
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
@@ -352,6 +352,27 @@
         slidesPerView: 1,
       },
     },
+  });
+
+  // about slider
+
+  $(".slider-nav").slick({
+    slidesToShow: 6, // Show 5 items in the navigation slider
+    slidesToScroll: 2,
+    asNavFor: ".slider-for",
+    dots: false,
+    centerMode: true,
+    focusOnSelect: true,
+  });
+
+  $(".slider-for").slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: false,
+    asNavFor: ".slider-nav",
+    autoplay: false, // Enable autoplay
+    autoplaySpeed: 2000, // Autoplay interval in milliseconds
   });
 
   ////////////////////////////////////////////////////

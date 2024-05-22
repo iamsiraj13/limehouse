@@ -14,7 +14,10 @@
     padding-top: 40px;  
     position:fixed;
     z-index: 1;
-    clip-path: ellipse(67% 60% at 49% 33%);
+    clip-path: ellipse(67% 51% at 49% 33%);
+    @media #{$xs}{
+        clip-path:ellipse(81% 72% at 49% 26%)
+    }
 }
 .header{
      &__area{
@@ -43,7 +46,7 @@
         padding:20px 20px;
         border-radius: 20px;
         @media #{$xl}{
-            padding:6px 20px;
+            padding:16px 20px;
         }
         & nav{
             & ul{
@@ -175,18 +178,24 @@
                     padding:7px 20px;
                     background-color: var(--tp-theme-green);
                     border-radius: 20px;
-                    font-size: 16px;
+                    font-size: 12px;
                     font-weight: 700;
                     color:white; 
+                    @media #{$xl}{
+                        font-size: 10px;
+                    }
             }
                 & .header__contact{
                     padding:7px 20px;
                     background-color:transparent;
                     border-radius: 20px;
-                    font-size: 16px;
+                    font-size: 12px;
                     border:1px solid var(--tp-theme-purple);
                     font-weight: 700;
                     color:var(--tp-theme-purple); 
+                    @media #{$xl}{
+                        font-size: 10px;
+                    }
                 }
                 & .header__phone{
                      padding:0;
@@ -195,7 +204,10 @@
                      line-height:40px;
                      text-align: center;
                      border-radius:50%;
-                     border:1px solid var(--tp-theme-purple)
+                     border:1px solid var(--tp-theme-purple);
+                     @media #{$xl}{
+                        font-size: 10px;
+                    }
                 }
         }
 
@@ -265,11 +277,8 @@
         top:0;
         left:0;
         right:0;
-        z-index:999;
-        
-        clip-path: ellipse(96% 73% at 44% 26%);
-        // background-image: url("../../img/menu/menu_shape.png");
-         
+        z-index:999;   
+        clip-path: ellipse(91% 64% at 49% 26%);  
         background-color: var(--tp-theme-purple);
         & .menu__btn{
             border:1px solid white;
@@ -381,9 +390,7 @@
     padding: 0px 10px;
   }
    
-//   .active { 
-//     color: white;
-//   }  
+  
   .dropdown-container {
     display: none;
     background-color:white;
@@ -430,3 +437,12 @@
     }
 
   }
+
+   .dropdown-btn{
+    position:relative;
+    &::after {
+        content:"\f107";
+        font-family: var(--tp-ff-fontawesome);
+        margin-left: 5px;
+    }
+   }

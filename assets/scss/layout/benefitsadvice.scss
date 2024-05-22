@@ -19,6 +19,16 @@
         }
         & .benefits__content{ 
             padding-right: 40px;
+            @media #{$md}{
+                padding-right: 0;
+             }
+            @media #{$sm}{
+                padding-right: 0;
+             }
+            @media #{$xs}{
+                padding-right: 0;
+             }
+
             & h2{
                 margin-bottom: 40px;
                 @media #{$md}{
@@ -89,21 +99,21 @@
             color:white;
             margin-bottom: 40px;
             @media #{$md}{
-                font-size: 12px;
-                padding-left: 100px;
-                padding-right: 100px;
+                font-size: 20px;
+                padding-left: 40px;
+                padding-right: 40px;
                 
             }
             @media #{$sm}{
-                font-size: 12px;
-                padding-left: 100px;
-                padding-right: 100px;
+                font-size: 20px;
+                padding-left: 40px;
+                padding-right: 40px;
                  
             }
             @media #{$xs}{
                 font-size: 12px;
-                padding-left: 100px;
-                padding-right: 100px;
+                padding-left: 30px;
+                padding-right: 30px;
                 
             }
         }
@@ -124,6 +134,12 @@
 .benefits__quote{
     padding:132px 0;
     text-align: center; 
+    @media #{$sm}{
+        padding:40px 0;
+    }
+    @media #{$xs}{
+        padding:40px 0;
+    }
 
     & .benefits__quote-card{
         background-color: var(--tp-theme-purple);

@@ -17,7 +17,15 @@
         }
     }
     &__content{
-        
+        @media #{$md}{
+           padding-top: 100px;
+        }
+        @media #{$sm}{
+           padding-top: 100px;
+        }
+        @media #{$xs}{
+           padding-top: 100px;
+        }
         & h2{
             @media #{$md}{
                 font-size: 32px;
@@ -66,6 +74,15 @@
         border-radius: 30px;
         text-align: center;
         margin-bottom: 30px;
+        @media #{$md}{
+            padding:30px 20px;
+        }
+        @media #{$sm}{
+            padding:30px 20px;
+        }
+        @media #{$xs}{
+            padding:30px 20px;
+        }
         & h3{
             font-size: 20px;
             font-weight: 700;
