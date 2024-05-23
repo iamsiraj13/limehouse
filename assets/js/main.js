@@ -372,7 +372,28 @@
     fade: false,
     asNavFor: ".slider-nav",
     autoplay: false, // Enable autoplay
-    autoplaySpeed: 2000, // Autoplay interval in milliseconds
+    autoplaySpeed: 2000,
+    prevArrow:
+      '<button type="button" class="slick-prev "><i class="fa-light fa-angle-left"></i></button>',
+    nextArrow:
+      '<button type="button" class="slick-next"><i class="fa-light fa-angle-right"></i></button>',
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
+        },
+      },
+    ],
   });
 
   ////////////////////////////////////////////////////

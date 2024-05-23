@@ -108,7 +108,19 @@
             }
             & span{
                 background-repeat: no-repeat;
-                background-position:bottom center;
+                background-position:bottom center; 
+                @media #{$md}{
+                    background-position: 0 43px;
+                    padding: 11px 0px;
+                }
+                @media #{$sm}{
+                    background-position: 0 43px;
+                    padding: 11px 0px;
+                }
+                @media #{$xs}{
+                    background-position: 0 43px;
+                    padding: 11px 0px;
+                }
             }
         }
     }
@@ -165,6 +177,7 @@
         }
         @media #{$xs}{
             font-size: 10px;
+            padding:12px 8px;
         }
 
     }
@@ -175,13 +188,13 @@
     font-weight: 400;
     line-height: 1.4;
     @media #{$md}{
-        font-size: 10px;
+        font-size: 16px;
     }
     @media #{$sm}{
-        font-size: 10px;
+        font-size: 16px;
     }
     @media #{$xs}{
-        font-size: 10px;
+        font-size: 12px;
     }
 }
 .accordion-button{

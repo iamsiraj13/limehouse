@@ -65,6 +65,12 @@
                 margin-bottom: 40px;
                 letter-spacing: 2px;
                 text-transform: uppercase;
+                @media #{$sm}{
+                    font-size:12px;
+                }
+                @media #{$xs}{
+                    font-size:12px;
+                }
             }
             & p{
                 font-size: 20px;
@@ -154,7 +160,12 @@
             margin-bottom: 30px;
             line-height: 1.4;
             padding:0 26px; 
+            @media #{$sm}{
+                padding:12px 0;
+                font-size: 10px;
+            }
             @media #{$xs}{
+                padding:12px 0;
                 font-size: 10px;
             }
         }
@@ -162,7 +173,8 @@
             background-color: var(--tp-theme-orange);
             padding:12px 20px;
             border-radius:30px;
-            color:var(--tp-theme-purple)
+            color:var(--tp-theme-purple);
+           
         }
     }
 
@@ -201,6 +213,13 @@
 .benefits__quote-title{
     & h2{
         font-size: 32px;
+
+        & span{
+            @media #{$xs}{
+                padding: 14px 0;
+                background-position: 0 50px;
+            }
+        }
     }
 }
 .quote1{

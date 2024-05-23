@@ -130,12 +130,56 @@
 
 .growth__area{
     width:100%;
-    padding:147px 148px;
+    padding:147px 0;
     background-color: #76C9D6;
     margin-right:20px; 
+    @media #{$xs}{
+        padding:66px 0;
+    }
+    .growth__title{
+        text-align: center;
+        & h2{
+            margin-top: 20px;
+            margin-bottom: 47px;
+            font-weight: 700;
+            color:white;
+            @media #{$xs}{
+               font-size: 32px;
+               & span{
+                font-size: inherit;
+                background-position: 1px 48px;
+            padding: 16px 0;
+               }
+            }
+        }
+        & span{
+            color:white;
+            @media #{$xs}{
+                font-size: 14px;
+            }
+        }
+    }
 
     .ml-200{
-        margin-left: 529px;
+        margin-left: 718px;
+        @media #{$xxl}{
+          margin-left: 300px;
+        }
+        @media #{$xl}{
+          margin-left: 345px;
+        }
+        @media #{$lg}{
+          margin-left: 165px;
+        }
+        @media #{$md}{
+          margin-left: 0;
+        }
+        @media #{$sm}{
+          margin-left: 0;
+        }
+        @media #{$xs}{
+          margin-left: 0;
+        }
     }
     & .slider-nav{ 
     text-align: center;
@@ -144,24 +188,95 @@
     width: 622px;
     margin-left: auto;
     margin-bottom: 30px;
+    @media #{$xs}{
+        width:100%;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: left;
+    }
         & .slick-slide {
-            margin-right:-70px; /* Adjust the value as needed for your gap */
+            margin-right:-70px; 
+            min-height:20px;
+            margin-top: 20px; 
+            @media #{$xs}{
+                margin-right: -285px;
+            }
           }
           
         &  .slick-list {
             // margin: 0 -10px; /* This compensates for the margin on the slides */
+            @media #{$xs}{
+                margin:0 -22px
+            }
           }
     }
     & .slider-for{
         
 
         & .slick-slide {
-            margin: 0 59px; /* Adjust the value as needed for your gap */
+            margin: 0 59px;  
+            min-height:20px;
+            @media #{$xl}{
+                margin:0 20px;
+            }
+            @media #{$md}{
+                margin:0 20px;
+            }
+            @media #{$sm}{
+                margin:0 20px;
+            }
+            @media #{$xs}{
+                margin:0 20px;
+            }
+            
           }
           
         &  .slick-list {
-            margin: 0 -59px; /* This compensates for the margin on the slides */
+            margin: 0 -59px;   
+            @media #{$md}{
+                margin:0 40px;
+            }
+            @media #{$sm}{
+                margin:0 -4px;
+            }
+            @media #{$xs}{
+                margin:0 -4px;
+            }
           }
+
+          & .slick-next{
+            position:absolute;
+            top:50%;
+            right:10px;
+            width:34px;
+            height:34px;
+            background-color: #fff;
+            border-radius: 50%;
+            color:#76C9D6;
+            line-height: 24px;
+
+            transform:translateY(-50%);
+            & i{
+               font-size: 24px;
+               margin-top: -10px;
+            }
+        }
+          & .slick-prev{
+            position:absolute;
+            top:50%;
+            left:0px;
+            width:34px;
+            height:34px;
+            background-color: #fff;
+            border-radius: 50%;
+            color:#76C9D6;
+            line-height: 24px;
+            transform:translateY(-50%);
+            & i{
+               font-size: 24px;
+               margin-top: -10px;
+            }
+        }
     }
 
     & .slick-center{
@@ -169,17 +284,10 @@
         color:white;
         font-weight: 700px;
         transform: all .07s;
-        &:last-child{
-            & div{
-                & div{
-                    font-size: inherit;
-                    color: inherit;
-                }
-            }
-        }
+       
         & div{
             & div{
-                font-size:30px;
+                font-size:48px;
                 font-weight:700;
             }
         }
@@ -195,7 +303,30 @@
             top: 22px;
             right: -148px;
             background: linear-gradient(270deg, #76C9D6 37.91%, rgba(118, 201, 214, 0) 91.35%);
+                @media #{$md}{
+                    display:none;
+                }
+                @media #{$sm}{
+                    display:none;
+                }
+                @media #{$xs}{
+                    display:none;
+                }
 
+         }
+         & .growth__desc{
+           & p{
+            text-align: center;
+            color:white;
+            font-size: 20px;
+            font-weight: 400;
+            margin-top: 90px;
+            @media #{$xs}{
+                font-size: 12px;
+                margin-top: 44px;
+                padding:0 20px;
+            }
+           }
          }
     }
 
@@ -206,11 +337,21 @@
         gap:57px;
         align-items: center;
         border-radius:30px;
+        @media #{$xs}{
+            padding: 39px 26px;
+            gap:35px;
+        }
+
         & h3{
             font-size: 150px;
             font-weight: 700;
             color:white;
+            @media #{$xs}{
+                font-size: 85px;
+            }
         }
+
+      
 
         & .growth__content__text{
             color:white;
@@ -221,11 +362,19 @@
                 color:white;
                 text-transform: uppercase;
                 margin-bottom: 19px;
+                @media #{$xs}{
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
             }
             & p{
                 font-size: 16px;
                 font-weight: 400;
                 color:white;
+                @media #{$xs}{
+                    font-size: 10px;
+                    line-height:1.7
+                }
             }
 
         }

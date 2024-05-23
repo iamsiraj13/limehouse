@@ -6,6 +6,7 @@
     &__services{
         padding:140px 0;
         background-color: white;
+      
     }
     &__content{
         padding:0 250px;
@@ -68,6 +69,12 @@
 
     background-color: #F5F5F5;
     padding:170px 0;
+    @media #{$sm}{
+        padding:60px 0;
+    }
+    @media #{$xs}{
+        padding:60px 0;
+    }
    }
 
     &__card{
@@ -93,12 +100,24 @@
                 font-size: 36px;
                 font-weight: 700;
                 margin-bottom: 30px; 
+                @media #{$sm}{
+                    font-size: 20px;
+                }
+                @media #{$xs}{
+                   font-size: 20px;
+                }
             }
             & p{
                 font-size: 20px;
                 font-weight: 400;
                 color:#494949;
                 line-height:1.4;
+                @media #{$sm}{
+                    font-size: 14px;
+                }
+                @media #{$xs}{
+                   font-size: 14px;
+                }
             }
             & a{
                 padding:12px 24px;
@@ -108,6 +127,12 @@
                 text-transform: capitalize;
                 margin-top: 30px;
                 display:inline-block;
+                @media #{$sm}{
+                    font-size: 12px;
+                }
+                @media #{$xs}{
+                   font-size: 12px;
+                }
             }
         }
     }

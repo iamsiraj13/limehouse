@@ -2315,6 +2315,16 @@ input[type=color] {
   background-color: #F5F5F5;
   padding: 170px 0;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .service__area {
+    padding: 60px 0;
+  }
+}
+@media (max-width: 575px) {
+  .service__area {
+    padding: 60px 0;
+  }
+}
 .service__card {
   background-color: white;
   border-radius: 30px;
@@ -2346,11 +2356,31 @@ input[type=color] {
   font-weight: 700;
   margin-bottom: 30px;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .service__card-content h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .service__card-content h3 {
+    font-size: 20px;
+  }
+}
 .service__card-content p {
   font-size: 20px;
   font-weight: 400;
   color: #494949;
   line-height: 1.4;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .service__card-content p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 575px) {
+  .service__card-content p {
+    font-size: 14px;
+  }
 }
 .service__card-content a {
   padding: 12px 24px;
@@ -2360,6 +2390,16 @@ input[type=color] {
   text-transform: capitalize;
   margin-top: 30px;
   display: inline-block;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .service__card-content a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 575px) {
+  .service__card-content a {
+    font-size: 12px;
+  }
 }
 
 .text-purple {
@@ -2487,6 +2527,16 @@ input[type=color] {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .benefits__area .benefits__content span {
+    font-size: 12px;
+  }
+}
+@media (max-width: 575px) {
+  .benefits__area .benefits__content span {
+    font-size: 12px;
+  }
+}
 .benefits__area .benefits__content p {
   font-size: 20px;
   font-weight: 400;
@@ -2573,8 +2623,15 @@ input[type=color] {
   line-height: 1.4;
   padding: 0 26px;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .benefits__quote .benefits__quote-card p {
+    padding: 12px 0;
+    font-size: 10px;
+  }
+}
 @media (max-width: 575px) {
   .benefits__quote .benefits__quote-card p {
+    padding: 12px 0;
     font-size: 10px;
   }
 }
@@ -2619,6 +2676,12 @@ input[type=color] {
 
 .benefits__quote-title h2 {
   font-size: 32px;
+}
+@media (max-width: 575px) {
+  .benefits__quote-title h2 span {
+    padding: 14px 0;
+    background-position: 0 50px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -3212,7 +3275,7 @@ input[type=color] {
   .donars__area h3 {
     padding: 10px 0;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     padding-top: 50px;
   }
 }
@@ -3220,7 +3283,7 @@ input[type=color] {
   .donars__area h3 {
     padding: 10px 0;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     padding-top: 50px;
   }
 }
@@ -3665,12 +3728,74 @@ input[type=color] {
 
 .growth__area {
   width: 100%;
-  padding: 147px 148px;
+  padding: 147px 0;
   background-color: #76C9D6;
   margin-right: 20px;
 }
+@media (max-width: 575px) {
+  .growth__area {
+    padding: 66px 0;
+  }
+}
+.growth__area .growth__title {
+  text-align: center;
+}
+.growth__area .growth__title h2 {
+  margin-top: 20px;
+  margin-bottom: 47px;
+  font-weight: 700;
+  color: white;
+}
+@media (max-width: 575px) {
+  .growth__area .growth__title h2 {
+    font-size: 32px;
+  }
+  .growth__area .growth__title h2 span {
+    font-size: inherit;
+    background-position: 1px 48px;
+    padding: 16px 0;
+  }
+}
+.growth__area .growth__title span {
+  color: white;
+}
+@media (max-width: 575px) {
+  .growth__area .growth__title span {
+    font-size: 14px;
+  }
+}
 .growth__area .ml-200 {
-  margin-left: 529px;
+  margin-left: 718px;
+}
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .growth__area .ml-200 {
+    margin-left: 300px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .growth__area .ml-200 {
+    margin-left: 345px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .growth__area .ml-200 {
+    margin-left: 165px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .growth__area .ml-200 {
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .growth__area .ml-200 {
+    margin-left: 0;
+  }
+}
+@media (max-width: 575px) {
+  .growth__area .ml-200 {
+    margin-left: 0;
+  }
 }
 .growth__area .slider-nav {
   text-align: center;
@@ -3679,14 +3804,102 @@ input[type=color] {
   margin-left: auto;
   margin-bottom: 30px;
 }
+@media (max-width: 575px) {
+  .growth__area .slider-nav {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+  }
+}
 .growth__area .slider-nav .slick-slide {
-  margin-right: -70px; /* Adjust the value as needed for your gap */
+  margin-right: -70px;
+  min-height: 20px;
+  margin-top: 20px;
+}
+@media (max-width: 575px) {
+  .growth__area .slider-nav .slick-slide {
+    margin-right: -285px;
+  }
+}
+@media (max-width: 575px) {
+  .growth__area .slider-nav .slick-list {
+    margin: 0 -22px;
+  }
 }
 .growth__area .slider-for .slick-slide {
-  margin: 0 59px; /* Adjust the value as needed for your gap */
+  margin: 0 59px;
+  min-height: 20px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .growth__area .slider-for .slick-slide {
+    margin: 0 20px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .growth__area .slider-for .slick-slide {
+    margin: 0 20px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .growth__area .slider-for .slick-slide {
+    margin: 0 20px;
+  }
+}
+@media (max-width: 575px) {
+  .growth__area .slider-for .slick-slide {
+    margin: 0 20px;
+  }
 }
 .growth__area .slider-for .slick-list {
-  margin: 0 -59px; /* This compensates for the margin on the slides */
+  margin: 0 -59px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .growth__area .slider-for .slick-list {
+    margin: 0 40px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .growth__area .slider-for .slick-list {
+    margin: 0 -4px;
+  }
+}
+@media (max-width: 575px) {
+  .growth__area .slider-for .slick-list {
+    margin: 0 -4px;
+  }
+}
+.growth__area .slider-for .slick-next {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 34px;
+  height: 34px;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #76C9D6;
+  line-height: 24px;
+  transform: translateY(-50%);
+}
+.growth__area .slider-for .slick-next i {
+  font-size: 24px;
+  margin-top: -10px;
+}
+.growth__area .slider-for .slick-prev {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  width: 34px;
+  height: 34px;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #76C9D6;
+  line-height: 24px;
+  transform: translateY(-50%);
+}
+.growth__area .slider-for .slick-prev i {
+  font-size: 24px;
+  margin-top: -10px;
 }
 .growth__area .slick-center {
   font-size: 20px;
@@ -3694,12 +3907,8 @@ input[type=color] {
   font-weight: 700px;
   transform: all 0.07s;
 }
-.growth__area .slick-center:last-child div div {
-  font-size: inherit;
-  color: inherit;
-}
 .growth__area .slick-center div div {
-  font-size: 30px;
+  font-size: 48px;
   font-weight: 700;
 }
 .growth__area .growth__wrapper {
@@ -3714,6 +3923,35 @@ input[type=color] {
   right: -148px;
   background: linear-gradient(270deg, #76C9D6 37.91%, rgba(118, 201, 214, 0) 91.35%);
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .growth__area .growth__wrapper::after {
+    display: none;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .growth__area .growth__wrapper::after {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .growth__area .growth__wrapper::after {
+    display: none;
+  }
+}
+.growth__area .growth__wrapper .growth__desc p {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 90px;
+}
+@media (max-width: 575px) {
+  .growth__area .growth__wrapper .growth__desc p {
+    font-size: 12px;
+    margin-top: 44px;
+    padding: 0 20px;
+  }
+}
 .growth__area .growth__content {
   border: 1px solid white;
   padding: 57px 47px;
@@ -3722,10 +3960,21 @@ input[type=color] {
   align-items: center;
   border-radius: 30px;
 }
+@media (max-width: 575px) {
+  .growth__area .growth__content {
+    padding: 39px 26px;
+    gap: 35px;
+  }
+}
 .growth__area .growth__content h3 {
   font-size: 150px;
   font-weight: 700;
   color: white;
+}
+@media (max-width: 575px) {
+  .growth__area .growth__content h3 {
+    font-size: 85px;
+  }
 }
 .growth__area .growth__content .growth__content__text {
   color: white;
@@ -3737,10 +3986,22 @@ input[type=color] {
   text-transform: uppercase;
   margin-bottom: 19px;
 }
+@media (max-width: 575px) {
+  .growth__area .growth__content .growth__content__text h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
 .growth__area .growth__content .growth__content__text p {
   font-size: 16px;
   font-weight: 400;
   color: white;
+}
+@media (max-width: 575px) {
+  .growth__area .growth__content .growth__content__text p {
+    font-size: 10px;
+    line-height: 1.7;
+  }
 }
 
 .story__area__title {
@@ -4369,6 +4630,24 @@ input[type=color] {
   background-repeat: no-repeat;
   background-position: bottom center;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .board__area .section_heading h2 span {
+    background-position: 0 43px;
+    padding: 11px 0px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .board__area .section_heading h2 span {
+    background-position: 0 43px;
+    padding: 11px 0px;
+  }
+}
+@media (max-width: 575px) {
+  .board__area .section_heading h2 span {
+    background-position: 0 43px;
+    padding: 11px 0px;
+  }
+}
 
 .auth span {
   font-size: 20px;
@@ -4434,6 +4713,7 @@ input[type=color] {
 @media (max-width: 575px) {
   .board__btn a {
     font-size: 10px;
+    padding: 12px 8px;
   }
 }
 
@@ -4445,17 +4725,17 @@ input[type=color] {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .accordion-body {
-    font-size: 10px;
+    font-size: 16px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .accordion-body {
-    font-size: 10px;
+    font-size: 16px;
   }
 }
 @media (max-width: 575px) {
   .accordion-body {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
