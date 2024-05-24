@@ -92,9 +92,19 @@
                     text-align: center;
                  }
             }
+            & .client__logo {
+                & img{
+                    width:100%;
+                    height:80px;
+                    object-fit: contain;
+                }
+            }
             & img{
                 
                 margin-left: 43px;
+                @media #{$xl}{
+                    margin-left: 22px;
+                }
             }
         }
     }

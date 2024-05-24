@@ -7,13 +7,13 @@
         padding-bottom: 108px;
         text-align: center;
         @media #{$md}{
-            padding:0;
+            padding:  0;
         }
         @media #{$sm}{
-            padding:0;
+            padding:  0;
         }
         @media #{$xs}{
-            padding:0;
+            padding:  0;
         }
     }
     &__content{
@@ -43,7 +43,8 @@
 
         }
         & span{
-            // margin: 43px;
+           margin-bottom: 45px;
+           margin-top: 29px;
             display:block;
             @media #{$md}{
                 margin: 8px;
@@ -67,6 +68,15 @@
      
         padding:114px 0;
         background-size: cover;
+        @media #{$md}{
+            padding:47px 0;
+        }
+        @media #{$sm}{
+            padding:47px 0;
+        }
+        @media #{$xs}{
+            padding:47px 0;
+        }
    
     & .feature__content{
         background-color: #fff;

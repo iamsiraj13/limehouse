@@ -97,7 +97,7 @@
             slidesToShow: 3,
             sliderPerView: 3,
             dots: false,
-            arrows: false,
+            arrows: true,
           },
         },
         {
@@ -106,7 +106,7 @@
             sliderPerView: 2,
             slidesToShow: 2,
             dots: false,
-            arrows: false,
+            arrows: true,
           },
         },
         {
@@ -211,12 +211,11 @@
   });
   $(".footer-class").slick({
     dots: false,
-    infinite: true,
-    speed: 200,
-    autoPlay: true,
+    draggable: true,
+    autoplay: true,
+    autoplaySpeed: 1000,
     slidesToShow: 2,
-    slidesToScroll: 2,
-    autoPlaySpeed: 1000,
+    slidesToScroll: 1,
     draggable: true,
     centerPadding: "111px",
     arrows: false,
@@ -371,7 +370,7 @@
     arrows: false,
     fade: false,
     asNavFor: ".slider-nav",
-    autoplay: false, // Enable autoplay
+    autoplay: true, // Enable autoplay
     autoplaySpeed: 2000,
     prevArrow:
       '<button type="button" class="slick-prev "><i class="fa-light fa-angle-left"></i></button>',

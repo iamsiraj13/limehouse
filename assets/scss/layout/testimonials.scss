@@ -3,6 +3,9 @@
 .testimonial__area{
     padding:132px 0;
     background-color: var(--tp-theme-purple); 
+    @media #{$md}{
+        padding:48px 0;
+      }
     @media #{$xs}{
         padding:48px 0;
       }

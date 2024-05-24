@@ -97,6 +97,15 @@
    
     padding:80px 0;
     text-align: center;
+    @media #{$md}{
+        padding:35px 0; 
+    }
+    @media #{$sm}{
+        padding:35px 0; 
+    }
+    @media #{$xs}{
+        padding:35px 0; 
+    }
     & .benefits__contacts-content{
       
         & h3{
@@ -140,6 +149,9 @@
 .benefits__quote{
     padding:132px 0;
     text-align: center; 
+    @media #{$md}{
+        padding:40px 0;
+    }
     @media #{$sm}{
         padding:40px 0;
     }
@@ -212,9 +224,26 @@
  
 .benefits__quote-title{
     & h2{
-        font-size: 32px;
+        font-size: 64px;
+        @media #{$md}{
+           font-size: 32px;
+        }
+        @media #{$sm}{
+           font-size: 32px;
+        }
+        @media #{$xs}{
+           font-size: 32px;
+        }
 
         & span{
+            @media #{$md}{
+                padding: 14px 0;
+                background-position: 0 50px;
+            }
+            @media #{$sm}{
+                padding: 14px 0;
+                background-position: 0 50px;
+            }
             @media #{$xs}{
                 padding: 14px 0;
                 background-position: 0 50px;
@@ -223,6 +252,14 @@
     }
 }
 .quote1{
+    @media #{$md}{
+        font-size: 14px;
+        display:block;
+    }
+    @media #{$sm}{
+        font-size: 14px;
+        display:block;
+    }
     @media #{$xs}{
         font-size: 14px;
         display:block;

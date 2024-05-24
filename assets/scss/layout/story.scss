@@ -5,15 +5,15 @@
     padding-top: 140px;
     padding-bottom: 90px;
     @media #{$md}{
-        padding-top: 40px;
+        padding-top: 47px;
         padding-bottom: 40px;
     }
     @media #{$sm}{
-        padding-top: 40px;
+        padding-top: 47px;
         padding-bottom: 40px;
     }
     @media #{$xs}{
-        padding-top: 40px;
+        padding-top: 47px;
         padding-bottom: 40px;
     }
     & h2{
@@ -91,8 +91,12 @@
     }
 
         & .story__img{
-            width:100%;
+            width: 100%;
             padding-right: 30px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100%;
             @media #{$xl}{
                 padding-right: 0;
             }
@@ -271,16 +275,20 @@
     background: rgba(224, 130, 186, 0.1);
 
     @media #{$md}{
-        padding:55px;
+        padding:55px 0;
     }
     @media #{$sm}{
-        padding:55px;
+        padding:55px 0;
     }
     @media #{$xs}{
-        padding:55px;
+        padding:55px 0;
     }
     & .impact__content{
       text-align: start;
+        @media #{$md}{
+            text-align: center;
+          
+        }
         @media #{$sm}{
             text-align: center;
           

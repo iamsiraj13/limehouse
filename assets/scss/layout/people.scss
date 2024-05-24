@@ -4,6 +4,9 @@
     width: 100%; 
     display: flex;
     justify-content: center;
+    & img{
+        width:100%;
+    }
 }
 
 .people__area{
@@ -89,6 +92,15 @@
 
 .board__area{
     padding:142px 0;
+    @media #{$md}{
+        padding:52px 0;
+    }
+    @media #{$sm}{
+        padding:52px 0;
+    }
+    @media #{$xs}{
+        padding:52px 0;
+    }
      & .board__content{
         margin-top: 40px;
      }

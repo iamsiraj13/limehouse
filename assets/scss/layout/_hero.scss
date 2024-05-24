@@ -181,6 +181,10 @@
  .understand__area{
     padding:160px 0;
     background-color: white;
+    @media #{$md}{
+        padding:80px 0;
+        text-align: center;
+    }
     @media #{$sm}{
         padding:27px 0;
         text-align: center;
@@ -197,6 +201,9 @@
         @media #{$xs}{
             padding-left: 16px;
             padding-right: 16px;
+        }
+        @media #{$md}{
+             text-align: center;
         }
         span{ 
             text-transform: uppercase; 
@@ -351,9 +358,7 @@
         }
         }
          
-        button.slick-prev.slick-arrow {
-            display: none;
-        }
+         
         & .slider-active   { 
             padding-left: 280px !important;
            @media #{$lg}{
@@ -418,6 +423,7 @@
     z-index: 99999;
     font-size: 30px;
 }
+ 
 }
 .ml-150{
     margin-left: 280px;

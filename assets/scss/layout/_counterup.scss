@@ -4,6 +4,8 @@
 .counter__area{
     background-color: var(--tp-theme-green);
     padding:80px 0;
+
+    
     & .counter-box{
       text-align: center; 
         @media #{$sm}{
