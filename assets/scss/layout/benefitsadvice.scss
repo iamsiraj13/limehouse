@@ -18,7 +18,7 @@
             padding:47px 0;
         }
         & .benefits__content{ 
-            padding-right: 40px;
+            
             @media #{$md}{
                 padding-right: 0;
              }
@@ -29,8 +29,9 @@
                 padding-right: 0;
              }
 
-            & h2{
-                margin-bottom: 40px;
+            & h2{ 
+                text-transform: capitalize;
+                letter-spacing: -2px;
                 @media #{$md}{
                     font-size: 32px;
                     margin-bottom: 20px;
@@ -46,8 +47,10 @@
                 & span{
                     font-size: inherit;
                     font-weight: inherit;
+                    text-transform: capitalize;
                     color:inherit;
                     display:inline-block;
+                    background-size:100%;
                    
                 }
             }
@@ -62,8 +65,7 @@
                 color:var(--tp-theme-purple);
                 font-size: 20px;
                 font-weight: 700;
-                margin-bottom: 40px;
-                letter-spacing: 2px;
+                margin-bottom: 30px;  
                 text-transform: uppercase;
                 @media #{$sm}{
                     font-size:12px;
@@ -83,7 +85,7 @@
                 }
             }
         }
-        & .benefits__img{
+        & .benefits__img{ 
             img{
                 width:100%;
                 height:auto;

@@ -2,12 +2,22 @@
 
 
 .donate__content{
+    padding-bottom: 160px;
+    @media #{$md}{
+        padding-bottom: 60px;
+    }
+    @media #{$sm}{
+        padding-bottom: 60px;
+    }
+    @media #{$xs}{
+        padding-bottom: 60px;
+    }
     & .donate__donation{
         text-align: center;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding:45px 0;
+        padding:35px 0;
         border-radius:30px;
         margin-bottom: 92px;
         gap:40px;
@@ -15,7 +25,9 @@
             font-size: 36px;
             color:white;
             font-weight: 700;
+            padding-top: 14px;
         }
+       
         & button{
             font-size: 16px;
             font-weight: 7100;
@@ -24,10 +36,29 @@
 
         }
     }
-
+    & .smb-90{
+        margin-bottom: 90px;
+        @media #{$md}{
+            margin-bottom: 0;
+        }
+        @media #{$sm}{
+            margin-bottom: 0;
+        }
+        @media #{$xs}{
+            margin-bottom: 0;
+        }
+    }
     & .donate__service{
 
         & .sp_0{
+            @media #{$md}{
+                padding-left: 0 !important;
+                padding-right: 0 !important; 
+            }
+            @media #{$sm}{
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
             @media #{$xs}{
                 padding-left: 0 !important;
                 padding-right: 0 !important;
@@ -124,28 +155,33 @@
         padding:60px;
         border:1px solid var(--tp-theme-purple);
         border-radius:30px;
+        
         & img{
             width:100%;
             height:100%;
             margin-bottom: 30px;
         }
+
         @media #{$md}{
             border:none;
-            padding:0;
+            padding:60px;
             text-align: center;
             padding:30px 20;
+            border-radius: 0;
         }
         @media #{$sm}{
             border:none;
-            padding:0;
+            padding:60px;
             text-align: center;
             padding:30px 20;
+            border-radius: 0;
         }
         @media #{$xs}{
             border:none;
-            padding:0;
+            padding:60px;
             text-align: center;
             padding:30px 20px;
+            border-radius: 0;
         }
         
         & h3{
@@ -164,6 +200,13 @@
                 margin-bottom: 20px;
             }
         }
+        & span{
+            font-size: 32px;
+            color:var(--tp-theme-purple);
+            margin:45px 0;
+            display:block;
+            
+        }
         & p{
             font-size: 20px;
             font-weight: 400;
@@ -171,7 +214,7 @@
             margin-bottom: 4 0px;
             line-height:35px;
             @media #{$md}{
-                font-size: 12px;
+                font-size: 18px;
                 line-height:1.1
             }
             @media #{$sm}{
@@ -246,6 +289,7 @@
 
 }
 
+
 .donate__contact{
     display:flex;
 
@@ -257,9 +301,7 @@
     @media #{$sm}{
         display:block; 
         padding: 30px 50px;
-        text-align: center;
-     
-
+        text-align: center; 
     }
     @media #{$xs}{
         display:block;
@@ -284,17 +326,36 @@
         background-color: white;
         border-radius:30px;
         font-size: 16px;
+        width:300px;
+        height:79px;
+
+        @media #{$md}{
+            font-size: 12px; 
+            width:121px;
+            height:24px;
+            line-height: 24px;
+            line-height: 0px;
+        }
         @media #{$sm}{
-            font-size: 12px;
-            padding:8px 15px;
+            font-size: 12px; 
+            width:121px;
+            height:24px;
+            line-height: 24px;
+            line-height: 0px;
+            padding: 0;
         }
         @media #{$xs}{
             font-size: 12px;
-            padding:8px 15px;
+            width:121px;
+            height:24px;
+            line-height: 0px;
+            padding: 0;
+            
         }
          
     }
 }
+
 .mb-45{
     margin-bottom: 45px;
     display:block;

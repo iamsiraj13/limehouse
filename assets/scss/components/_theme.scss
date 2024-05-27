@@ -383,8 +383,10 @@ input[type="color"] {
 .shape_u{
 	background-repeat: no-repeat;
 	background-position:bottom;
+	
 	font-size: inherit;
 	color:inherit;
+	text-transform: capitalize;
 }
 .section__title{
 	font-size: 64px;

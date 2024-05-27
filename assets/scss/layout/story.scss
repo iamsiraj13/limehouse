@@ -7,14 +7,20 @@
     @media #{$md}{
         padding-top: 47px;
         padding-bottom: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     @media #{$sm}{
         padding-top: 47px;
         padding-bottom: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     @media #{$xs}{
         padding-top: 47px;
         padding-bottom: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     & h2{
         margin-top: 20px;
@@ -31,15 +37,33 @@
             margin-top: 10px;
         margin-bottom: 20px;
         }
+
+        & span{
+            @media #{$md}{
+                padding: 15px 0;
+                background-position: 2% 90%;
+                background-size: 100% 17%;
+            }
+            @media #{$sm}{
+                padding: 15px 0;
+                background-position: 2% 90%;
+                background-size: 80% 17%;
+            }
+            @media #{$xs}{
+                padding: 15px 0;
+                background-position: 2% 90%;
+                background-size: 80% 17%;
+            }
+        }
     }
 }
  
 .story__area{
     & .story__bg{
-        background-size: inherit;
+        background-size: 55% 93%;
     background-repeat: no-repeat;
     background-position: top 302px right 16%;
-    padding-bottom: 252px;
+    padding-bottom: 125px;
     position:relative;
     @media #{$xl}{
         background-image: none !important;
@@ -68,7 +92,7 @@
     & .shape__top{
         position: absolute;
         top: 213px;
-        right: 7%;
+        right: 6%;
     
         & p{
             font-size: 24px;
@@ -115,6 +139,21 @@
             padding-left: 62px;
             padding-right: 62px;
             background-color: #ffffff92;
+            &:hover{
+                background-color:var(--tp-theme-green);
+                border-color:var(--tp-theme-green);
+                color:white;
+                span{
+                    color:white;
+                 }
+                 h3{
+                    color:white;
+                 }
+                 p{
+                    color:white;
+                 }
+             
+            }
             @media #{$xl}{
                 padding-top: 40px;
                 padding-bottom: 30px;
@@ -128,6 +167,8 @@
                 padding-right: 0;
                 text-align: center;
                 padding-bottom: 0;
+                margin-left: 15px;
+                margin-right: 15px;
             }
             @media #{$sm}{
                 border:none;
@@ -136,6 +177,8 @@
                 padding-right: 0;
                 text-align: center;
                 padding-bottom: 0;
+                margin-left: 15px;
+                margin-right: 15px;
             }
             @media #{$xs}{
                 border:none;
@@ -143,28 +186,42 @@
                 padding-left: 0;
                 padding-right: 0;
                 text-align: center;
+                margin-left: 15px;
+                margin-right: 15px;
                 padding-bottom: 0;
             }
             & .story__inner{
-              
+                
+                
                 
                 @media #{$md}{
                     border:1px solid var(--tp-theme-purple);
                     border-bottom-left-radius: 30px;
                     border-bottom-right-radius: 30px;
-                    padding:40px 20px;
+                    padding:40px 20px;  
+                    &:hover{
+                        border-color:var(--tp-theme-green);
+                    }
                 }
                 @media #{$sm}{
                     border:1px solid var(--tp-theme-purple);
                     border-bottom-left-radius: 30px;
                     border-bottom-right-radius: 30px;
-                    padding:40px 20px;
+                    padding:40px 20px; 
+                    &:hover{
+                        border-color:var(--tp-theme-green);
+                    }
                 }
                 @media #{$xs}{
                     border:1px solid var(--tp-theme-purple);
+                    border-top:0;
                     border-bottom-left-radius: 30px;
                     border-bottom-right-radius: 30px;
                     padding:40px 20px;
+                    margin-top: -2px; 
+                    &:hover{
+                        border-color:var(--tp-theme-green);
+                    }
                 }
             }
             & img{
@@ -181,10 +238,11 @@
                    font-size: 10px;
                 }
                 @media #{$sm}{
-                  font-size: 10px;
+                  font-size: 10px; 
                 }
                 @media #{$xs}{
-                    font-size: 10px;
+                    font-size: 10px; 
+                    
                 }
             }
 
@@ -196,14 +254,17 @@
                 @media #{$md}{
                     font-size: 32px;
                     text-align: center;
+                    text-transform: uppercase;
                  }
                  @media #{$sm}{
                    font-size: 16px;
                    text-align: center;
+                   text-transform: uppercase;
                  }
                  @media #{$xs}{
                      font-size: 16px;
                      text-align: center;
+                     text-transform: uppercase;
                  }
             }
             & p{
@@ -236,13 +297,13 @@
 .mb-90{
     margin-bottom: 90px;
     @media #{$md}{
-        margin-bottom: 30px;
+        margin-bottom: 50px;
      }
      @media #{$sm}{
-       margin-bottom: 30px;
+       margin-bottom: 50px;
      }
      @media #{$xs}{
-      margin-bottom: 30px;
+      margin-bottom: 50px;
      }
 }
 .ml-30{
@@ -268,33 +329,39 @@
     @media #{$xs} {
         margin-right: 0;
     }
-}
+} 
 
 .impact__area{
     padding:167px 0;
     background: rgba(224, 130, 186, 0.1);
 
     @media #{$md}{
-        padding:55px 0;
+        padding:60px 0;
     }
     @media #{$sm}{
-        padding:55px 0;
+        padding:60px 0;
     }
     @media #{$xs}{
-        padding:55px 0;
+        padding:60px 0;
     }
     & .impact__content{
       text-align: start;
         @media #{$md}{
             text-align: center;
+            padding-left: 30px;
+            padding-right: 30px;
           
         }
         @media #{$sm}{
             text-align: center;
+            padding-left: 30px;
+            padding-right: 30px;
           
         }
         @media #{$xs}{
             text-align: center;
+            padding-left: 30px;
+            padding-right: 30px;
            
         }
         & span{
@@ -376,6 +443,17 @@
     }
     & .impact__img{
         text-align: right;
+       
+        @media #{$sm}{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        @media #{$xs}{
+            margin-left: 15px;
+            margin-right: 15px;
+            
+        }
+
         & img{
             width:100%;
             @media #{$md}{

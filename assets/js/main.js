@@ -31,6 +31,14 @@
     });
   }
 
+  // new mobile menu
+
+  $("#leftside-navigation .sub-menu > a").click(function (e) {
+    $("#leftside-navigation ul ul").slideUp(),
+      $(this).next().is(":visible") || $(this).next().slideDown(),
+      e.stopPropagation();
+  });
+
   ////////////////////////////////////////////////////
   // 06. Sticky Header Js
   windowOn.on("scroll", function () {
@@ -370,7 +378,7 @@
     arrows: false,
     fade: false,
     asNavFor: ".slider-nav",
-    autoplay: true, // Enable autoplay
+    autoplay: false, // Enable autoplay
     autoplaySpeed: 2000,
     prevArrow:
       '<button type="button" class="slick-prev "><i class="fa-light fa-angle-left"></i></button>',

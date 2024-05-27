@@ -1,7 +1,7 @@
 @use '../utils' as *;
 
 .newsletter__area{
-    padding: 68px 0;
+    padding: 63px 0;
     background-color: var(--tp-theme-blue);
     text-align: center;
     @media #{$xs}{
@@ -14,11 +14,14 @@
         color:white;
         font-size: 40px;
         font-weight: 700;
+        text-align: left;
         @media #{$xs}{
             font-size: 20px;
+            text-align: center;
           }
         @media #{$sm}{
            font-size: 20px;
+           text-align: center;
           }
 
     }
@@ -89,7 +92,7 @@
     & button{
         font-size: 16px;
         font-weight: 700;
-        padding:10px 20px;
+        padding:0 20px;
         color:var(--tp-theme-green);
         background-color: #fff;
         border-radius:20px;

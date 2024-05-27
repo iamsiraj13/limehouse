@@ -13,6 +13,12 @@
         padding:48px 0;
       }
     & .testimonial__heading{  
+      @media #{$xs}{
+        padding:0 20px;
+      }
+    @media #{$sm}{
+      padding:0 20px;
+      }
         & span{
             color:white;
             text-transform: uppercase;
@@ -74,12 +80,15 @@
             border-radius:20px;
             @media #{$md}{
               margin-bottom: 30px;
+              padding:30px 50px;
             }
             @media #{$xs}{
                 margin-bottom: 15px;
+                padding:30px 50px;
               }
             @media #{$sm}{
                 margin-bottom: 15px;
+                padding:30px 50px;
               }
         }
         & p{
