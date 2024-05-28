@@ -18,13 +18,19 @@
     }
     &__content{
         @media #{$md}{
-           padding-top: 100px;
+           padding-top: 50px;
+           padding-left: 30px;
+           padding-right: 30px; 
         }
         @media #{$sm}{
-           padding-top: 100px;
+           padding-top: 50px;
+           padding-left: 30px;
+           padding-right: 30px; 
         }
         @media #{$xs}{
-           padding-top: 100px;
+           padding-top: 50px;
+           padding-left: 30px;
+           padding-right: 30px; 
         }
         & h2{
             @media #{$md}{
@@ -39,6 +45,21 @@
             & span{
                 display:inline-block;
                 margin: 0;
+                @media #{$md}{
+                    background-size: 100%;
+                    background-position: 100% 100%;
+                    margin:10px 0;
+                }
+                @media #{$sm}{
+                    background-size: 100%;
+                    background-position: 100% 100%;
+                    margin:10px 0;
+                }
+                @media #{$xs}{
+                    background-size: 100%;
+                    background-position: 100% 100%;
+                    margin:10px 0;
+                }
             }
 
         }
@@ -118,5 +139,6 @@
     border-radius:30px;
     margin-bottom: 30px;
     color:white;
+    margin-top: 15px;
 
 }

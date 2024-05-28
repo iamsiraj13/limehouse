@@ -143,6 +143,9 @@
                 background-color:var(--tp-theme-green);
                 border-color:var(--tp-theme-green);
                 color:white;
+               & .story__inner {
+                
+
                 span{
                     color:white;
                  }
@@ -152,6 +155,7 @@
                  p{
                     color:white;
                  }
+               }
              
             }
             @media #{$xl}{
@@ -190,10 +194,7 @@
                 margin-right: 15px;
                 padding-bottom: 0;
             }
-            & .story__inner{
-                
-                
-                
+            & .story__inner{ 
                 @media #{$md}{
                     border:1px solid var(--tp-theme-purple);
                     border-bottom-left-radius: 30px;
@@ -226,6 +227,7 @@
             }
             & img{
                 width:100%;
+
             }
             & span{
                 margin-bottom: 20px;

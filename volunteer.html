@@ -13,14 +13,9 @@
 
    <!-- CSS here -->
    <link rel="stylesheet" href="assets/css/bootstrap.css">
-   <link rel="stylesheet" href="assets/css/meanmenu.css">
-   <link rel="stylesheet" href="assets/css/animate.css">
    <link rel="stylesheet" href="assets/css/swiper-bundle.css">
    <link rel="stylesheet" href="assets/css/slick.css">
    <link rel="stylesheet" href="assets/css/backtotop.css">
-   <link rel="stylesheet" href="assets/css/magnific-popup.css">
-   <link rel="stylesheet" href="assets/css/nice-select.css">
-   <link rel="stylesheet" href="assets/css/ui-icon.css">
    <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
    <link rel="stylesheet" href="assets/css/spacing.css">
    <link rel="stylesheet" href="assets/css/style.css">
@@ -90,7 +85,7 @@
                   <div class="col-xl-3 col-lg-4">
                      <div class="header__button d-flex justify-content-end gap-2">
                         <button class="header__donate">Donate</button>
-                        <button class="header__contact">Contact Us</button>
+                        <button class="header__contact"><a href="contact.html">Contact Us</a></button>
                         <button class="header__phone"><i class="fa-sharp fa-light fa-phone"></i></button>
                      </div>
                   </div>
@@ -158,7 +153,7 @@
 
             <div class="sidenav__button">
                <button class="donate">Donate</button>
-               <button class="contact">Contact Us</button>
+               <button class="contact"> <a href="contact.html">Contact Us</a> </button>
                <a class="phone"><i class="fa-sharp fa-light fa-phone"></i></a>
             </div>
          </div>
@@ -199,6 +194,11 @@
 
             <div class="donate__service">
                <div class="row smb-90 gx-xl-5">
+                  <div class="col-12 d-flex justify-content-center d-block d-lg-none">
+                     <button class="d-block d-lg-none donate_btn blue-bg">
+                        Donate
+                     </button>
+                  </div>
                   <div class="col-lg-5 d-none d-lg-block">
                      <div class="donate__service-img" data-background="./assets/img/partner/partner1.png">
                      </div>
@@ -207,15 +207,18 @@
 
                      <div class="lim_card s_orange">
                         <img src="./assets/img/donate/1sm.png" class="d-block d-lg-none" alt="">
-                        <h3>Your Time and Talents</h3>
-                        <span>Valuable Gifts to Our Community</span>
-                        <p>YAt the Limehouse Project, every volunteer brings unique skills and perspectives that are
-                           invaluable to our work.</p>
-                        <p>Whether you excel in strategic thinking or have a knack for operational tasks, your
-                           contribution as a volunteer is a gift to our community. By volunteering with us, you’re not
-                           just giving your time; you’re making a lasting impact on the lives of those we serve and
-                           enriching your own life in the process.
-                        </p>
+                        <div class="lim_card_content">
+                           <h3>Your Time and Talents</h3>
+                           <span>Valuable Gifts to Our Community</span>
+                           <p>YAt the Limehouse Project, every volunteer brings unique skills and perspectives that are
+                              invaluable to our work.</p>
+                           <p>Whether you excel in strategic thinking or have a knack for operational tasks, your
+                              contribution as a volunteer is a gift to our community. By volunteering with us, you’re
+                              not
+                              just giving your time; you’re making a lasting impact on the lives of those we serve and
+                              enriching your own life in the process.
+                           </p>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -224,12 +227,15 @@
                   <div class="col-lg-7 order-1 order-lg-0 sp_0">
                      <div class="lim_card s_pink">
                         <img src="./assets/img/donate/2sm.png" class="d-block d-lg-none" alt="">
-                        <h3>Why Volunteer for LHP?</h3>
-                        <ul>
-                           <li>Engage in meaningful work that aligns with your skills and interests</li>
-                           <li>Be part of a community dedicated to social change and empowerment</li>
-                           <li>Gain new experiences and insights while contributing to a worthy cause</li>
-                        </ul>
+                        <div class="lim_card_content">
+                           <h3>Why Volunteer for LHP?</h3>
+                           <ul>
+                              <li>Engage in meaningful work that aligns with your skills and interests</li>
+                              <li>Be part of a community dedicated to social change and empowerment</li>
+                              <li>Gain new experiences and insights while contributing to a worthy cause</li>
+                           </ul>
+                        </div>
+
                      </div>
                   </div>
                   <div class="col-lg-5 order-0 order-lg-1">
@@ -249,50 +255,6 @@
          </div>
       </section>
 
-      <section class="donars__area">
-
-         <div class="row align-items-center">
-            <div class="col-lg-3 offset-lg-2 ">
-               <h3>Our Funds</h3>
-            </div>
-            <div class="col-lg-7">
-               <div class="row">
-                  <div class="col-12">
-                     <div class="donars__slider">
-                        <div class="row donar-class">
-                           <div class="col-12">
-                              <div class="donars__slider-item">
-                                 <img src="./assets/img/donate/donars.png" alt="">
-                              </div>
-                           </div>
-                           <div class="col-12">
-                              <div class="donars__slider-item">
-                                 <img src="./assets/img/donate/donars.png" alt="">
-                              </div>
-                           </div>
-                           <div class="col-12">
-                              <div class="donars__slider-item">
-                                 <img src="./assets/img/donate/donars.png" alt="">
-                              </div>
-                           </div>
-                           <div class="col-12">
-                              <div class="donars__slider-item">
-                                 <img src="./assets/img/donate/donars.png" alt="">
-                              </div>
-                           </div>
-                           <div class="col-12">
-                              <div class="donars__slider-item">
-                                 <img src="./assets/img/donate/donars.png" alt="">
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-
-         </div>
-      </section>
 
 
 
@@ -431,18 +393,11 @@
    <script src="assets/js/vendor/jquery.js"></script>
    <script src="assets/js/vendor/waypoints.js"></script>
    <script src="assets/js/bootstrap-bundle.js"></script>
-   <script src="assets/js/meanmenu.js"></script>
    <script src="assets/js/swiper-bundle.js"></script>
    <script src="assets/js/slick.js"></script>
-   <script src="assets/js/magnific-popup.js"></script>
-   <script src="assets/js/parallax.js"></script>
    <script src="assets/js/backtotop.js"></script>
-   <script src="assets/js/nice-select.js"></script>
    <script src="assets/js/counterup.js"></script>
-   <script src="assets/js/wow.js"></script>
-   <script src="assets/js/isotope-pkgd.js"></script>
    <script src="assets/js/imagesloaded-pkgd.js"></script>
-   <script src="assets/js/ajax-form.js"></script>
    <script src="assets/js/main.js"></script>
 </body>
 

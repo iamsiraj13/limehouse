@@ -15,6 +15,10 @@
         font-size: 40px;
         font-weight: 700;
         text-align: left;
+        @media #{$md}{
+            font-size: 20px;
+            text-align: center;
+          }
         @media #{$xs}{
             font-size: 20px;
             text-align: center;
@@ -97,6 +101,15 @@
         background-color: #fff;
         border-radius:20px;
         margin-left: 18px;
+        @media #{$md}{
+          padding:5px 20px;
+        }
+        @media #{$xs}{
+          padding:5px 20px;
+        }
+        @media #{$sm}{
+          padding:5px 20px;
+          }
     }
     & .arr{
         width:30px;

@@ -1,6 +1,32 @@
 @use '../utils' as *;
 
 
+
+.contact__title__area{
+    text-align: center;
+    padding:100px 0;
+    @media #{$md}{
+        padding:50px 0;
+    }
+    @media #{$sm}{
+        padding:50px 0;
+    }
+    @media #{$xs}{
+        padding:50px 0;
+    }
+
+    & .support__content{
+        @media #{$md}{
+            margin-bottom: 30px;
+        }
+        @media #{$sm}{
+            margin-bottom: 30px;
+        }
+        @media #{$xs}{
+            margin-bottom: 30px;
+        }
+    }
+}
 .contact__area{
      
     & .contact__form{
@@ -21,29 +47,45 @@
                 width:100%;
                 text-align: center;
                 margin-bottom: 22px;
+                padding-left: 20px;
+                padding-right: 20px;
+                line-height: 1.1;
 
             }
             @media #{$sm}{
                 width:100%;
                 text-align: center;
                 margin-bottom: 22px;
+                padding-left: 20px;
+                padding-right: 20px;
+                line-height: 1.1;
             }
             @media #{$xs}{
                 width:100%;
                 text-align: center;
                 margin-bottom: 22px;
+                padding-left: 20px;
+                padding-right: 20px;
+                line-height: 1.1;
             }
             & h3{
                 font-size: 48px;
                 font-weight: 700;
                 margin-bottom: 43px;
+                @media #{$md}{
+                    font-size: 16px;
+                    margin-bottom: 8px;
+                    text-transform: uppercase;
+                }
                 @media #{$sm}{
                     font-size: 16px;
                     margin-bottom: 8px;
+                    text-transform: uppercase;
                 }
                 @media #{$xs}{
                     font-size: 16px;
                     margin-bottom: 8px;
+                    text-transform: uppercase;
                 }
 
             }

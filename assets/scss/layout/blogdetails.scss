@@ -7,14 +7,17 @@
     @media #{$md}{
         padding-top: 50px;
         padding-bottom: 50px;
+        padding-top: 100px;
     }
     @media #{$sm}{
         padding-top: 50px;
         padding-bottom: 50px;
+        padding-top: 100px;
     }
     @media #{$xs}{
         padding-top: 0px;
         padding-bottom: 50px;
+        padding-top: 100px;
     }
     & .blog_details_heading{
         margin-bottom: 70px;

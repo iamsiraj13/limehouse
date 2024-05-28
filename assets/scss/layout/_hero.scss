@@ -22,7 +22,7 @@
     }
 
     & .hero__content{ 
-        padding-left: 39%;
+        padding-left: 32%;
         background-color: var(--tp-theme-purple);
         height:100%;
         display:flex;
@@ -33,7 +33,7 @@
             padding-left: 24%;
         }
         @media #{$xxl}{
-            padding-left: 24%;
+            padding-left: 15%;
         }
         @media #{$xl}{ 
             max-height:80vh;
