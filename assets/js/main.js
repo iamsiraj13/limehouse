@@ -378,7 +378,7 @@
     arrows: false,
     fade: false,
     asNavFor: ".slider-nav",
-    autoplay: false, // Enable autoplay
+    autoplay: true, // Enable autoplay
     autoplaySpeed: 2000,
     prevArrow:
       '<button type="button" class="slick-prev "><i class="fa-light fa-angle-left"></i></button>',

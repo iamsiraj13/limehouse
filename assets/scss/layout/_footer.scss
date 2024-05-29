@@ -15,6 +15,7 @@
             padding-bottom: 23px;
          }
 
+
         & h3{
             color:#494949; 
             margin-bottom: 36px;
@@ -38,13 +39,30 @@
                 margin-top: 6px;
              }
         }
+
+
+        & .footer__head{
+            padding:33px 0;
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom:1px solid #BCBCBC;
+            margin-bottom: 30px;
+
+            & .footer__head__btn{
+                & button{
+                    background-color:transparent;
+                    text-transform: uppercase;
+                    color:#494949;
+                    border: 1px solid black;
+                    padding:0 18px;
+                }
+            }
+
+        }
     }
 
-    // @media #{$xl}{
-    //     padding-right: 90px;
-    //     font-size:14px;
-    // }
-
+   
     // footer center 
 
     & .footer__center{
