@@ -293,7 +293,7 @@
             }
             
             @media #{$sm}{
-                margin-right: -291px;
+                margin-right: -293px;
             }
             @media #{$xs}{
                 margin-right: -291px;
@@ -301,9 +301,9 @@
           }
           
         &  .slick-list {
-           
+            margin-left: -108px;
             @media #{$sm}{
-                margin:0 62px
+                margin:0 78px
             }
             @media #{$xs}{
                 margin:0 62px

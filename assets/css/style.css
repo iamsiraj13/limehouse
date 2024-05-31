@@ -970,7 +970,7 @@ input[type=color] {
   top: 0 !important;
   padding-top: 40px;
   position: fixed;
-  z-index: 1;
+  z-index: 99;
   clip-path: ellipse(67% 51% at 49% 33%);
 }
 @media (max-width: 575px) {
@@ -4279,6 +4279,560 @@ input[type=color] {
   }
 }
 
+.donation__area .donation__button {
+  margin-bottom: 84px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 3fr;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .donation__area .donation__button {
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+    grid-template-rows: 2;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .donation__area .donation__button {
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+    grid-template-rows: 2;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .donation__area .donation__button {
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+    grid-template-rows: 2;
+    margin-bottom: 30px;
+  }
+}
+.donation__area .donation__button button {
+  padding: 30px 0;
+  background-color: #fff;
+  border: 1px solid var(--tp-theme-blue);
+  border-radius: 30px;
+  transition: all 0.4s;
+  color: black;
+  font-size: 32px;
+  margin-right: 5px;
+}
+.donation__area .donation__button button:last-child {
+  margin-right: 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .donation__area .donation__button button {
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .donation__area .donation__button button {
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 575px) {
+  .donation__area .donation__button button {
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+}
+.donation__area .donation__button button:hover {
+  background-color: var(--tp-theme-blue);
+  color: #fff;
+}
+.donation__area .gift__aid {
+  padding: 50px 92px 50px 69px;
+  border-radius: 30px;
+}
+@media (max-width: 575px) {
+  .donation__area .gift__aid {
+    padding: 30px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .donation__area .gift__aid .gift__img img {
+    width: 50%;
+    height: 100%;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .donation__area .gift__aid .gift__img img {
+    width: 50%;
+    height: 100%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .donation__area .gift__aid .gift__img img {
+    width: 50%;
+    height: 100%;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .donation__area .gift__aid .gift__img {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .donation__area .gift__aid .gift__img {
+    text-align: center;
+  }
+}
+@media (max-width: 575px) {
+  .donation__area .gift__aid .gift__img {
+    text-align: center;
+  }
+}
+.donation__area .gift__aid .gift__amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #fff;
+  padding: 30px 70px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 30px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .donation__area .gift__aid .gift__amount {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .donation__area .gift__aid .gift__amount {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .donation__area .gift__aid .gift__amount {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}
+.donation__area .gift__aid .gitf__pera {
+  padding-left: 50px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .donation__area .gift__aid .gitf__pera {
+    padding-left: 0;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .donation__area .gift__aid .gitf__pera {
+    padding-left: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 575px) {
+  .donation__area .gift__aid .gitf__pera {
+    padding-left: 0;
+    text-align: center;
+  }
+}
+.donation__area .gift__aid .gitf__pera p {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .donation__area .gift__aid .gitf__pera p {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .donation__area .gift__aid .gitf__pera p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 575px) {
+  .donation__area .gift__aid .gitf__pera p {
+    font-size: 12px;
+  }
+}
+.donation__area .gift_desc {
+  padding: 0 111px;
+  text-align: center;
+  margin-top: 45px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .donation__area .gift_desc {
+    padding: 0 30px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .donation__area .gift_desc {
+    padding: 0 30px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .donation__area .gift_desc {
+    padding: 0 30px;
+    margin-bottom: 20px;
+  }
+}
+.donation__area .gift_desc p {
+  font-size: 20px;
+  color: #000;
+  font-weight: 400;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .donation__area .gift_desc p {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .donation__area .gift_desc p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 575px) {
+  .donation__area .gift_desc p {
+    font-size: 12px;
+  }
+}
+.donation__area .personal__info {
+  margin-top: 86px;
+  margin-bottom: 74px;
+}
+@media (max-width: 575px) {
+  .donation__area .personal__info {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+}
+.donation__area .personal__info .form__title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 46px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .donation__area .personal__info .form__title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .donation__area .personal__info .form__title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .donation__area .personal__info .form__title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+.donation__area .personal__info .input__group {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 21px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .donation__area .personal__info .input__group {
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .donation__area .personal__info .input__group {
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (max-width: 575px) {
+  .donation__area .personal__info .input__group {
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.donation__area .personal__info .input__group label {
+  font-size: 16px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .donation__area .personal__info .input__group label {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .donation__area .personal__info .input__group label {
+    font-size: 12px;
+  }
+}
+@media (max-width: 575px) {
+  .donation__area .personal__info .input__group label {
+    font-size: 12px;
+  }
+}
+.donation__area .personal__info .input__group input {
+  width: 77%;
+  padding: 8px 32px;
+  border: 1px solid #000;
+  outline: none;
+  border-radius: 61px;
+  font-size: 16px;
+  font-weight: 400;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .donation__area .personal__info .input__group input {
+    width: 73%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .donation__area .personal__info .input__group input {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .donation__area .personal__info .input__group input {
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .donation__area .personal__info .input__group input {
+    width: 100%;
+  }
+}
+.donation__area .personal__info .input__group2 {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .donation__area .personal__info .input__group2 {
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .donation__area .personal__info .input__group2 {
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 575px) {
+  .donation__area .personal__info .input__group2 {
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 15px;
+  }
+}
+.donation__area .personal__info .input__group2 label {
+  font-size: 16px;
+}
+@media (max-width: 575px) {
+  .donation__area .personal__info .input__group2 label {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .donation__area .personal__info .input__group2 label {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .donation__area .personal__info .input__group2 label {
+    font-size: 12px;
+  }
+}
+.donation__area .personal__info .input__group2 input {
+  padding: 8px 32px;
+  border: 1px solid #000;
+  border-radius: 61px;
+  font-size: 16px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .donation__area .personal__info .input__group2 input {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .donation__area .personal__info .input__group2 input {
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .donation__area .personal__info .input__group2 input {
+    width: 100%;
+  }
+}
+.donation__area .button__area {
+  background-color: #383B3C;
+  padding: 57px 71px;
+  border-radius: 28px;
+  margin-top: 105px;
+  margin-bottom: 21px;
+}
+@media (max-width: 575px) {
+  .donation__area .button__area {
+    padding: 15px;
+    margin-top: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+.donation__area .button__area .subtotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .donation__area .button__area .subtotal {
+    padding: 15px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .donation__area .button__area .subtotal {
+    padding: 15px;
+  }
+}
+@media (max-width: 575px) {
+  .donation__area .button__area .subtotal {
+    padding: 15px;
+  }
+}
+.donation__area .button__area .subtotal h5 {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 700;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .donation__area .button__area .subtotal h5 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .donation__area .button__area .subtotal h5 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .donation__area .button__area .subtotal h5 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+.donation__area .button__area .subtotal div {
+  font-weight: 700;
+  font-size: 32px;
+  color: #fff;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .donation__area .button__area .subtotal div {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .donation__area .button__area .subtotal div {
+    font-size: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .donation__area .button__area .subtotal div {
+    font-size: 20px;
+  }
+}
+.donation__area .donate__form_button {
+  width: 100%;
+  margin-bottom: 168px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .donation__area .donate__form_button {
+    margin-bottom: 48px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .donation__area .donate__form_button {
+    margin-bottom: 48px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (max-width: 575px) {
+  .donation__area .donate__form_button {
+    margin-bottom: 48px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.donation__area .donate__form_button button {
+  background-color: #76C9D6;
+  font-size: 24px;
+  width: 100%;
+  border-radius: 30px;
+  color: #fff;
+  padding: 12px 0;
+}
+
+.w-89 {
+  width: 89%;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .w-89 {
+    width: 87%;
+  }
+}
+
+.w-72 {
+  width: 72%;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .w-72 {
+    width: 66%;
+  }
+}
+
+.w-58 {
+  width: 58%;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .w-58 {
+    width: 51%;
+  }
+}
+
+.w-79 {
+  width: 79%;
+}
+
 .about__area {
   padding: 140px 0;
   margin-top: 200px;
@@ -4619,7 +5173,7 @@ input[type=color] {
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .growth__area .slider-nav .slick-slide {
-    margin-right: -291px;
+    margin-right: -293px;
   }
 }
 @media (max-width: 575px) {
@@ -4627,9 +5181,12 @@ input[type=color] {
     margin-right: -291px;
   }
 }
+.growth__area .slider-nav .slick-list {
+  margin-left: -108px;
+}
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .growth__area .slider-nav .slick-list {
-    margin: 0 62px;
+    margin: 0 78px;
   }
 }
 @media (max-width: 575px) {
@@ -5622,21 +6179,48 @@ input[type=color] {
   .board__area .section_heading h2 span {
     background-position: 0 43px;
     padding: 11px 0px;
+    background-size: 100%;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .board__area .section_heading h2 span {
     background-position: 0 43px;
     padding: 11px 0px;
+    background-size: 100%;
   }
 }
 @media (max-width: 575px) {
   .board__area .section_heading h2 span {
     background-position: 0 43px;
     padding: 11px 0px;
+    background-size: 100%;
   }
 }
 
+.auth h3 {
+  margin-bottom: 0;
+}
+.auth .deg {
+  font-size: 20px;
+  font-weight: 700;
+  color: #494949;
+  transition: all 0.3s;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .auth .deg {
+    display: none;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .auth .deg {
+    display: none !important;
+  }
+}
+@media (max-width: 575px) {
+  .auth .deg {
+    display: none !important;
+  }
+}
 .auth span {
   font-size: 20px;
   color: var(--tp-theme-green);
@@ -5686,6 +6270,19 @@ input[type=color] {
     color: white;
   }
 }
+.auth .btn__head {
+  background-color: #fff;
+  width: 80px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 5px;
+  font-size: 12px;
+  text-transform: capitalize;
+  border-radius: 30px;
+  color: var(--tp-theme-green);
+}
 
 .board__btn .orange-bg {
   background-color: var(--tp-theme-orange);
@@ -5720,35 +6317,53 @@ input[type=color] {
   }
 }
 
-.accordion-body {
+.accordion-body p {
   font-size: 20px;
   color: #494949;
   font-weight: 400;
   line-height: 1.4;
-  width: 71%;
+  width: 67%;
   margin: auto;
   padding-bottom: 80px;
+  margin-top: -19px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .accordion-body p {
+    width: 61%;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .accordion-body {
+  .accordion-body p {
     font-size: 12px;
     width: 100%;
     padding-bottom: 40px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-  .accordion-body {
+  .accordion-body p {
     font-size: 12px;
     width: 100%;
     padding-bottom: 40px;
   }
 }
 @media (max-width: 575px) {
-  .accordion-body {
+  .accordion-body p {
     font-size: 12px;
     width: 100%;
     padding-bottom: 40px;
+    padding-top: 30px;
   }
+}
+.accordion-body p button {
+  text-align: center;
+  border: 1px solid black;
+  margin-left: auto;
+  width: 100px;
+  height: 30px;
+  font-size: 13px;
+  line-height: 0;
+  border-radius: 30px;
+  margin-left: 50%;
 }
 
 .accordion-button {
@@ -5760,9 +6375,23 @@ input[type=color] {
 }
 .accordion-button .collapsed:focus {
   outline: none;
+  border-color: transparent;
+  outline: 0;
+  box-shadow: 0;
 }
 .accordion-button:focus {
   outline: none;
+  box-shadow: none !important;
+}
+.accordion-button:focus .accordion-button:focus {
+  border-color: transparent;
+  outline: 0;
+  box-shadow: 0;
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none !important;
+  z-index: 3;
 }
 
 .accordion-item {
@@ -5814,29 +6443,29 @@ input[type=color] {
   background-color: var(--tp-theme-orange);
 }
 .board__accordion .board__title .profile {
-  width: 110px;
-  height: 110px;
+  width: 140px;
+  height: 140px;
   border-radius: 30px;
   background-color: white;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .board__accordion .board__title .profile {
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     border-radius: 20px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .board__accordion .board__title .profile {
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     border-radius: 20px;
   }
 }
 @media (max-width: 575px) {
   .board__accordion .board__title .profile {
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     border-radius: 20px;
   }
 }
@@ -5904,6 +6533,16 @@ input[type=color] {
   .delever__button {
     background-color: var(--tp-theme-orange) !important;
   }
+}
+.delever__button .auth h3 {
+  margin-bottom: 0px;
+}
+.delever__button .auth p {
+  margin: 0;
+}
+.delever__button .auth span {
+  margin-top: 2px;
+  margin: 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .delever__button .auth span {
@@ -6114,6 +6753,12 @@ input[type=color] {
   text-align: center;
   display: inline-block;
   border: 1px solid #D1D1D1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
 }
 
 /*# sourceMappingURL=style.css.map */

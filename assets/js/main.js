@@ -1,7 +1,6 @@
 /***************************************************
 ==================== JS INDEX ======================
 ****************************************************
-01. PreLoader Js
 
 
 ****************************************************/
@@ -30,6 +29,38 @@
       }
     });
   }
+
+  // board js
+
+  $(document).ready(function () {
+    // Initially hide all p.deg elements
+    $("p.deg").hide();
+    $("a.btn__head").show();
+
+    $(".accordion-button").click(function (e) {
+      var $button = $(this);
+      var $accordionItem = $button.closest(".accordion-item");
+
+      if ($button.hasClass("collapsed")) {
+        $accordionItem.find(".board__btn > a").text("Read More").css({
+          "background-color": "#87CCA9", // Background color for collapsed state
+        });
+        $accordionItem.find("p.deg").hide();
+        $accordionItem.find("a.btn__head").show();
+      } else {
+        $accordionItem.find(".board__btn > a").text("Collapse").css({
+          "background-color": "#000", // Background color for expanded state
+        });
+        $accordionItem.find("p.deg").show().css({ transitioin: "0.4s" });
+        $accordionItem.find("a.btn__head").hide().css({ transition: "0.4s" });
+      }
+    });
+  });
+
+  $(".collapseButton").on("click", function () {
+    var $collapseElement = $(this).closest(".accordion-collapse");
+    $collapseElement.collapse("hide");
+  });
 
   // new mobile menu
 
@@ -180,6 +211,7 @@
       },
     ],
   });
+
   $(".donar-class").slick({
     dots: false,
     infinite: true,
@@ -217,6 +249,7 @@
       },
     ],
   });
+
   $(".footer-class").slick({
     dots: false,
     draggable: true,
@@ -390,6 +423,14 @@
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: true,
         },
       },
       {

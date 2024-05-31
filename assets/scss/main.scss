@@ -1,11 +1,4 @@
-@forward 'components/theme';
- 
-@forward 'components/buttons';
-@forward 'components/carousel';
-  
- 
-@forward 'components/animation';
-@forward 'components/preloader';
+@forward 'components/theme'; 
 @forward 'layout/header';
 @forward 'layout/hero';  
 @forward 'layout/counterup';
@@ -19,6 +12,7 @@
 @forward 'layout/donate';
 @forward 'layout/contact';
 @forward 'layout/location';
+@forward 'layout/donateform.scss';
 @forward 'layout/about';
 @forward 'layout/story';
 @forward 'layout/people';
@@ -26,3 +20,6 @@
 
 @forward 'layout/blog';
 @forward 'layout/footer';
+
+
+ 
