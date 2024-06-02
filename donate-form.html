@@ -84,7 +84,7 @@
                   </div>
                   <div class="col-xl-3 col-lg-4">
                      <div class="header__button d-flex justify-content-end gap-2">
-                        <button class="header__donate"><a href="donate-form.html">Donate</a></button>
+                        <a class="header__donate" href="donate-form.html">Donate </a>
                         <a href="contact.html" class="header__contact"> Contact Us</a>
                         <button class="header__phone"><i class="fa-sharp fa-light fa-phone"></i></button>
                      </div>
@@ -231,13 +231,16 @@
          <div class="container">
             <form>
                <div class="donation__button">
-                  <button class="">£5</button>
-                  <button class="">£10</button>
-                  <button class="">£25</button>
-                  <button class="">£50</button>
-                  <button class="">
-                     Custom Amount
-                  </button>
+                  <div class="donate__amount">
+                     <button class="">£5</button>
+                     <button class="">£10</button>
+                     <button class="">£25</button>
+                     <button class="">£50</button>
+                  </div>
+                  <div class="custom__amount">
+                     <input type="number" name="" placeholder="Custom Amount...">
+                  </div>
+
                </div>
                <!-- gift aid  -->
                <div class="gift__aid blue-bg">
@@ -261,6 +264,18 @@
                            <p>As a UK taxpayer you can supersize your donation by 25% at no extra cost to you!</p>
                         </div>
                      </div>
+                  </div>
+                  <!-- donate checkbox  -->
+                  <div>
+                     <div class="checkbox-container">
+                        <span class="checkbox-text">I am a UK taxpayer, donating as an individual and would like
+                           Limehouse Project to claim Gift Aid on my donation*</span>
+                        <input type="checkbox" id="custom-checkbox" class="custom-checkbox" checked>
+                        <label for="custom-checkbox" class="custom-checkbox-label"></label>
+                     </div>
+                  </div>
+                  <div>
+
                   </div>
                </div>
                <!-- description -->
