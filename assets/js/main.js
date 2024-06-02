@@ -5,6 +5,31 @@
 
 ****************************************************/
 
+// board js
+$(document).ready(function () {
+  // Initially hide all p.deg elements in another section
+  $(".another-section p.deg").hide();
+  $(".board__area-section a.btn__head").show();
+
+  $(".another-section .accordion-button").click(function (e) {
+    var $button = $(this);
+    var $accordionItem = $button.closest(".accordion-item");
+
+    if ($button.hasClass("collapsed")) {
+      $accordionItem.find(".board__btn > a").text("Read More").css({
+        "background-color": "#87CCA9", // Background color for collapsed state
+      });
+      $accordionItem.find("p.deg").hide();
+      $accordionItem.find("a.btn__head").show();
+    } else {
+      $accordionItem.find(".board__btn > a").text("Collapse").css({
+        "background-color": "#000", // Background color for expanded state
+      });
+      $accordionItem.find("p.deg").show().css({ transition: "0.4s" });
+      $accordionItem.find("a.btn__head").hide().css({ transition: "0.4s" });
+    }
+  });
+});
 (function ($) {
   "use strict";
 
@@ -30,20 +55,20 @@
     });
   }
 
-  // board js
+  // delivery js
 
   $(document).ready(function () {
-    // Initially hide all p.deg elements
-    $("p.deg").hide();
-    $("a.btn__head").show();
+    // Initially hide all p.deg elements in the delivery section
+    $(".delivery-section p.deg").hide();
+    $(".delivery-section a.btn__head").show();
 
-    $(".accordion-button").click(function (e) {
+    $(".delivery-section .accordion-button").click(function (e) {
       var $button = $(this);
       var $accordionItem = $button.closest(".accordion-item");
 
       if ($button.hasClass("collapsed")) {
         $accordionItem.find(".board__btn > a").text("Read More").css({
-          "background-color": "#87CCA9", // Background color for collapsed state
+          "background-color": "#F4C676", // Background color for collapsed state
         });
         $accordionItem.find("p.deg").hide();
         $accordionItem.find("a.btn__head").show();
@@ -51,7 +76,7 @@
         $accordionItem.find(".board__btn > a").text("Collapse").css({
           "background-color": "#000", // Background color for expanded state
         });
-        $accordionItem.find("p.deg").show().css({ transitioin: "0.4s" });
+        $accordionItem.find("p.deg").show().css({ transition: "0.4s" });
         $accordionItem.find("a.btn__head").hide().css({ transition: "0.4s" });
       }
     });
