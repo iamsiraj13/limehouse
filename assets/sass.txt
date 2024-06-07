@@ -1,2 +1,1 @@
 sass --watch G:\limehouse-project\limehouse-project\assets\scss\main.scss:G:\limehouse-project\limehouse-project\assets\css\style.css
-Sass is watching for changes. Press Ctrl-C to stop.

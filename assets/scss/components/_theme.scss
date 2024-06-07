@@ -418,13 +418,17 @@ input[type="color"] {
 }
 .pera{
 	font-size: 20px;
+	line-height:35px;
 	@media #{$md}{
 		font-size: 12px;
+		line-height: 20px;
 	}
 	@media #{$sm}{
 		font-size: 12px;
+		line-height: 20px;
 	}
 	@media #{$xs}{
 		font-size: 12px;
+		line-height: 20px;
 	}
 }

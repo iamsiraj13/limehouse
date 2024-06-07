@@ -26,6 +26,7 @@
         padding:90px 63px;
         border-radius:30px;
         text-align: center;
+        
 
         @media #{$md}{
             margin-bottom: 30px;
@@ -70,6 +71,7 @@
             font-weight: 400;
             padding-left: 15px;
             padding-right: 15px;
+            line-height:35px;
             @media #{$md}{
                 font-size: 16px;
                 padding: 0;

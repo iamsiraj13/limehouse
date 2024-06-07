@@ -19,7 +19,7 @@
     
     & .blog__heading{
         text-align: center;
-        margin-bottom: 230px;
+        margin-bottom: 127px;
         @media #{$md}{
             margin-bottom: 66px;
         }
@@ -30,6 +30,9 @@
             margin-bottom: 66px; 
         }
         & h2{
+            & span{
+                padding:10px 0;
+            }
             @media #{$md}{
                 font-size: 32px;
                 margin-top: 15px; 

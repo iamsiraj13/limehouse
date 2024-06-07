@@ -153,7 +153,7 @@ $(document).ready(function () {
       prevArrow:
         '<button type="button" class="slick-prev d-none"><i class="fa-sharp fa-light fa-circle-arrow-left"></i></button>',
       nextArrow:
-        '<button type="button" class="slick-next"><i class="fa-light fa-circle-arrow-right"></i></button>',
+        '<button type="button" class="slick-next"><i class="fa-regular fa-angle-right"></i></button>',
       responsive: [
         {
           breakpoint: 1400,
@@ -470,46 +470,6 @@ $(document).ready(function () {
   });
 
   ////////////////////////////////////////////////////
-  // 13. Masonary Js
-  $(".grid").imagesLoaded(function () {
-    // init Isotope
-    var $grid = $(".grid").isotope({
-      itemSelector: ".grid-item",
-      percentPosition: true,
-      masonry: {
-        // use outer width of grid-sizer for columnWidth
-        columnWidth: ".grid-item",
-      },
-    });
-
-    // filter items on button click
-    $(".masonary-menu").on("click", "button", function () {
-      var filterValue = $(this).attr("data-filter");
-      $grid.isotope({ filter: filterValue });
-    });
-
-    //for menu active class
-    $(".masonary-menu button").on("click", function (event) {
-      $(this).siblings(".active").removeClass("active");
-      $(this).addClass("active");
-      event.preventDefault();
-    });
-  });
-
-  /* magnificPopup img view */
-  $(".popup-image").magnificPopup({
-    type: "image",
-    gallery: {
-      enabled: true,
-    },
-  });
-
-  /* magnificPopup video view */
-  $(".popup-video").magnificPopup({
-    type: "iframe",
-  });
-
-  ////////////////////////////////////////////////////
   // 14. Wow Js
   new WOW().init();
 
@@ -518,25 +478,5 @@ $(document).ready(function () {
   $(".counter").counterUp({
     delay: 10,
     time: 1000,
-  });
-
-  ////////////////////////////////////////////////////
-  // 22. Parallax Js
-  if ($(".scene").length > 0) {
-    $(".scene").parallax({
-      scalarX: 10.0,
-      scalarY: 15.0,
-    });
-  }
-
-  ////////////////////////////////////////////////////
-  // 23. InHover Active Js
-  $(".hover__active").on("mouseenter", function () {
-    $(this)
-      .addClass("active")
-      .parent()
-      .siblings()
-      .find(".hover__active")
-      .removeClass("active");
   });
 })(jQuery);

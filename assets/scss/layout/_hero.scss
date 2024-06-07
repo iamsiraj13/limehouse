@@ -92,6 +92,7 @@
                 font-size: inherit;
                 text-transform: inherit;
                 display:inline-block;
+                background-size: 100%;
                 @media #{$xl}{
                     background-position: 0px 48px;
                     padding: 16px 0;
@@ -112,6 +113,9 @@
 
             }
 
+            @media #{$xxl}{
+                font-size:50px;
+            }
             @media #{$xl}{
                 font-size:30px;
             }
@@ -138,6 +142,7 @@
             font-weight: 600;
             margin-top: 45px;
             font-size: 15px;
+            border-radius:30px;
             display:inline-block !important;
 
             @media #{$xs}{
@@ -254,6 +259,7 @@
         text-align: center;
     }
     .understand__content{
+        padding-right: 68px;
         @media #{$sm}{
             padding-left: 16px;
             padding-right: 16px;
@@ -282,6 +288,7 @@
             line-height:1.1;
             margin-top: 20px;
             font-weight:700;
+            text-transform: capitalize !important;
             margin-bottom: 45px;
             @media #{$md}{
                 font-size: 32px;
@@ -294,24 +301,30 @@
             }
             & span{
                 font-size: inherit;
-            font-weight: inherit;
-        
-
+                font-weight: inherit;
+                text-transform: capitalize;
+                background-size: 83% 16%;
+                padding: 0px 0;
+                background-position: left bottom;
             }
         }
        & p{
             color:var(--tp-text-body);
             font-weight:400;
             font-size:20px;
+            line-height: 35px;
 
             @media #{$md}{
                 font-size: 12px;
+                line-height: 20px;
             }
             @media #{$sm}{
                 font-size: 12px;
+                line-height: 20px;
             }
             @media #{$xs}{
                 font-size: 12px;
+                line-height: 20px;
             }
         }
         & button{
@@ -319,12 +332,12 @@
             background-color: var(--tp-theme-purple);
             font-size: 14px;
             font-weight: 700;
-            margin-top: 43px;
+            margin-top: 23px;
             color:white;
         }
     }
     .understand__img {
-        padding-left: 60px; 
+        // padding-left: 60px; 
         @media #{$md}{
             padding-left: 0;
             margin-bottom: 33px;
@@ -477,12 +490,20 @@
 }
 
 .slick-next {
-    position: absolute; 
-    color:var(--tp-theme-purple);
-    top: 50%;
-    right: -46%;
+    position: absolute;
+    color: var(--tp-theme-purple);
+    top: 40%;
+    right: 3%;
     z-index: 99999;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
     font-size: 30px;
+    line-height: 1.1;
+    width: 43px;
+    border: 1px solid var(--tp-theme-purple);
+    height: 43px;
 }
  
 }
@@ -492,6 +513,12 @@
 }
 .pl-280{
     padding-left: 280px;
+    @media #{$xxl}{
+        padding-left: 116px;
+    }
+    @media #{$xl}{
+        padding-left: 100px;
+    }
     @media #{$md}{
         padding-left: 0;
     }

@@ -143,6 +143,7 @@
             width:100%;
             border-radius:30px;
             border:1px solid #494949;
+            height:148px;
             padding:5px 10px;
             font-size:16px;
 
@@ -188,3 +189,12 @@
     }
 }
 
+
+
+.contact_donate__btn{
+    & .donate__contact{
+        & button{
+            font-size: 32px;
+        }
+    }
+}
