@@ -2938,6 +2938,22 @@ input[type=color] {
     background-size: 100% 14%;
   }
 }
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .hero__blog .hero__content h2 span {
+    padding: 18px 0;
+    background-position: 100% 78%;
+    background-size: 100% 9%;
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 575px) {
+  .hero__blog .hero__content h2 span {
+    padding: 18px 0;
+    background-position: 100% 78%;
+    background-size: 100% 9%;
+    background-repeat: no-repeat;
+  }
+}
 
 .blog__area {
   padding-top: 127px;
@@ -2982,6 +2998,8 @@ input[type=color] {
 }
 .blog__area .blog__heading h2 span {
   padding: 10px 0;
+  background-repeat: no-repeat;
+  background-size: 100% 10%;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .blog__area .blog__heading h2 {
@@ -5106,7 +5124,7 @@ input[type=color] {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .growth__area .ml-200 {
-    margin-left: 371px;
+    margin-left: 398px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -5702,9 +5720,9 @@ input[type=color] {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .story__area .story__bg .story__content {
-    padding-top: 40px;
-    padding-bottom: 30px;
-    padding-left: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 60px;
     padding-right: 20px;
   }
 }

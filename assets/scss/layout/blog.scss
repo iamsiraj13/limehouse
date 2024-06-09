@@ -14,6 +14,18 @@
                     display: inline;
                     background-size: 100% 14%;
                 }
+                @media #{$sm}{
+                    padding: 18px 0;
+                    background-position: 100% 78%;
+                    background-size: 100% 9%;
+                    background-repeat: no-repeat;
+                }
+                @media #{$xs}{
+                    padding: 18px 0;
+                    background-position: 100% 78%;
+                    background-size: 100% 9%;
+                    background-repeat: no-repeat;
+                }
             }
 
         }
@@ -54,6 +66,8 @@
         & h2{
             & span{
                 padding:10px 0;
+                background-repeat: no-repeat;
+                background-size:100% 10%;
             }
             @media #{$md}{
                 font-size: 32px;
