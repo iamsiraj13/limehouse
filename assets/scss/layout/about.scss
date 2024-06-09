@@ -152,6 +152,7 @@
                 color:white;
                 line-height:25px;
                 color: #494949;
+                margin-bottom: 0;
 
                 @media #{$md}{
                     font-size: 10px;
@@ -246,6 +247,24 @@
             & span{
                 padding:10px 0;
             }
+            @media #{$md}{
+               font-size: 32px;
+               & span{
+                font-size: inherit;
+                background-position: 1px 48px;
+                padding: 16px 0;
+                background-size:100%;
+               }
+            }
+            @media #{$sm}{
+               font-size: 32px;
+               & span{
+                font-size: inherit;
+                background-position: 1px 48px;
+                padding: 16px 0;
+                background-size:100%;
+               }
+            }
             @media #{$xs}{
                font-size: 32px;
                & span{
@@ -258,8 +277,18 @@
         }
         & span{
             color:white;
+            letter-spacing: 4px;
+            @media #{$md}{
+                font-size: 14px;
+                letter-spacing:2px;
+            }
+            @media #{$sm}{
+                font-size: 14px;
+                letter-spacing:2px;
+            }
             @media #{$xs}{
                 font-size: 14px;
+                letter-spacing:2px;
             }
         }
     }
@@ -291,17 +320,29 @@
     margin-right: auto;
     width: 622px;
     margin-left: auto;
-    margin-bottom: 30px;
+    margin-bottom: 52px;
     @media #{$xs}{
         width:100%;
         margin-left: 0;
         margin-right: 0;
         text-align: left;
     }
-        & .slick-center{
+    & div{
+        & div{
+            font-size:36px;
+            transition:all 0.3s;
+        }
+    }
+        & .slick-current{
             & div{
                 & div{
-                    font-size: 24px;
+                    font-size: 48px;
+                    @media #{$md}{
+                        font-size: 24px;
+                    }
+                    @media #{$sm}{
+                        font-size: 24px;
+                    }
                     @media #{$xs}{
                         font-size: 24px;
                     }
@@ -345,8 +386,8 @@
     & .slider-for{
         
 
-        & .slick-slide {
-            margin: 0 59px;  
+        & .slick-slide { 
+            margin: 0 30px;
             min-height:20px;
             @media #{$xl}{
                 margin:0 20px;
@@ -364,15 +405,21 @@
           }
           
         &  .slick-list {
-            margin: 0 -59px;   
+            margin: 0 -7% !important;   
+            @media #{$xxl}{
+                margin:0 10% !important;
+            }
+            @media #{$xl}{
+                margin:0 11% !important;
+            }
             @media #{$md}{
-                margin:0 40px;
+                margin:0 0%;
             }
             @media #{$sm}{
-                margin:0 -4px;
+                margin:0 0% !important;
             }
             @media #{$xs}{
-                margin:0 -4px;
+                margin:0 0% !important;
             }
           }
 
@@ -481,11 +528,28 @@
         padding:57px 47px;
         display:flex;
         gap:57px;
+        width:600px; 
         align-items: center;
         border-radius:30px;
+        @media #{$xl}{
+            padding: 39px 26px;
+            gap:35px;
+            width:500px;
+        }
+        @media #{$md}{
+            padding: 39px 26px;
+            gap:35px;
+            width:100%;
+        }
+        @media #{$sm}{
+            padding: 39px 26px;
+            gap:35px;
+            width:100%;
+        }
         @media #{$xs}{
             padding: 39px 26px;
             gap:35px;
+            width:100%;
         }
 
         & h3{
