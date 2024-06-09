@@ -139,12 +139,14 @@
             padding-top: 84px;
             padding-bottom: 84px;
             padding-left: 62px;
-            padding-right: 62px;
-            background-color:rgba(255, 255, 255, 0.8);
+            padding-right: 62px;  
+            background-color: rgba(255,255,255,0.9);
             &:hover{
                 background-color:var(--tp-theme-green);
                 border-color:var(--tp-theme-green);
                 color:white;
+          
+              
                & .story__inner {
                 
 

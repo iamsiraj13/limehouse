@@ -1,5 +1,27 @@
 @use '../utils' as *;
 
+.hero__blog{
+    & .hero__content{
+        padding-right: 74px;
+        & h2{
+            @media #{$xl}{
+                line-height: 58px;
+            }
+            & span{
+                @media #{$xl}{
+                    background-position: 0px 50px;
+                    padding: 0 0 31px;
+                    display: inline;
+                    background-size: 100% 14%;
+                }
+            }
+
+        }
+    }
+}
+
+
+ 
 .blog__area{
     
         padding-top:127px;

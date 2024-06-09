@@ -159,10 +159,12 @@
                         font-size: 16px;
                         color:#494949;
                         font-weight: 700;
-                         
                         position: relative;  
                         border-bottom: 1px solid transparent;
                         transition: all 0.5s;
+                        @media #{$xl}{
+                            font-size: 13px;
+                        }
                       
                         
                         &:hover, &:active{
@@ -188,7 +190,7 @@
                     font-weight: 700;
                     color:white; 
                     @media #{$xl}{
-                        font-size: 12px;
+                        font-size: 13px;
                         padding:7px 15px;
                     }
             }
@@ -200,6 +202,7 @@
                     border:1px solid var(--tp-theme-purple);
                     font-weight: 700;
                     color:var(--tp-theme-purple); 
+                    margin-left: 15px;
                     @media #{$xl}{
                         font-size: 12px;
                         padding:7px 15px;
@@ -214,8 +217,9 @@
                      text-align: center;
                      border-radius:50%;
                      border:1px solid var(--tp-theme-purple);
+                     margin-left: 15px;
                      @media #{$xl}{
-                        font-size: 12px; 
+                        font-size: 13px; 
                     }
                 }
         }

@@ -689,6 +689,11 @@ input[type=color] {
   border-bottom: 1px solid transparent;
   transition: all 0.5s;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .header__menu nav ul li a {
+    font-size: 13px;
+  }
+}
 .header__menu nav ul li a:hover, .header__menu nav ul li a:active {
   color: var(--tp-theme-purple);
   border-bottom: 1px solid transparent;
@@ -703,7 +708,7 @@ input[type=color] {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .header__menu .header__button .header__donate {
-    font-size: 12px;
+    font-size: 13px;
     padding: 7px 15px;
   }
 }
@@ -715,6 +720,7 @@ input[type=color] {
   border: 1px solid var(--tp-theme-purple);
   font-weight: 700;
   color: var(--tp-theme-purple);
+  margin-left: 15px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .header__menu .header__button .header__contact {
@@ -731,10 +737,11 @@ input[type=color] {
   text-align: center;
   border-radius: 50%;
   border: 1px solid var(--tp-theme-purple);
+  margin-left: 15px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .header__menu .header__button .header__phone {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 .header__hamburger {
@@ -1076,6 +1083,11 @@ input[type=color] {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .hero__area .hero__content span {
+    margin-bottom: 10px;
+  }
+}
 .hero__area .hero__content p {
   font-size: 20px;
   font-weight: 400;
@@ -1171,6 +1183,25 @@ input[type=color] {
   font-size: 15px;
   border-radius: 30px;
   display: inline-block !important;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .hero__area .hero__content button {
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .hero__area .hero__content button {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .hero__area .hero__content button {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
 @media (max-width: 575px) {
   .hero__area .hero__content button {
@@ -1332,6 +1363,11 @@ input[type=color] {
   font-weight: 700;
   text-transform: capitalize !important;
   margin-bottom: 45px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .understand__area .understand__content h2 {
+    font-size: 48px;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .understand__area .understand__content h2 {
@@ -1543,22 +1579,25 @@ input[type=color] {
 }
 .services__area .service__card {
   max-width: 380px;
+  height: 585px;
 }
 .services__area .service__card .service__content {
   text-align: center;
-  padding: 53px 43px;
+  padding: 50px 54px;
 }
 .services__area .service__card .service__content h3 {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 30px;
   text-transform: uppercase;
-  padding: 0 20%;
+  padding: 0 26%;
+  text-align: center;
 }
 .services__area .service__card .service__content p {
   color: #494949;
   font-size: 16px;
   font-weight: 400;
+  line-height: 25px;
 }
 .services__area .service__card .service__content button {
   text-transform: capitalize;
@@ -2376,6 +2415,11 @@ input[type=color] {
   line-height: 1.1;
   margin-bottom: 10px;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .benefits__area .benefits__content h2 {
+    font-size: 44px;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .benefits__area .benefits__content h2 {
     font-size: 32px;
@@ -2876,6 +2920,23 @@ input[type=color] {
   margin-bottom: 30px;
   color: white;
   margin-top: 15px;
+}
+
+.hero__blog .hero__content {
+  padding-right: 74px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .hero__blog .hero__content h2 {
+    line-height: 58px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .hero__blog .hero__content h2 span {
+    background-position: 0px 50px;
+    padding: 0 0 31px;
+    display: inline;
+    background-size: 100% 14%;
+  }
 }
 
 .blog__area {
@@ -3614,7 +3675,7 @@ input[type=color] {
 }
 .donate__contact button {
   background-color: white;
-  border-radius: 30px;
+  border-radius: 50px;
   font-size: 16px;
   width: 300px;
   height: 79px;
@@ -5045,7 +5106,7 @@ input[type=color] {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .growth__area .ml-200 {
-    margin-left: 345px;
+    margin-left: 371px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -5071,9 +5132,30 @@ input[type=color] {
 .growth__area .slider-nav {
   text-align: center;
   margin-right: auto;
-  width: 622px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
   margin-bottom: 52px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .growth__area .slider-nav {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .growth__area .slider-nav {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+    margin-bottom: 25px;
+  }
 }
 @media (max-width: 575px) {
   .growth__area .slider-nav {
@@ -5081,32 +5163,82 @@ input[type=color] {
     margin-left: 0;
     margin-right: 0;
     text-align: left;
+    margin-bottom: 25px;
   }
 }
-.growth__area .slider-nav div div {
+.growth__area .slider-nav .slick-list {
+  width: 100%;
+}
+.growth__area .slider-nav .slick-track {
+  width: 28% !important;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .growth__area .slider-nav .slick-track {
+    width: 32% !important;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .growth__area .slider-nav .slick-track {
+    width: 83% !important;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .growth__area .slider-nav .slick-track {
+    width: 83% !important;
+  }
+}
+@media (max-width: 575px) {
+  .growth__area .slider-nav .slick-track {
+    width: 83% !important;
+  }
+}
+.growth__area .slider-nav div .slide__tab {
   font-size: 36px;
   transition: all 0.3s;
+  text-align: center;
+  color: #fff;
+  width: 100% !important;
+  height: 100%;
+  cursor: pointer;
 }
-.growth__area .slider-nav .slick-current div div {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .growth__area .slider-nav div .slide__tab {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .growth__area .slider-nav div .slide__tab {
+    font-size: 16px;
+  }
+}
+@media (max-width: 575px) {
+  .growth__area .slider-nav div .slide__tab {
+    font-size: 16px;
+  }
+}
+.growth__area .slider-nav .slick-current div .slide__tab {
   font-size: 48px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .growth__area .slider-nav .slick-current div div {
+  .growth__area .slider-nav .slick-current div .slide__tab {
     font-size: 24px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-  .growth__area .slider-nav .slick-current div div {
+  .growth__area .slider-nav .slick-current div .slide__tab {
     font-size: 24px;
   }
 }
 @media (max-width: 575px) {
-  .growth__area .slider-nav .slick-current div div {
+  .growth__area .slider-nav .slick-current div .slide__tab {
     font-size: 24px;
   }
 }
 .growth__area .slider-nav .slick-slide {
-  margin-right: -105px;
+  margin-right: 0;
   min-height: 20px;
   margin-top: 20px;
 }
@@ -5122,16 +5254,16 @@ input[type=color] {
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .growth__area .slider-nav .slick-slide {
-    margin-right: -293px;
+    margin-right: 0;
   }
 }
 @media (max-width: 575px) {
   .growth__area .slider-nav .slick-slide {
-    margin-right: -291px;
+    margin-right: 0;
   }
 }
 .growth__area .slider-nav .slick-list {
-  margin-left: -108px;
+  margin-left: 0;
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .growth__area .slider-nav .slick-list {
@@ -5309,7 +5441,7 @@ input[type=color] {
   .growth__area .growth__content {
     padding: 39px 26px;
     gap: 35px;
-    width: 500px;
+    width: 542px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -5552,7 +5684,7 @@ input[type=color] {
   padding-bottom: 84px;
   padding-left: 62px;
   padding-right: 62px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 .story__area .story__bg .story__content:hover {
   background-color: var(--tp-theme-green);

@@ -299,7 +299,7 @@
           margin-left: 300px;
         }
         @media #{$xl}{
-          margin-left: 345px;
+          margin-left: 371px;
         }
         @media #{$lg}{
           margin-left: 165px;
@@ -318,24 +318,83 @@
     text-align: center;
     
     margin-right: auto;
-    width: 622px;
+    width: 100%;
+    display:flex; 
+    justify-content: center;
+    align-items: center;
     margin-left: auto;
     margin-bottom: 52px;
+    @media #{$md}{
+        width:100%;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: left;
+        margin-bottom: 25px;
+    }
+    @media #{$sm}{
+        width:100%;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: left;
+        margin-bottom: 25px;
+    }
     @media #{$xs}{
         width:100%;
         margin-left: 0;
         margin-right: 0;
         text-align: left;
+        margin-bottom: 25px;
+    }
+
+    & .slick-list{
+        width:100%;
+    }
+
+    & .slick-track{
+        width:28% !important;
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        @media #{$xl}{
+           width:32% !important;
+        }
+        @media #{$md}{
+           width:83% !important;
+        }
+        @media #{$sm}{
+           width:83% !important;
+        }
+        @media #{$xs}{
+           width:83% !important;
+        }
     }
     & div{
-        & div{
+        & .slide__tab{
             font-size:36px;
-            transition:all 0.3s;
+            transition:all 0.3s; 
+            text-align: center;
+            color:#fff;
+            width:100% !important;
+            height:100%; 
+            // border:1px solid red;
+
+            cursor:pointer;
+            @media #{$md}{ 
+                font-size: 16px;
+            }
+            @media #{$sm}{ 
+                font-size: 16px;
+            }
+            @media #{$xs}{ 
+                font-size: 16px;
+            }
+
+        
         }
     }
         & .slick-current{
             & div{
-                & div{
+                & .slide__tab{
                     font-size: 48px;
                     @media #{$md}{
                         font-size: 24px;
@@ -350,7 +409,7 @@
             }
         }
         & .slick-slide {
-            margin-right:-105px; 
+            margin-right:0; 
             min-height:20px;
             margin-top: 20px; 
             & div {
@@ -366,15 +425,15 @@
             }
             
             @media #{$sm}{
-                margin-right: -293px;
+                margin-right: 0;
             }
             @media #{$xs}{
-                margin-right: -291px;
+                margin-right:0;
             }
           }
           
         &  .slick-list {
-            margin-left: -108px;
+            margin-left: 0;
             @media #{$sm}{
                 margin:0 78px
             }
@@ -534,7 +593,7 @@
         @media #{$xl}{
             padding: 39px 26px;
             gap:35px;
-            width:500px;
+            width:542px;
         }
         @media #{$md}{
             padding: 39px 26px;

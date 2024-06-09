@@ -423,10 +423,10 @@ $(document).ready(function () {
 
   $(".slider-nav").slick({
     slidesToShow: 6, // Show 5 items in the navigation slider
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     asNavFor: ".slider-for",
     dots: false,
-    centerMode: true,
+    centerMode: false,
     focusOnSelect: true,
   });
 
@@ -436,7 +436,7 @@ $(document).ready(function () {
     arrows: false,
     fade: false,
     asNavFor: ".slider-nav",
-    autoplay: true, // Enable autoplay
+    autoplay: false, // Enable autoplay
     autoplaySpeed: 2000,
     prevArrow:
       '<button type="button" class="slick-prev "><i class="fa-light fa-angle-left"></i></button>',
