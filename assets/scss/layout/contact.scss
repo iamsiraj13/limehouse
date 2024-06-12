@@ -110,15 +110,17 @@
                 }
 
             }
-            & span{
+            & p{
                 font-size: 24px;
                 color:var(--tp-theme-purple);
                 font-weight: 700;
                 @media #{$sm}{
                     font-size: 10px;
+                    line-height: 15px;
                 }
                 @media #{$xs}{
                     font-size: 10px;
+                    line-height: 15px;
                 }
 
             }
@@ -126,9 +128,11 @@
         & label{
             @media #{$sm}{
                 font-size: 10px;
+                color:var(--tp-theme-purple)
             }
             @media #{$xs}{
                 font-size: 10px;
+                color:var(--tp-theme-purple)
             }
         }
         & input{
@@ -137,6 +141,12 @@
             border:1px solid #494949;
             padding:5px 10px;
             font-size:16px;
+            @media #{$sm}{
+                 border-color:var(--tp-theme-purple)
+            }
+            @media #{$xs}{
+                 border-color:var(--tp-theme-purple)
+            }
 
         }
         & textarea{
@@ -146,6 +156,12 @@
             height:148px;
             padding:5px 10px;
             font-size:16px;
+            @media #{$sm}{
+                border-color:var(--tp-theme-purple)
+           }
+           @media #{$xs}{
+                border-color:var(--tp-theme-purple)
+           }
 
         }
         & button{
@@ -153,6 +169,12 @@
             color:white;
             border-radius:30px;
             margin-top: 39px;
+            @media #{$sm}{
+                background-color:var(--tp-theme-purple)
+           }
+           @media #{$xs}{
+                background-color:var(--tp-theme-purple)
+           }
         }
     }
 }
@@ -195,6 +217,24 @@
     & .donate__contact{
         & button{
             font-size: 32px;
+            @media #{$sm}{
+                font-size: 12px;
+            }
+            @media #{$xs}{
+                font-size: 12px;
+            }
+        }
+        & a{
+            font-size: 32px;
+            border-top-color: #fff;
+            display:inline-block;
+            color:var(--tp-theme-green);
+            @media #{$sm}{
+                font-size: 12px;
+            }
+            @media #{$xs}{
+                font-size: 12px;
+            }
         }
     }
 }

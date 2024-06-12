@@ -87,6 +87,11 @@ body {
   color: var(--tp-text-body);
   line-height: 26px;
   overflow-x: hidden;
+  position: relative;
+}
+
+body, html {
+  scroll-behavior: smooth;
 }
 
 a {
@@ -457,6 +462,16 @@ input[type=color] {
   color: inherit;
   text-transform: capitalize;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .shape_u {
+    background-size: contain;
+  }
+}
+@media (max-width: 575px) {
+  .shape_u {
+    background-size: contain;
+  }
+}
 
 .section__title {
   font-size: 64px;
@@ -803,10 +818,11 @@ input[type=color] {
   border-radius: 30px;
   color: white;
   font-size: 10px;
-  font-weight: 700;
-  padding: 8px 20px;
+  font-weight: 600;
+  padding: 10px 25px;
   text-transform: uppercase;
-  line-height: 1;
+  letter-spacing: 1px;
+  line-height: 1.1;
 }
 .mobile__menu .offcanvas-header {
   background-color: var(--tp-theme-purple);
@@ -1254,20 +1270,30 @@ input[type=color] {
   position: relative;
   color: white;
   z-index: 9;
-  padding: 0 30px;
+  padding: 0 48px;
   text-align: center;
+}
+.hero__mobile .hero__mobile-content span {
+  text-transform: uppercase;
+  line-height: 23px;
+  font-size: 14px;
 }
 .hero__mobile .hero__mobile-content h2 {
   font-size: 32px;
   font-weight: 700;
   color: white;
   margin-top: 15px;
+  margin-bottom: 29px;
+}
+.hero__mobile .hero__mobile-content h2 span {
+  text-transform: lowercase;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero__mobile .hero__mobile-content h2 span {
     padding: 15px 0;
     background-position: 100% 90%;
     background-size: 100% 17%;
+    font-size: inherit;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -1275,19 +1301,24 @@ input[type=color] {
     padding: 15px 0;
     background-position: 100% 90%;
     background-size: 100% 17%;
+    font-size: inherit;
   }
 }
 @media (max-width: 575px) {
   .hero__mobile .hero__mobile-content h2 span {
     padding: 15px 0;
     background-position: 100% 90%;
-    background-size: 100% 17%;
+    background-size: contain;
+    font-size: inherit;
+    text-transform: capitalize !important;
   }
 }
 .hero__mobile .hero__mobile-content p {
   font-size: 12px;
   font-weight: 400;
   color: white;
+  line-height: 20px;
+  padding: 0 18px;
 }
 .hero__mobile .hero__mobile-content button {
   background-color: #fff;
@@ -1348,11 +1379,13 @@ input[type=color] {
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .understand__area .understand__content span {
     font-size: 14px;
+    letter-spacing: 2px;
   }
 }
 @media (max-width: 575px) {
   .understand__area .understand__content span {
     font-size: 14px;
+    letter-spacing: 2px;
   }
 }
 .understand__area .understand__content h2 {
@@ -1372,16 +1405,22 @@ input[type=color] {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .understand__area .understand__content h2 {
     font-size: 32px;
+    margin-top: 15px;
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 575px) {
   .understand__area .understand__content h2 {
     font-size: 32px;
+    margin-top: 15px;
+    margin-bottom: 30px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .understand__area .understand__content h2 {
     font-size: 32px;
+    margin-top: 15px;
+    margin-bottom: 30px;
   }
 }
 .understand__area .understand__content h2 span {
@@ -1414,6 +1453,7 @@ input[type=color] {
   .understand__area .understand__content p {
     font-size: 12px;
     line-height: 20px;
+    padding: 0 30px;
   }
 }
 .understand__area .understand__content button {
@@ -1479,6 +1519,38 @@ input[type=color] {
     padding: 47px 0;
   }
 }
+.services__area .custom-dot {
+  background-color: #fff;
+  border: 1px solid #494949;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  font-size: 0;
+}
+.services__area .custom-dot:hover {
+  background-color: #000;
+}
+.services__area .slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 5px;
+}
+.services__area .slick-dots li {
+  display: inline-block;
+}
+.services__area .slick-dots li button {
+  width: 12px !important;
+  height: 12px !important;
+  padding: 0;
+  transition: all 0.3s;
+}
+.services__area .slick-dots li.slick-active button {
+  background-color: black;
+  width: 15px;
+}
 .services__area .services__heading {
   margin-bottom: 74px;
 }
@@ -1516,7 +1588,7 @@ input[type=color] {
 @media (max-width: 575px) {
   .services__area .services__heading span {
     font-size: 12px;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
     letter-spacing: 2px;
   }
 }
@@ -1583,14 +1655,14 @@ input[type=color] {
 }
 .services__area .service__card .service__content {
   text-align: center;
-  padding: 50px 54px;
+  padding: 50px 0;
 }
 .services__area .service__card .service__content h3 {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 30px;
   text-transform: uppercase;
-  padding: 0 26%;
+  padding: 0 17%;
   text-align: center;
 }
 .services__area .service__card .service__content p {
@@ -1598,6 +1670,7 @@ input[type=color] {
   font-size: 16px;
   font-weight: 400;
   line-height: 25px;
+  padding: 0 50px;
 }
 .services__area .service__card .service__content button {
   text-transform: capitalize;
@@ -1858,18 +1931,23 @@ input[type=color] {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .testimonial__area .testimonial__heading p {
     padding: 0;
+    line-height: 20px;
   }
 }
 @media (max-width: 575px) {
   .testimonial__area .testimonial__heading p {
     padding: 0;
     font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 30px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .testimonial__area .testimonial__heading p {
     padding: 0;
+    line-height: 20px;
     font-size: 12px;
+    margin-bottom: 30px;
   }
 }
 .testimonial__area .testimonial__heading h2 {
@@ -1882,12 +1960,14 @@ input[type=color] {
   .testimonial__area .testimonial__heading h2 {
     font-size: 32px;
     background-size: 65%;
+    padding: 4px 0;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .testimonial__area .testimonial__heading h2 {
     font-size: 32px;
     background-size: 65%;
+    padding: 4px 0;
   }
 }
 .testimonial__area .testimonial__content .testimonial__box {
@@ -2041,7 +2121,8 @@ input[type=color] {
 }
 @media (max-width: 575px) {
   .newsletter__area .newsletter__form input {
-    width: 276px;
+    width: 203px;
+    font-size: 12px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -2054,6 +2135,16 @@ input[type=color] {
   text-align: center;
   font-weight: 700;
   font-size: 16px;
+}
+@media (max-width: 575px) {
+  .newsletter__area .newsletter__form input::placeholder {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .newsletter__area .newsletter__form input::placeholder {
+    font-size: 12px;
+  }
 }
 .newsletter__area button {
   font-size: 16px;
@@ -2079,11 +2170,11 @@ input[type=color] {
   }
 }
 .newsletter__area .arr {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
-  line-height: 30px;
-  font-size: 14px;
+  line-height: 39px;
+  font-size: 17px;
   text-align: center;
   display: block;
   background-color: #fff;
@@ -2315,6 +2406,11 @@ input[type=color] {
   padding-right: 30px;
   margin-bottom: 38px;
 }
+@media (max-width: 575px) {
+  .service__area__mobile .service__mobile__title {
+    margin-bottom: 18px;
+  }
+}
 .service__area__mobile .service__mobile__title span {
   font-size: 14px;
   text-transform: uppercase;
@@ -2330,43 +2426,73 @@ input[type=color] {
   font-size: 12px;
   line-height: 1.4;
 }
-.service__area__mobile .service__card_mobile {
-  display: flex;
-  align-items: center;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  margin-bottom: 15px;
-  border-radius: 30px;
-  width: 100%;
-  height: 180px;
-}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .service__area__mobile .service__card_mobile {
-    height: 240px;
+  .service__area__mobile .service__mobile__title p {
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0 36px;
   }
 }
-.service__area__mobile .service__card_mobile img {
-  width: 240px;
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .service__area__mobile .service__mobile__title p {
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0 36px;
+  }
+}
+@media (max-width: 575px) {
+  .service__area__mobile .service__mobile__title p {
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0 36px;
+  }
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.service__card__mobile {
+  width: 310px;
+  min-height: 189px;
   height: 100%;
-  object-fit: cover;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-}
-.service__area__mobile .service__card_mobile .s__mobile__content {
-  padding: 20px;
-}
-.service__area__mobile .service__card_mobile .s__mobile__content h3 {
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.service__area__mobile .service__card_mobile .s__mobile__content p {
-  font-size: 10px;
-  line-height: 1.4;
-}
-.service__area__mobile .service__card_mobile .s__mobile__content button {
+  margin: auto;
+  margin-bottom: 15px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 30px;
+}
+.service__card__mobile .service__card__mobile__img {
+  width: 40%;
+  height: 100%;
+}
+.service__card__mobile .service__card__mobile__img img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.service__card__mobile .service__mobile__content {
+  width: 60%;
+  padding: 20px 27px 22px 23px;
+}
+.service__card__mobile .service__mobile__content h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.service__card__mobile .service__mobile__content p {
   font-size: 10px;
-  padding: 6px 20px;
+  font-weight: 300;
+  line-height: 15px;
+}
+.service__card__mobile .service__mobile__content a {
+  display: inline-block;
+  width: 82px;
+  line-height: 25px;
+  font-size: 10px;
+  text-align: center;
+  border-radius: 50px;
 }
 
 .benefits__area {
@@ -2376,19 +2502,19 @@ input[type=color] {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .benefits__area {
     text-align: center;
-    padding: 47px 0;
+    padding: 47px 0 17px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .benefits__area {
     text-align: center;
-    padding: 47px 0;
+    padding: 47px 0 17px;
   }
 }
 @media (max-width: 575px) {
   .benefits__area {
     text-align: center;
-    padding: 47px 0;
+    padding: 47px 0 17px;
   }
 }
 .benefits__area .benefits__content {
@@ -2435,7 +2561,7 @@ input[type=color] {
 @media (max-width: 575px) {
   .benefits__area .benefits__content h2 {
     font-size: 32px;
-    margin-bottom: 30px;
+    margin-bottom: 26px;
     padding: 0 100px;
     line-height: 1.3;
   }
@@ -2465,6 +2591,16 @@ input[type=color] {
   text-align: center;
   margin-bottom: 10px;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .benefits__area .benefits__content img {
+    margin-bottom: 34px;
+  }
+}
+@media (max-width: 575px) {
+  .benefits__area .benefits__content img {
+    margin-bottom: 34px;
+  }
+}
 .benefits__area .benefits__content span {
   display: inline-block;
   color: var(--tp-theme-purple);
@@ -2482,14 +2618,16 @@ input[type=color] {
     font-size: 14px;
     margin-top: 0;
     line-height: 21px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 @media (max-width: 575px) {
   .benefits__area .benefits__content span {
     font-size: 14px;
     margin-top: 0;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 70px;
+    padding-right: 70px;
     line-height: 21px;
   }
 }
@@ -2505,24 +2643,24 @@ input[type=color] {
   .benefits__area .benefits__content p {
     line-height: 20px;
     font-size: 12px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .benefits__area .benefits__content p {
     line-height: 20px;
     font-size: 12px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
   }
 }
 @media (max-width: 575px) {
   .benefits__area .benefits__content p {
     line-height: 20px;
     font-size: 12px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
   }
 }
 .benefits__area .benefits__img {
@@ -2564,6 +2702,7 @@ input[type=color] {
     font-size: 20px;
     padding-left: 40px;
     padding-right: 40px;
+    margin-bottom: 15px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -2571,13 +2710,15 @@ input[type=color] {
     font-size: 20px;
     padding-left: 40px;
     padding-right: 40px;
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 575px) {
   .benefits__contacts .benefits__contacts-content h3 {
     font-size: 12px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-bottom: 15px;
   }
 }
 .benefits__contacts .benefits__contacts-content a {
@@ -2587,6 +2728,11 @@ input[type=color] {
   font-weight: 400;
   text-transform: capitalize;
   border-radius: 30px;
+}
+@media (max-width: 575px) {
+  .benefits__contacts .benefits__contacts-content a {
+    font-size: 12px;
+  }
 }
 
 .benefits__quote {
@@ -2642,12 +2788,17 @@ input[type=color] {
   .benefits__quote .benefits__quote-card p {
     padding: 12px 0;
     font-size: 10px;
+    margin: 20px 0;
+    line-height: 16px;
+    font-weight: 300;
   }
 }
 @media (max-width: 575px) {
   .benefits__quote .benefits__quote-card p {
-    padding: 12px 0;
+    margin: 20px 0;
     font-size: 10px;
+    line-height: 16px;
+    font-weight: 300;
   }
 }
 .benefits__quote .benefits__quote-card a {
@@ -2655,6 +2806,21 @@ input[type=color] {
   padding: 12px 20px;
   border-radius: 30px;
   color: var(--tp-theme-purple);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .benefits__quote .benefits__quote-card a {
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .benefits__quote .benefits__quote-card a {
+    font-size: 10px;
+  }
+}
+@media (max-width: 575px) {
+  .benefits__quote .benefits__quote-card a {
+    font-size: 10px;
+  }
 }
 
 .green {
@@ -2712,19 +2878,20 @@ input[type=color] {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .benefits__quote-title h2 span {
-    padding: 14px 0;
+    padding-bottom: 14px;
     background-position: 0 50px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .benefits__quote-title h2 span {
-    padding: 14px 0;
+    padding-bottom: 14px;
     background-position: 0 50px;
+    background-size: 100%;
   }
 }
 @media (max-width: 575px) {
   .benefits__quote-title h2 span {
-    padding: 14px 0;
+    padding-bottom: 14px;
     background-position: 0 50px;
     background-size: 100%;
   }
@@ -2734,17 +2901,20 @@ input[type=color] {
   .quote1 {
     font-size: 14px;
     display: block;
+    padding-bottom: 0;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .quote1 {
     font-size: 14px;
     display: block;
+    padding-bottom: 0 !important;
   }
 }
 @media (max-width: 575px) {
   .quote1 {
     font-size: 14px;
+    padding-bottom: 0 !important;
     display: block;
   }
 }
@@ -2793,16 +2963,22 @@ input[type=color] {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .support__content h2 {
     font-size: 32px;
+    margin-bottom: 25px;
+    padding: 0 47px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .support__content h2 {
     font-size: 32px;
+    margin-bottom: 25px;
+    padding: 0 47px;
   }
 }
 @media (max-width: 575px) {
   .support__content h2 {
     font-size: 32px;
+    margin-bottom: 25px;
+    padding: 0 57px;
   }
 }
 .support__content h2 span {
@@ -2813,21 +2989,24 @@ input[type=color] {
   .support__content h2 span {
     background-size: 100%;
     background-position: 100% 100%;
-    margin: 10px 0;
+    padding: 10px 0;
+    font-size: inherit;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .support__content h2 span {
     background-size: 100%;
     background-position: 100% 100%;
-    margin: 10px 0;
+    padding: 10px 0;
+    font-size: inherit;
   }
 }
 @media (max-width: 575px) {
   .support__content h2 span {
     background-size: 100%;
     background-position: 100% 100%;
-    margin: 10px 0;
+    padding: 10px 0;
+    font-size: inherit;
   }
 }
 .support__content span {
@@ -2838,16 +3017,28 @@ input[type=color] {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .support__content span {
     margin: 8px;
+    font-size: 14px;
+    line-height: 23px;
+    padding: 0 72px;
+    letter-spacing: 1px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .support__content span {
     margin: 8px;
+    font-size: 14px;
+    line-height: 23px;
+    padding: 0 72px;
+    letter-spacing: 1px;
   }
 }
 @media (max-width: 575px) {
   .support__content span {
     margin: 8px;
+    font-size: 14px;
+    line-height: 23px;
+    padding: 0 72px;
+    letter-spacing: 1px;
   }
 }
 .support__content p {
@@ -2883,17 +3074,17 @@ input[type=color] {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .features__area .feature__content {
-    padding: 30px 20px;
+    padding: 33px 34px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .features__area .feature__content {
-    padding: 30px 20px;
+    padding: 33px 34px;
   }
 }
 @media (max-width: 575px) {
   .features__area .feature__content {
-    padding: 30px 20px;
+    padding: 33px 34px;
   }
 }
 .features__area .feature__content h3 {
@@ -2901,11 +3092,40 @@ input[type=color] {
   font-weight: 700;
   text-transform: uppercase;
 }
+@media (max-width: 575px) {
+  .features__area .feature__content h3 {
+    margin-bottom: 22px;
+  }
+}
 .features__area .feature__content p {
   font-size: 16px;
   font-weight: 400;
   color: #494949;
   margin: 30px 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .features__area .feature__content p {
+    font-size: 10px;
+    line-height: 16px;
+    padding: 0 30px;
+    margin: 22px 0;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .features__area .feature__content p {
+    font-size: 10px;
+    line-height: 16px;
+    padding: 0 30px;
+    margin: 22px 0;
+  }
+}
+@media (max-width: 575px) {
+  .features__area .feature__content p {
+    font-size: 10px;
+    line-height: 16px;
+    padding: 0 30px;
+    margin: 22px 0;
+  }
 }
 .features__area .feature__content button {
   font-size: 16px;
@@ -2914,12 +3134,67 @@ input[type=color] {
   color: white;
   border-radius: 30px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .features__area .feature__content button {
+    font-size: 13px;
+    padding: 6px 40px !important;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .features__area .feature__content button {
+    font-size: 13px;
+    padding: 6px 40px !important;
+  }
+}
+@media (max-width: 575px) {
+  .features__area .feature__content button {
+    font-size: 13px;
+    padding: 6px 40px !important;
+  }
+}
 
 .donate_btn {
   border-radius: 30px;
   margin-bottom: 30px;
   color: white;
   margin-top: 15px;
+  text-transform: uppercase;
+}
+@media (max-width: 575px) {
+  .donate_btn {
+    padding: 6px 0;
+    font-size: 13px;
+    width: 153px;
+    margin-bottom: 47px;
+    text-transform: uppercase;
+  }
+}
+
+.partner__contact {
+  background-color: var(--tp-theme-orange);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .partner__contact {
+    background-color: var(--tp-theme-pink);
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .partner__contact {
+    background-color: var(--tp-theme-pink);
+  }
+}
+@media (max-width: 575px) {
+  .partner__contact {
+    background-color: var(--tp-theme-pink);
+  }
+}
+.partner__contact button {
+  color: var(--tp-theme-orange);
+}
+@media (max-width: 575px) {
+  .partner__contact button {
+    color: var(--tp-theme-pink);
+  }
 }
 
 .hero__blog .hero__content {
@@ -3047,6 +3322,47 @@ input[type=color] {
   color: white;
   border-radius: 30px;
   padding: 12px 22px;
+}
+
+.blog__card_mobile {
+  width: 310px;
+  height: 189px;
+  margin: auto;
+  margin-bottom: 15px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 30px;
+}
+.blog__card_mobile .blog__card__mobile__img {
+  width: 40%;
+  height: 100%;
+}
+.blog__card_mobile .blog__card__mobile__img img {
+  width: 100%;
+  height: 100%;
+}
+.blog__card_mobile .blog__mobile__content {
+  width: 60%;
+  padding: 20px 27px 22px 23px;
+}
+.blog__card_mobile .blog__mobile__content h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.blog__card_mobile .blog__mobile__content p {
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 15px;
+}
+.blog__card_mobile .blog__mobile__content a {
+  display: inline-block;
+  width: 82px;
+  line-height: 25px;
+  font-size: 10px;
+  text-align: center;
+  border-radius: 50px;
 }
 
 .blog__details {
@@ -3416,6 +3732,11 @@ input[type=color] {
   border-radius: 30px;
 }
 @media (max-width: 575px) {
+  .donate__content .donate__service .lim_card .lim_card_content {
+    padding: 0;
+  }
+}
+@media (max-width: 575px) {
   .donate__content .donate__service .lim_card .lim_card_content h3 {
     font-weight: 700;
   }
@@ -3498,18 +3819,21 @@ input[type=color] {
   .donate__content .donate__service .lim_card h3 {
     font-size: 32px;
     margin-bottom: 30px;
+    padding: 0 15px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .donate__content .donate__service .lim_card h3 {
     font-size: 22px;
     margin-bottom: 30px;
+    padding: 0 15px;
   }
 }
 @media (max-width: 575px) {
   .donate__content .donate__service .lim_card h3 {
     font-size: 32px;
     margin-bottom: 30px;
+    padding: 0 15px;
   }
 }
 .donate__content .donate__service .lim_card span {
@@ -3533,7 +3857,7 @@ input[type=color] {
 @media (max-width: 575px) {
   .donate__content .donate__service .lim_card span {
     font-size: 14px;
-    margin: 20px 0;
+    margin-bottom: 30px;
   }
 }
 .donate__content .donate__service .lim_card p {
@@ -3546,19 +3870,22 @@ input[type=color] {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .donate__content .donate__service .lim_card p {
     font-size: 18px;
-    line-height: 1.3;
+    line-height: 20px;
+    padding: 0 22px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .donate__content .donate__service .lim_card p {
     font-size: 12px;
-    line-height: 1.3;
+    line-height: 20px;
+    padding: 0 22px;
   }
 }
 @media (max-width: 575px) {
   .donate__content .donate__service .lim_card p {
     font-size: 12px;
-    line-height: 1.3;
+    line-height: 20px;
+    padding: 0 22px;
   }
 }
 .donate__content .donate__service .lim_card button {
@@ -3577,11 +3904,15 @@ input[type=color] {
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .donate__content .donate__service .lim_card button {
     margin-top: 30px;
+    font-size: 13px;
+    padding: 8px 64px;
   }
 }
 @media (max-width: 575px) {
   .donate__content .donate__service .lim_card button {
     margin-top: 30px;
+    font-size: 13px;
+    padding: 8px 64px;
   }
 }
 
@@ -3611,26 +3942,36 @@ input[type=color] {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .donars__area h3 {
-    padding: 10px 0;
+    padding: 0 116px;
     text-align: center;
-    font-size: 30px;
+    font-size: 12px;
     padding-top: 50px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .donars__area h3 {
-    padding: 10px 0;
+    padding: 0 116px;
     text-align: center;
-    font-size: 20px;
+    font-size: 12px;
     padding-top: 50px;
   }
 }
 @media (max-width: 575px) {
   .donars__area h3 {
-    padding: 10px 0;
+    padding: 0 116px;
     text-align: center;
-    font-size: 20px;
+    font-size: 12px;
     padding-top: 50px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .donars__area .donars__slider {
+    margin-bottom: 27px;
+  }
+}
+@media (max-width: 575px) {
+  .donars__area .donars__slider {
+    margin-bottom: 27px;
   }
 }
 .donars__area .donars__slider .donars__slider-item {
@@ -3684,11 +4025,13 @@ input[type=color] {
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .donate__contact h4 {
     font-size: 12px;
+    line-height: 10px;
   }
 }
 @media (max-width: 575px) {
   .donate__contact h4 {
     font-size: 12px;
+    line-height: 10px;
   }
 }
 .donate__contact button {
@@ -3870,29 +4213,33 @@ input[type=color] {
     text-transform: uppercase;
   }
 }
-.contact__area .contact__form .contact__title span {
+.contact__area .contact__form .contact__title p {
   font-size: 24px;
   color: var(--tp-theme-purple);
   font-weight: 700;
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-  .contact__area .contact__form .contact__title span {
+  .contact__area .contact__form .contact__title p {
     font-size: 10px;
+    line-height: 15px;
   }
 }
 @media (max-width: 575px) {
-  .contact__area .contact__form .contact__title span {
+  .contact__area .contact__form .contact__title p {
     font-size: 10px;
+    line-height: 15px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .contact__area .contact__form label {
     font-size: 10px;
+    color: var(--tp-theme-purple);
   }
 }
 @media (max-width: 575px) {
   .contact__area .contact__form label {
     font-size: 10px;
+    color: var(--tp-theme-purple);
   }
 }
 .contact__area .contact__form input {
@@ -3902,6 +4249,16 @@ input[type=color] {
   padding: 5px 10px;
   font-size: 16px;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .contact__area .contact__form input {
+    border-color: var(--tp-theme-purple);
+  }
+}
+@media (max-width: 575px) {
+  .contact__area .contact__form input {
+    border-color: var(--tp-theme-purple);
+  }
+}
 .contact__area .contact__form textarea {
   width: 100%;
   border-radius: 30px;
@@ -3910,11 +4267,31 @@ input[type=color] {
   padding: 5px 10px;
   font-size: 16px;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .contact__area .contact__form textarea {
+    border-color: var(--tp-theme-purple);
+  }
+}
+@media (max-width: 575px) {
+  .contact__area .contact__form textarea {
+    border-color: var(--tp-theme-purple);
+  }
+}
 .contact__area .contact__form button {
   font-size: 16px;
   color: white;
   border-radius: 30px;
   margin-top: 39px;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .contact__area .contact__form button {
+    background-color: var(--tp-theme-purple);
+  }
+}
+@media (max-width: 575px) {
+  .contact__area .contact__form button {
+    background-color: var(--tp-theme-purple);
+  }
 }
 
 .mb-15 {
@@ -3957,6 +4334,32 @@ input[type=color] {
 
 .contact_donate__btn .donate__contact button {
   font-size: 32px;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .contact_donate__btn .donate__contact button {
+    font-size: 12px;
+  }
+}
+@media (max-width: 575px) {
+  .contact_donate__btn .donate__contact button {
+    font-size: 12px;
+  }
+}
+.contact_donate__btn .donate__contact a {
+  font-size: 32px;
+  border-top-color: #fff;
+  display: inline-block;
+  color: var(--tp-theme-green);
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .contact_donate__btn .donate__contact a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 575px) {
+  .contact_donate__btn .donate__contact a {
+    font-size: 12px;
+  }
 }
 
 .location__area {
@@ -4001,6 +4404,24 @@ input[type=color] {
 .adress p span {
   margin-right: 10px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .adress p {
+    font-size: 10px;
+    margin-bottom: 18px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .adress p {
+    font-size: 10px;
+    margin-bottom: 18px;
+  }
+}
+@media (max-width: 575px) {
+  .adress p {
+    font-size: 10px;
+    margin-bottom: 18px;
+  }
+}
 .adress button {
   position: absolute;
   bottom: 40px;
@@ -4013,6 +4434,33 @@ input[type=color] {
     width: 100%;
     margin-bottom: 15px;
     background-color: var(--tp-theme-purple);
+  }
+}
+.adress .lock__num {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.adress .lock__num ul {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  list-style-type: none;
+}
+.adress .lock__num ul li {
+  background-color: red;
+  color: #fff;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 12px;
+  width: 37px;
+  line-height: 21px;
+}
+@media (max-width: 575px) {
+  .adress .lock__num ul li {
+    font-size: 12px;
+    width: 37px;
+    line-height: 21px;
   }
 }
 
@@ -4039,6 +4487,7 @@ input[type=color] {
 @media (max-width: 575px) {
   .google__maps iframe {
     height: 218px;
+    box-shadow: 0px 0px 25px 0px hsla(0, 0%, 0%, 0.15);
   }
 }
 
@@ -4048,6 +4497,10 @@ input[type=color] {
     border-radius: 30px;
     padding: 40px 20px;
   }
+}
+
+.location__content h2 {
+  padding: 0 !important;
 }
 
 .donation__area .donation__button {
@@ -4309,16 +4762,19 @@ input[type=color] {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .donation__area .gift__aid .gitf__pera p {
     font-size: 12px;
+    margin-bottom: -10px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .donation__area .gift__aid .gitf__pera p {
     font-size: 12px;
+    margin-bottom: -10px;
   }
 }
 @media (max-width: 575px) {
   .donation__area .gift__aid .gitf__pera p {
     font-size: 12px;
+    margin-bottom: -10px;
   }
 }
 .donation__area .gift_desc {
@@ -4352,16 +4808,19 @@ input[type=color] {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .donation__area .gift_desc p {
     font-size: 12px;
+    line-height: 20px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .donation__area .gift_desc p {
     font-size: 12px;
+    line-height: 20px;
   }
 }
 @media (max-width: 575px) {
   .donation__area .gift_desc p {
     font-size: 12px;
+    line-height: 20px;
   }
 }
 .donation__area .personal__info {
@@ -4689,9 +5148,18 @@ input[type=color] {
   max-width: 450px;
   line-height: 1.1;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .checkbox-text {
+    max-width: 70%;
+    font-size: 10px;
+    line-height: 15px;
+  }
+}
 @media (max-width: 575px) {
   .checkbox-text {
     max-width: 70%;
+    font-size: 10px;
+    line-height: 15px;
   }
 }
 
@@ -4703,7 +5171,7 @@ input[type=color] {
   position: relative;
   width: 40px;
   height: 40px;
-  background-color: #76C9D6;
+  border: 1px solid #76C9D6;
   border-radius: 3px;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -4977,7 +5445,7 @@ input[type=color] {
 }
 @media (max-width: 575px) {
   .impact__heading {
-    padding: 50px 30px;
+    padding: 50px 30px 30px;
   }
 }
 .impact__heading h2 {
@@ -5426,7 +5894,7 @@ input[type=color] {
   .growth__area .growth__wrapper .growth__desc p {
     font-size: 12px;
     margin-top: 44px;
-    padding: 0 20px;
+    padding: 0 70px;
     line-height: 20px;
   }
 }
@@ -5434,7 +5902,7 @@ input[type=color] {
   .growth__area .growth__wrapper .growth__desc p {
     font-size: 12px;
     margin-top: 44px;
-    padding: 0 20px;
+    padding: 0 70px;
     line-height: 20px;
   }
 }
@@ -5442,7 +5910,7 @@ input[type=color] {
   .growth__area .growth__wrapper .growth__desc p {
     font-size: 12px;
     margin-top: 44px;
-    padding: 0 20px;
+    padding: 0 70px;
     line-height: 20px;
   }
 }
@@ -5464,21 +5932,21 @@ input[type=color] {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .growth__area .growth__content {
-    padding: 39px 26px;
+    padding: 50px 47x;
     gap: 35px;
     width: 100%;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .growth__area .growth__content {
-    padding: 39px 26px;
+    padding: 50px 47x;
     gap: 35px;
     width: 100%;
   }
 }
 @media (max-width: 575px) {
   .growth__area .growth__content {
-    padding: 39px 26px;
+    padding: 50px 47x;
     gap: 35px;
     width: 100%;
   }
@@ -5490,7 +5958,17 @@ input[type=color] {
 }
 @media (max-width: 575px) {
   .growth__area .growth__content h3 {
-    font-size: 85px;
+    font-size: 117px;
+  }
+}
+@media (max-width: 575px) {
+  .growth__area .growth__content h3 {
+    font-size: 117px;
+  }
+}
+@media (max-width: 575px) {
+  .growth__area .growth__content h3 {
+    font-size: 117px;
   }
 }
 .growth__area .growth__content .growth__content__text {
@@ -5509,6 +5987,18 @@ input[type=color] {
     margin-bottom: 10px;
   }
 }
+@media (max-width: 575px) {
+  .growth__area .growth__content .growth__content__text h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 575px) {
+  .growth__area .growth__content .growth__content__text h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
 .growth__area .growth__content .growth__content__text p {
   font-size: 16px;
   font-weight: 400;
@@ -5517,7 +6007,22 @@ input[type=color] {
 @media (max-width: 575px) {
   .growth__area .growth__content .growth__content__text p {
     font-size: 10px;
-    line-height: 1.7;
+    line-height: 16px;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 575px) {
+  .growth__area .growth__content .growth__content__text p {
+    font-size: 10px;
+    line-height: 16px;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 575px) {
+  .growth__area .growth__content .growth__content__text p {
+    font-size: 10px;
+    line-height: 16px;
+    padding-right: 10px;
   }
 }
 
@@ -5594,21 +6099,21 @@ input[type=color] {
   .story__area__title h2 span {
     padding: 15px 0;
     background-position: 2% 90%;
-    background-size: 100% 17%;
+    background-size: contain;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .story__area__title h2 span {
     padding: 15px 0;
     background-position: 2% 90%;
-    background-size: 80% 17%;
+    background-size: contain;
   }
 }
 @media (max-width: 575px) {
   .story__area__title h2 span {
     padding: 15px 0;
     background-position: 2% 90%;
-    background-size: 80% 17%;
+    background-size: contain;
   }
 }
 
@@ -5811,16 +6316,19 @@ input[type=color] {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .story__area .story__bg .story__content span {
     font-size: 10px;
+    margin-bottom: 15px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .story__area .story__bg .story__content span {
     font-size: 10px;
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 575px) {
   .story__area .story__bg .story__content span {
     font-size: 10px;
+    margin-bottom: 15px;
   }
 }
 .story__area .story__bg .story__content h3 {
@@ -5834,6 +6342,7 @@ input[type=color] {
     font-size: 32px;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 15px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -5841,6 +6350,7 @@ input[type=color] {
     font-size: 16px;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 15px;
   }
 }
 @media (max-width: 575px) {
@@ -5848,6 +6358,7 @@ input[type=color] {
     font-size: 16px;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 15px;
   }
 }
 .story__area .story__bg .story__content p {
@@ -5864,6 +6375,7 @@ input[type=color] {
     font-size: 16px;
     text-align: center;
     padding-right: 0;
+    line-height: 16px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -5871,6 +6383,7 @@ input[type=color] {
     font-size: 10px;
     text-align: center;
     padding-right: 0;
+    line-height: 16px;
   }
 }
 @media (max-width: 575px) {
@@ -5878,6 +6391,7 @@ input[type=color] {
     font-size: 10px;
     text-align: center;
     padding-right: 0;
+    line-height: 16px;
   }
 }
 
@@ -6168,22 +6682,29 @@ input[type=color] {
   .people__area .people__content {
     margin-bottom: 30px;
     padding: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 36px 34px;
+    margin-bottom: 20px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .people__area .people__content {
     margin-bottom: 30px;
     padding: 21px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 36px 34px;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 575px) {
   .people__area .people__content {
-    margin-bottom: 30px;
     padding: 21px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 36px 34px;
+    margin-bottom: 20px;
   }
 }
 .people__area .people__content h3 {
@@ -6196,19 +6717,19 @@ input[type=color] {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .people__area .people__content h3 {
     font-size: 32px;
-    margin-bottom: 10px;
+    margin-bottom: 22px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .people__area .people__content h3 {
     font-size: 16px;
-    margin-bottom: 0;
+    margin-bottom: 22px;
   }
 }
 @media (max-width: 575px) {
   .people__area .people__content h3 {
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 22px;
   }
 }
 .people__area .people__content p {
@@ -6224,6 +6745,7 @@ input[type=color] {
     font-size: 16px;
     padding: 0;
     margin-bottom: 0;
+    line-height: 16px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -6231,6 +6753,7 @@ input[type=color] {
     font-size: 10px;
     padding: 0;
     margin-bottom: 0;
+    line-height: 16px;
   }
 }
 @media (max-width: 575px) {
@@ -6238,7 +6761,7 @@ input[type=color] {
     font-size: 10px;
     padding: 0;
     margin-bottom: 10px;
-    line-height: 1.7;
+    line-height: 16px;
   }
 }
 .people__area .people__content button {
@@ -6249,16 +6772,22 @@ input[type=color] {
   .people__area .people__content button {
     font-size: 13px;
     margin-top: 15px;
+    margin-top: 22px;
+    padding: 8px 24px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .people__area .people__content button {
     font-size: 13px;
+    margin-top: 22px;
+    padding: 8px 24px;
   }
 }
 @media (max-width: 575px) {
   .people__area .people__content button {
     font-size: 13px;
+    margin-top: 22px;
+    padding: 8px 24px;
   }
 }
 
@@ -6269,23 +6798,45 @@ input[type=color] {
   background-repeat: no-repeat !important;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .people__heading h2 .people_h {
+    padding: 15px 0 !important;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .people__heading h2 .people_h {
+    padding: 15px 0 !important;
+  }
+}
+@media (max-width: 575px) {
+  .people__heading h2 .people_h {
+    padding: 15px 0 !important;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .people__heading p {
     padding-left: 60px;
     padding-right: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 47px;
+    margin-top: 15px;
+    line-height: 20px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .people__heading p {
     padding-left: 30px;
     padding-right: 30px;
+    line-height: 20px;
+    margin-bottom: 47px;
+    margin-top: 15px;
   }
 }
 @media (max-width: 575px) {
   .people__heading p {
     padding-left: 15px;
     padding-right: 15px;
-    line-height: 1.3;
+    line-height: 20px;
+    margin-bottom: 47px;
+    margin-top: 15px;
   }
 }
 
@@ -7006,20 +7557,26 @@ input[type=color] {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .footer__area .footer__center-right p {
-    padding-left: 0;
+    padding: 0 71px;
     text-align: center;
+    font-size: 10px;
+    line-height: 16px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .footer__area .footer__center-right p {
-    padding-left: 0;
+    padding: 0 71px;
     text-align: center;
+    font-size: 10px;
+    line-height: 16px;
   }
 }
 @media (max-width: 575px) {
   .footer__area .footer__center-right p {
-    padding-left: 0;
+    padding: 0 71px;
     text-align: center;
+    font-size: 10px;
+    line-height: 16px;
   }
 }
 .footer__area .footer__center-right .client__logo img {

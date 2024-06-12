@@ -79,7 +79,8 @@
         font-size: 16px;
         color:white;
         @media #{$xs}{
-            width:276px;
+            width:203px;
+            font-size: 12px;
           }
         @media #{$sm}{
            font-size: 20px;
@@ -88,8 +89,14 @@
         &::placeholder{
             color:white;
             text-align: center;
-        font-weight: 700;
-        font-size: 16px;
+            font-weight: 700;
+            font-size: 16px;
+            @media #{$xs}{ 
+              font-size: 12px;
+            }
+            @media #{$sm}{
+              font-size: 12px;
+              }
         }
     
     }
@@ -111,11 +118,11 @@
           }
     }
     & .arr{
-        width:30px;
-        height:30px;
+        width:35px;
+        height:35px;
         border-radius:50%;
-        line-height:30px;
-        font-size: 14px;
+        line-height:39px;
+        font-size: 17px;
         text-align: center;
         display: block;
         background-color: #fff;

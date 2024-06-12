@@ -294,14 +294,15 @@
         clip-path: ellipse(91% 64% at 49% 26%);  
         background-color: var(--tp-theme-purple);
         & .menu__btn{
-            border:1px solid white;
+            border: 1px solid white;
             border-radius: 30px;
-            color:white;
+            color: white;
             font-size: 10px;
-            font-weight: 700;
-            padding:8px 20px;
+            font-weight: 600;
+            padding: 10px 25px;
             text-transform: uppercase;
-            line-height: 1;
+            letter-spacing: 1px;
+            line-height: 1.1;
         }
     }
 

@@ -35,12 +35,18 @@
         & h2{
             @media #{$md}{
                 font-size: 32px;
+                margin-bottom: 25px;
+                padding:0 47px;
             }
             @media #{$sm}{
                 font-size: 32px;
+                margin-bottom: 25px;
+                padding:0 47px;
             }
             @media #{$xs}{
                 font-size: 32px;
+                margin-bottom: 25px;
+                padding:0 57px;
             }
             & span{
                 display:inline-block;
@@ -48,17 +54,20 @@
                 @media #{$md}{
                     background-size: 100%;
                     background-position: 100% 100%;
-                    margin:10px 0;
+                    padding:10px 0;
+                    font-size: inherit;
                 }
                 @media #{$sm}{
                     background-size: 100%;
                     background-position: 100% 100%;
-                    margin:10px 0;
+                    padding:10px 0;
+                    font-size: inherit;
                 }
                 @media #{$xs}{
                     background-size: 100%;
                     background-position: 100% 100%;
-                    margin:10px 0;
+                    padding:10px 0;
+                    font-size: inherit;
                 }
             }
 
@@ -69,12 +78,24 @@
             display:block;
             @media #{$md}{
                 margin: 8px;
+                font-size: 14px;
+                line-height: 23px;
+                padding:0 72px;
+                letter-spacing: 1px;
              }
             @media #{$sm}{
                 margin: 8px;
+                font-size: 14px;
+                line-height: 23px;
+                padding:0 72px;
+                letter-spacing: 1px;
              }
             @media #{$xs}{
                 margin: 8px;
+                font-size: 14px;
+                line-height: 23px;
+                padding:0 72px;
+                letter-spacing: 1px;
              }
         }
         & p{
@@ -106,24 +127,46 @@
         text-align: center;
         margin-bottom: 30px;
         @media #{$md}{
-            padding:30px 20px;
+            padding:33px 34px;
         }
         @media #{$sm}{
-            padding:30px 20px;
+            padding:33px 34px;
         }
         @media #{$xs}{
-            padding:30px 20px;
+            padding:33px 34px;
         }
         & h3{
             font-size: 20px;
             font-weight: 700;
             text-transform: uppercase;
+            @media #{$xs}{
+                margin-bottom: 22px;
+            }
         }
         & p{
             font-size: 16px;
             font-weight: 400;
             color:#494949;
             margin:30px 0;
+            @media #{$md}{
+                font-size: 10px;
+                line-height: 16px;
+                padding:0 30px;
+                margin:22px 0;
+                 
+            }
+            @media #{$sm}{
+                font-size: 10px;
+                line-height: 16px;
+                padding:0 30px; 
+                margin:22px 0;
+            }
+            @media #{$xs}{
+                font-size: 10px;
+                line-height: 16px;
+                padding:0 30px;  
+                margin:22px 0;
+            }
         }
         & button{
             font-size: 16px;
@@ -131,6 +174,19 @@
             text-transform: capitalize;
             color:white;
             border-radius:30px;
+            @media #{$md}{
+                font-size:13px;
+                padding:6px 40px !important;
+            }
+            @media #{$sm}{
+                font-size:13px;
+                padding:6px 40px !important;
+            }
+            @media #{$xs}{
+                font-size:13px;
+                padding:6px 40px !important;
+            }
+
         }
     }
 }
@@ -140,5 +196,32 @@
     margin-bottom: 30px;
     color:white;
     margin-top: 15px;
+    text-transform: uppercase;
+    @media #{$xs}{
+        padding:6px 0;
+        font-size:13px;
+        width:153px;
+        margin-bottom: 47px;
+        text-transform: uppercase;
+    }
 
+}
+
+.partner__contact{
+    background-color: var(--tp-theme-orange);
+    @media #{$md}{
+        background-color: var(--tp-theme-pink);
+    }
+    @media #{$sm}{
+        background-color: var(--tp-theme-pink);
+    }
+    @media #{$xs}{
+        background-color: var(--tp-theme-pink);
+    }
+    & button{
+        color:var(--tp-theme-orange);
+        @media #{$xs}{
+            color: var(--tp-theme-pink);
+        }
+    }
 }

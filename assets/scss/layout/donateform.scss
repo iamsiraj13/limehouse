@@ -214,12 +214,17 @@
                 color:#fff;
                 @media #{$md}{
                     font-size: 12px;
+                    margin-bottom: -10px;
                 }
                 @media #{$sm}{
                     font-size: 12px;
+                    margin-bottom: -10px;
                 }
                 @media #{$xs}{
                     font-size: 12px;
+                    margin-bottom: -10px;
+                    
+                    
                 }
             }
         }
@@ -247,12 +252,15 @@
             font-weight: 400;
             @media #{$md}{
                 font-size:12px;
+                line-height: 20px;
             }
             @media #{$sm}{
                 font-size:12px;
+                line-height: 20px;
             }
             @media #{$xs}{
                 font-size:12px;
+                line-height: 20px;
             }
         }
     }
@@ -525,8 +533,15 @@
     width:100%;
     max-width:450px;
     line-height: 1.1;
+    @media #{$sm}{
+        max-width:70%;
+        font-size: 10px;
+        line-height: 15px;
+    }
     @media #{$xs}{
         max-width:70%;
+        font-size: 10px;
+        line-height: 15px;
     }
 }
 
@@ -538,7 +553,7 @@
     position: relative;
     width: 40px;
     height: 40px;
-    background-color:#76C9D6;
+    border:1px solid #76C9D6;
     border-radius: 3px;
     cursor: pointer;
     transition: background-color 0.3s;

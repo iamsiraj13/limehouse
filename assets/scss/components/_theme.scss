@@ -46,6 +46,10 @@ body {
 	color: var(--tp-text-body);
 	line-height: 26px;
 	overflow-x: hidden;
+	position:relative;
+}
+body , html{
+	scroll-behavior: smooth;
 }
 
 a{
@@ -387,6 +391,12 @@ input[type="color"] {
 	font-size: inherit;
 	color:inherit;
 	text-transform: capitalize;
+	@media #{$sm}{
+		background-size: contain;
+	}
+	@media #{$xs}{
+		background-size: contain;
+	}
 }
 .section__title{
 	font-size: 64px;

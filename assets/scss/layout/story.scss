@@ -42,17 +42,17 @@
             @media #{$md}{
                 padding: 15px 0;
                 background-position: 2% 90%;
-                background-size: 100% 17%;
+                background-size:contain;
             }
             @media #{$sm}{
                 padding: 15px 0;
                 background-position: 2% 90%;
-                background-size: 80% 17%;
+                background-size:contain;
             }
             @media #{$xs}{
                 padding: 15px 0;
                 background-position: 2% 90%;
-                background-size: 80% 17%;
+                background-size:contain;
             }
         }
     }
@@ -242,12 +242,15 @@
                 text-transform: uppercase;
                 @media #{$md}{
                    font-size: 10px;
+                   margin-bottom: 15px;
                 }
                 @media #{$sm}{
                   font-size: 10px; 
+                  margin-bottom: 15px;
                 }
                 @media #{$xs}{
                     font-size: 10px; 
+                    margin-bottom: 15px;
                     
                 }
             }
@@ -261,16 +264,19 @@
                     font-size: 32px;
                     text-align: center;
                     text-transform: uppercase;
+                    margin-bottom: 15px;
                  }
                  @media #{$sm}{
                    font-size: 16px;
                    text-align: center;
                    text-transform: uppercase;
+                   margin-bottom: 15px;
                  }
                  @media #{$xs}{
                      font-size: 16px;
                      text-align: center;
                      text-transform: uppercase;
+                     margin-bottom: 15px;
                  }
             }
             & p{
@@ -283,16 +289,19 @@
                     font-size: 16px;
                     text-align: center;
                     padding-right: 0;
+                    line-height: 16px;
                  }
                  @media #{$sm}{
                    font-size: 10px;
                    text-align: center;
                    padding-right: 0;
+                   line-height: 16px;
                  }
                  @media #{$xs}{
                      font-size: 10px;
                      text-align: center;
                      padding-right: 0;
+                     line-height: 16px;
                  }
             }
         }

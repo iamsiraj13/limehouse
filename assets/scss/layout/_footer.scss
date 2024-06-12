@@ -107,16 +107,23 @@
                 padding-left: 297px; 
                 margin-bottom: 60px;
                 @media #{$md}{ 
-                    padding-left: 0;
+                    padding: 0 71px;
                     text-align: center;
+                    font-size: 10px;
+                    line-height: 16px;
                  }
                 @media #{$sm}{ 
-                    padding-left: 0;
+                    padding: 0 71px;
                     text-align: center;
+                    font-size: 10px;
+                    line-height: 16px;
                  }
                 @media #{$xs}{ 
-                    padding-left: 0;
+                    padding: 0 71px;
                     text-align: center;
+                    font-size: 10px;
+                    line-height: 16px;
+
                  }
             }
             & .client__logo {

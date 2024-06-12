@@ -191,7 +191,7 @@
 
             <div class="sidenav__button">
                <button class="donate"><a href="donate-form.html">Donate</a></button>
-               <button class="contact"><a href="contact.html"><a href="contact.htmlContact Us">Contact
+               <button class="contact"><a href="contact.html"><a href="contact.html">Contact
                         Us</a></a></button>
                <a class="phone"><i class="fa-sharp fa-light fa-phone"></i></a>
             </div>
@@ -232,13 +232,13 @@
             <form>
                <div class="donation__button">
                   <div class="donate__amount">
-                     <button class="">£5</button>
-                     <button class="">£10</button>
-                     <button class="">£25</button>
-                     <button class="">£50</button>
+                     <button class="dbtn" value="5" type="button">£5</button>
+                     <button class="dbtn" value="10" type="button">£10</button>
+                     <button class="dbtn" value="25" type="button">£25</button>
+                     <button class="dbtn" value="50" type="button">£50</button>
                   </div>
                   <div class="custom__amount">
-                     <input type="number" name="" placeholder="Custom Amount...">
+                     <input id="inputField" type="number" name="" placeholder="Custom Amount...">
                   </div>
 
                </div>
@@ -253,9 +253,10 @@
                      <div class="col-lg-5">
                         <div class="gift__amount">
 
-                           <div>£200</div>
+                           <div>£<span id="display1"></span>
+                           </div>
                            <div><i class="fa-sharp fa-regular fa-arrow-right"></i></div>
-                           <div>£250</div>
+                           <div>£<span id="display2"></span></div>
 
                         </div>
                      </div>
@@ -270,7 +271,7 @@
                      <div class="checkbox-container">
                         <span class="checkbox-text">I am a UK taxpayer, donating as an individual and would like
                            Limehouse Project to claim Gift Aid on my donation*</span>
-                        <input type="checkbox" id="custom-checkbox" class="custom-checkbox" checked>
+                        <input type="checkbox" id="custom-checkbox" class="custom-checkbox" required>
                         <label for="custom-checkbox" class="custom-checkbox-label"></label>
                      </div>
                   </div>

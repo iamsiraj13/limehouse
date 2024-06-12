@@ -16,9 +16,9 @@
       @media #{$xs}{
         padding:0 20px;
       }
-    @media #{$sm}{
-      padding:0 20px;
-      }
+      @media #{$sm}{
+        padding:0 20px;
+        }
         & span{
             color:white;
             text-transform: uppercase;
@@ -46,14 +46,19 @@
               }
             @media #{$md}{
                 padding: 0; 
+              line-height: 20px;
               }
             @media #{$xs}{
                 padding: 0;
                 font-size: 12px; 
-              }
-            @media #{$sm}{
-                padding: 0;
+                line-height: 20px;
+                margin-bottom: 30px;
+                }
+                @media #{$sm}{
+                  padding: 0;
+                  line-height: 20px;
                 font-size: 12px;
+                margin-bottom: 30px;
                 
               }
         }
@@ -65,10 +70,12 @@
             @media #{$xs}{
                 font-size: 32px;
                 background-size: 65%;
+                padding:4px 0;
               }
             @media #{$sm}{
                 font-size: 32px;
                 background-size: 65%;
+                padding:4px 0;
               }
         }
     }

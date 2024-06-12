@@ -184,7 +184,7 @@
         padding:50px 30px;
     }
     @media #{$xs}{
-        padding:50px 30px;
+        padding:50px 30px 30px;
     }
     & h2{
         padding:15px 0;
@@ -563,19 +563,19 @@
             @media #{$md}{
                 font-size: 12px;
                 margin-top: 44px;
-                padding:0 20px;
+                padding:0 70px;
                 line-height: 20px;
             }
             @media #{$sm}{
                 font-size: 12px;
                 margin-top: 44px;
-                padding:0 20px;
+                padding:0 70px;
                 line-height: 20px;
             }
             @media #{$xs}{
                 font-size: 12px;
                 margin-top: 44px;
-                padding:0 20px;
+                padding:0 70px;
                 line-height: 20px;
             }
            }
@@ -596,17 +596,17 @@
             width:542px;
         }
         @media #{$md}{
-            padding: 39px 26px;
+            padding: 50px 47x;
             gap:35px;
             width:100%;
         }
         @media #{$sm}{
-            padding: 39px 26px;
+            padding: 50px 47x;
             gap:35px;
             width:100%;
         }
         @media #{$xs}{
-            padding: 39px 26px;
+            padding: 50px 47x;
             gap:35px;
             width:100%;
         }
@@ -616,7 +616,13 @@
             font-weight: 700;
             color:white;
             @media #{$xs}{
-                font-size: 85px;
+                font-size: 117px;
+            }
+            @media #{$xs}{
+                font-size: 117px;
+            }
+            @media #{$xs}{
+                font-size: 117px;
             }
         }
 
@@ -635,6 +641,14 @@
                     font-size: 20px;
                     margin-bottom: 10px;
                 }
+                @media #{$xs}{
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+                @media #{$xs}{
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
             }
             & p{
                 font-size: 16px;
@@ -642,7 +656,18 @@
                 color:white;
                 @media #{$xs}{
                     font-size: 10px;
-                    line-height:1.7
+                    line-height:16px;
+                    padding-right: 10px;
+                }
+                @media #{$xs}{
+                    font-size: 10px;
+                    line-height:16px;
+                    padding-right: 10px;
+                }
+                @media #{$xs}{
+                    font-size: 10px;
+                    line-height:16px;
+                    padding-right: 10px;
                 }
             }
 

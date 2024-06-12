@@ -55,6 +55,39 @@ $(document).ready(function () {
     });
   }
 
+  // donate form button
+  function updateDisplays(value) {
+    $("#display1").text(value);
+    $("#display2").text(value);
+  }
+
+  $(".dbtn").click(function () {
+    var buttonValue = $(this).val();
+    updateDisplays(buttonValue);
+  });
+
+  $("#inputField").on("input", function () {
+    var inputValue = $(this).val();
+    updateDisplays(inputValue);
+  });
+
+  $("#inputField").on("input", function () {
+    var inputValue = $(this).val();
+    $("#display").text(inputValue);
+  });
+  // scroll spy
+  var offset = 150; // Adjust this value to your needs
+
+  $(".scrollButton").click(function () {
+    var target = $(this).data("target");
+    $("html, body").animate(
+      {
+        scrollTop: $(target).offset().top - offset,
+      },
+      1000
+    ); // 1000 milliseconds for the scroll effect duration
+  });
+
   // delivery js
 
   $(document).ready(function () {
@@ -142,7 +175,7 @@ $(document).ready(function () {
       }
     );
     BasicSlider.slick({
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 3000,
       slidesToShow: 4,
       centerPadding: "15px",
@@ -150,6 +183,9 @@ $(document).ready(function () {
       fade: false,
       sliderPerView: 4,
       arrows: true,
+      customPaging: function (slider, i) {
+        return '<button class="custom-dot"></button>';
+      },
       prevArrow:
         '<button type="button" class="slick-prev d-none"><i class="fa-sharp fa-light fa-circle-arrow-left"></i></button>',
       nextArrow:
@@ -178,7 +214,7 @@ $(document).ready(function () {
           settings: {
             sliderPerView: 1,
             slidesToShow: 1,
-            dots: false,
+            dots: true,
             arrows: false,
           },
         },
