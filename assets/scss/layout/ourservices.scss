@@ -78,18 +78,35 @@
     @media #{$xs}{
         padding:60px 0;
     }
-   }
-
+   } 
+ 
     &__card{
         background-color:white;
         border-radius:30px;
         margin-bottom: 30px;
+        transition:all 0.3s ease-in;
+
+        &:hover{
+            background-color: var(--tp-theme-pink);
+            & h3{
+                color:#fff !important;
+            }
+            & p{
+                color:#fff !important;
+            }
+
+            & a{
+                background-color: #fff !important;
+                color:var(--tp-theme-pink) !important;
+            }
+        }
+       
         
         &-content{
             margin:auto;
             width:564px;
             text-align: center;
-            padding:70px 60px;
+            padding:70px 0;
             @media #{$md}{
                 width:100%;
             }
@@ -115,6 +132,7 @@
                 font-size: 20px;
                 font-weight: 400;
                 color:#494949; 
+                padding:0 63px;
                 @media #{$sm}{
                     font-size: 14px;
                 }
@@ -130,6 +148,9 @@
                 text-transform: capitalize;
                 margin-top: 30px;
                 display:inline-block;
+                &:hover{
+                    color:inherit;
+                }
                 @media #{$sm}{
                     font-size: 12px;
                 }

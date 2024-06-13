@@ -492,6 +492,7 @@
             border-radius: 50%;
             color:#76C9D6;
             line-height: 24px;
+            z-index:99;
 
             transform:translateY(-50%);
             & i{
@@ -508,6 +509,7 @@
             background-color: #fff;
             border-radius: 50%;
             color:#76C9D6;
+            z-index:99;
             line-height: 24px;
             transform:translateY(-50%);
             & i{

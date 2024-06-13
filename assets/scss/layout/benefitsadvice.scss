@@ -206,8 +206,13 @@
             font-weight: 400; 
             text-transform: capitalize;
             border-radius: 30px;
+            @media #{$sm}{
+                font-size: 12px;
+                padding:8px 24px;
+            }
             @media #{$xs}{
                 font-size: 12px;
+                padding:8px 24px;
             }
         }
     }
@@ -259,12 +264,14 @@
                 margin:20px 0;
                 line-height: 16px;
                 font-weight: 300;
+                padding:0 41px;
             }
             @media #{$xs}{
                 margin:20px 0;
                 font-size: 10px;
                 line-height: 16px;
                 font-weight: 300;
+                padding:0 41px;
             }
         }
         & a{
@@ -341,7 +348,7 @@
                 background-size: 100%;
             }
             @media #{$xs}{
-                padding-bottom: 14px;
+                padding-bottom: 17px;
                 background-position: 0 50px;
                 background-size: 100%;
             }

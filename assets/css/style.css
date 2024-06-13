@@ -631,7 +631,7 @@ input[type=color] {
   width: fit-content;
   text-align: left;
   border-radius: 30px;
-  padding: 20px 10px 20px 20px;
+  padding: 20px 0 20px 20px;
   transition: all 0.3s;
   visibility: hidden;
   opacity: 0;
@@ -2280,12 +2280,26 @@ input[type=color] {
   background-color: white;
   border-radius: 30px;
   margin-bottom: 30px;
+  transition: all 0.3s ease-in;
+}
+.service__card:hover {
+  background-color: var(--tp-theme-pink);
+}
+.service__card:hover h3 {
+  color: #fff !important;
+}
+.service__card:hover p {
+  color: #fff !important;
+}
+.service__card:hover a {
+  background-color: #fff !important;
+  color: var(--tp-theme-pink) !important;
 }
 .service__card-content {
   margin: auto;
   width: 564px;
   text-align: center;
-  padding: 70px 60px;
+  padding: 70px 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .service__card-content {
@@ -2322,6 +2336,7 @@ input[type=color] {
   font-size: 20px;
   font-weight: 400;
   color: #494949;
+  padding: 0 63px;
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .service__card-content p {
@@ -2341,6 +2356,9 @@ input[type=color] {
   text-transform: capitalize;
   margin-top: 30px;
   display: inline-block;
+}
+.service__card-content a:hover {
+  color: inherit;
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .service__card-content a {
@@ -2729,9 +2747,16 @@ input[type=color] {
   text-transform: capitalize;
   border-radius: 30px;
 }
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .benefits__contacts .benefits__contacts-content a {
+    font-size: 12px;
+    padding: 8px 24px;
+  }
+}
 @media (max-width: 575px) {
   .benefits__contacts .benefits__contacts-content a {
     font-size: 12px;
+    padding: 8px 24px;
   }
 }
 
@@ -2791,6 +2816,7 @@ input[type=color] {
     margin: 20px 0;
     line-height: 16px;
     font-weight: 300;
+    padding: 0 41px;
   }
 }
 @media (max-width: 575px) {
@@ -2799,6 +2825,7 @@ input[type=color] {
     font-size: 10px;
     line-height: 16px;
     font-weight: 300;
+    padding: 0 41px;
   }
 }
 .benefits__quote .benefits__quote-card a {
@@ -2891,7 +2918,7 @@ input[type=color] {
 }
 @media (max-width: 575px) {
   .benefits__quote-title h2 span {
-    padding-bottom: 14px;
+    padding-bottom: 17px;
     background-position: 0 50px;
     background-size: 100%;
   }
@@ -5823,6 +5850,7 @@ input[type=color] {
   border-radius: 50%;
   color: #76C9D6;
   line-height: 24px;
+  z-index: 99;
   transform: translateY(-50%);
 }
 .growth__area .slider-for .slick-next i {
@@ -5838,6 +5866,7 @@ input[type=color] {
   background-color: #fff;
   border-radius: 50%;
   color: #76C9D6;
+  z-index: 99;
   line-height: 24px;
   transform: translateY(-50%);
 }
@@ -6317,18 +6346,21 @@ input[type=color] {
   .story__area .story__bg .story__content span {
     font-size: 10px;
     margin-bottom: 15px;
+    line-height: 1.1;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .story__area .story__bg .story__content span {
     font-size: 10px;
     margin-bottom: 15px;
+    line-height: 1.1;
   }
 }
 @media (max-width: 575px) {
   .story__area .story__bg .story__content span {
     font-size: 10px;
     margin-bottom: 15px;
+    line-height: 1.1;
   }
 }
 .story__area .story__bg .story__content h3 {
@@ -6343,6 +6375,7 @@ input[type=color] {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 15px;
+    line-height: 1.1;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -6351,6 +6384,7 @@ input[type=color] {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 15px;
+    line-height: 1.1;
   }
 }
 @media (max-width: 575px) {
@@ -6359,6 +6393,7 @@ input[type=color] {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 15px;
+    line-height: 1.1;
   }
 }
 .story__area .story__bg .story__content p {
