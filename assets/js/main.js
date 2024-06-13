@@ -181,6 +181,8 @@ $(document).ready(function () {
       centerPadding: "15px",
       dots: false,
       fade: false,
+      draggable: true,
+      swipe: true,
       sliderPerView: 4,
       arrows: true,
       customPaging: function (slider, i) {

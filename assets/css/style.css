@@ -1536,6 +1536,8 @@ input[type=color] {
   justify-content: center;
   align-items: center;
   list-style: none;
+  position: relative;
+  z-index: 99;
   gap: 5px;
 }
 .services__area .slick-dots li {
@@ -1649,15 +1651,15 @@ input[type=color] {
 .services__area .services__heading .slider-active .slick-list .slick-track .slick-slide {
   width: 380px !important;
 }
-.services__area .service__card {
+.services__area .service__card2 {
   max-width: 380px;
   height: 585px;
 }
-.services__area .service__card .service__content {
+.services__area .service__card2 .service__content {
   text-align: center;
   padding: 50px 0;
 }
-.services__area .service__card .service__content h3 {
+.services__area .service__card2 .service__content h3 {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 30px;
@@ -1665,14 +1667,14 @@ input[type=color] {
   padding: 0 17%;
   text-align: center;
 }
-.services__area .service__card .service__content p {
+.services__area .service__card2 .service__content p {
   color: #494949;
   font-size: 16px;
   font-weight: 400;
   line-height: 25px;
   padding: 0 50px;
 }
-.services__area .service__card .service__content button {
+.services__area .service__card2 .service__content button {
   text-transform: capitalize;
   border-radius: 30px;
   font-size: 16px;
