@@ -58,7 +58,7 @@ $(document).ready(function () {
   // donate form button
   function updateDisplays(value) {
     $("#display1").text(value);
-    $("#display2").text(value);
+    $("#display2").text(value * 1.25);
   }
 
   $(".dbtn").click(function () {

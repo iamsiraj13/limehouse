@@ -116,7 +116,7 @@
 }
 
 .blog__card_mobile{
-     width:310px;
+     width:360px;
      height:189px;
     margin:auto;
     margin-bottom: 15px;
@@ -157,4 +157,17 @@
 
         }
     }
+}
+
+.hero__blog__mobile{
+   & .hero__mobile-content{
+        padding:0 67px;
+        & h2{
+            & span{
+                text-transform: capitalize !important;
+            }
+        }
+
+        
+   }
 }

@@ -485,7 +485,7 @@
           & .slick-next{
             position:absolute;
             top:50%;
-            right:10px;
+            right:17px;
             width:34px;
             height:34px;
             background-color: #fff;
@@ -503,7 +503,7 @@
           & .slick-prev{
             position:absolute;
             top:50%;
-            left:0px;
+            left:15px;
             width:34px;
             height:34px;
             background-color: #fff;
@@ -515,6 +515,7 @@
             & i{
                font-size: 24px;
                margin-top: -10px;
+               margin-left: -2px;
             }
         }
     }
@@ -603,14 +604,17 @@
             width:100%;
         }
         @media #{$sm}{
-            padding: 50px 47x;
+            // padding: 50px 47px;
             gap:35px;
-            width:100%;
+            width:93%;
+            margin:0 auto;
         }
         @media #{$xs}{
-            padding: 50px 47x;
+            // padding: 50px 47px;
             gap:35px;
-            width:100%;
+            width:93%;
+            margin:0 auto;
+
         }
 
         & h3{

@@ -59,7 +59,7 @@
 }
  
 .story__area{
-    & .story__bg{
+    & .story__bg{ 
         background-size: 55% 93%;
     background-repeat: no-repeat;
     background-position: top 302px right 16%;
@@ -84,7 +84,7 @@
         background-image: none !important;
         padding-bottom: 0;
     }
-    @media #{$xs}{
+    @media #{$xs}{ 
         background-image: none !important;
         padding-bottom: 0;
     }
@@ -148,7 +148,7 @@
           
               
                & .story__inner {
-                
+                border-color: transparent;
 
                 span{
                     color:white;
@@ -203,7 +203,7 @@
                     border:1px solid var(--tp-theme-purple);
                     border-bottom-left-radius: 30px;
                     border-bottom-right-radius: 30px;
-                    padding:40px 20px;  
+                    padding:40px 50px;  
                     &:hover{
                         border-color:var(--tp-theme-green);
                     }
@@ -212,7 +212,7 @@
                     border:1px solid var(--tp-theme-purple);
                     border-bottom-left-radius: 30px;
                     border-bottom-right-radius: 30px;
-                    padding:40px 20px; 
+                    padding:40px 50px; 
                     &:hover{
                         border-color:var(--tp-theme-green);
                     }
@@ -222,7 +222,7 @@
                     border-top:0;
                     border-bottom-left-radius: 30px;
                     border-bottom-right-radius: 30px;
-                    padding:40px 20px;
+                    padding:40px 50px;
                     margin-top: -2px; 
                     &:hover{
                         border-color:var(--tp-theme-green);
@@ -268,21 +268,21 @@
                     text-align: center;
                     text-transform: uppercase;
                     margin-bottom: 15px;
-                    line-height: 1.1;
+                    line-height:22px;
                  }
                  @media #{$sm}{
                    font-size: 16px;
                    text-align: center;
                    text-transform: uppercase;
                    margin-bottom: 15px;
-                   line-height: 1.1;
+                   line-height:22px;
                  }
                  @media #{$xs}{
                      font-size: 16px;
                      text-align: center;
                      text-transform: uppercase;
                      margin-bottom: 15px;
-                     line-height: 1.1;
+                     line-height: 22px;
                  }
             }
             & p{

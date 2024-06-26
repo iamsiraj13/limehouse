@@ -219,7 +219,7 @@
         position: relative;
         color:white;
         z-index: 9;
-        padding:0 48px; 
+        padding:0 57px; 
         text-align: center;
         & span{
             text-transform: uppercase;
@@ -232,8 +232,9 @@
             color:white;
             margin-top: 15px;
             margin-bottom: 29px;
+
             & span{
-                text-transform: lowercase;
+                text-transform: lowercase !important;
                 @media #{$md}{
                     padding: 15px 0;
                     background-position: 100% 90%;
@@ -241,17 +242,18 @@
                     font-size: inherit;
                 }
                 @media #{$sm}{
-                    padding: 15px 0;
+                    padding: 7px 0;
                     background-position: 100% 90%;
                     background-size: 100% 17%; 
                     font-size: inherit;
+                    text-transform: lowercase !important;
                 }
                 @media #{$xs}{
-                    padding: 15px 0;
+                    padding: 7px 0;
                     background-position: 100% 90%;
                     background-size:contain; 
                     font-size: inherit;
-                    text-transform: capitalize !important;
+                    text-transform: lowercase !important;
 
                 }
             }
@@ -261,7 +263,7 @@
             font-weight: 400;
             color:white;
             line-height: 20px;
-            padding:0 18px;
+            padding:0 12px;
         }
         & button{
             background-color: #fff;
@@ -292,12 +294,12 @@
     .understand__content{
         padding-right: 68px;
         @media #{$sm}{
-            padding-left: 16px;
-            padding-right: 16px;
+            padding-left: 33px;
+            padding-right: 33px;
         }
         @media #{$xs}{
-            padding-left: 16px;
-            padding-right: 16px;
+            padding-left: 33px;
+            padding-right: 33px;
         }
         @media #{$md}{
              text-align: center;
@@ -352,6 +354,7 @@
                 background-size: 83% 16%;
                 padding: 0px 0;
                 background-position: left bottom;
+                letter-spacing: 0px;
             }
         }
        & p{
@@ -381,6 +384,12 @@
             font-weight: 700;
             margin-top: 23px;
             color:white;
+            @media #{$sm}{
+                margin-top: 10px;
+            }
+            @media #{$xs}{
+                margin-top: 10px;
+            }
         }
     }
     .understand__img {

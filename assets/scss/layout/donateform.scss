@@ -215,16 +215,20 @@
                 @media #{$md}{
                     font-size: 12px;
                     margin-bottom: -10px;
+                    padding:0 20px;
+                    line-height: 20px;
                 }
                 @media #{$sm}{
                     font-size: 12px;
                     margin-bottom: -10px;
+                    padding:0 20px;
+                    line-height: 20px;
                 }
                 @media #{$xs}{
                     font-size: 12px;
                     margin-bottom: -10px;
-                    
-                    
+                    padding:0 20px; 
+                    line-height: 20px;
                 }
             }
         }
@@ -520,7 +524,7 @@
     width: 100%; 
     margin-top: 37px; 
     background-color: #fff;
-    padding: 15px 15px;
+    padding: 20px 30px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     border-radius: 30px;
 }

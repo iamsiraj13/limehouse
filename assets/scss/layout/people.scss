@@ -453,17 +453,23 @@
         @media #{$md}{
             font-size: 12px;
             width:100%;
-            padding-bottom: 40px;
+            padding-bottom: 20px;
+            padding-top:0;
+            text-align: center;
+            color:#fff;
         }
         @media #{$sm}{
             font-size: 12px;
             width:100%;
-            padding-bottom: 40px;
+            padding-bottom: 20px;
+            padding-top:0;
+            text-align: center;
+            color:#fff;
         }
         @media #{$xs}{
             font-size: 12px;
             width:100%;
-            padding-bottom: 40px;
+            padding-bottom: 20px;
             padding-top:0;
             text-align: center;
             color:#fff;
