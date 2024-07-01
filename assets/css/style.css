@@ -1669,7 +1669,9 @@ input[type=color] {
 }
 .services__area .service__card2 {
   max-width: 380px;
-  height: 585px;
+  height: 550px;
+  background-color: #fff;
+  border-radius: 30px;
 }
 .services__area .service__card2 .service__content {
   text-align: center;
