@@ -29,7 +29,7 @@
         & h2{
             position:relative; 
             font-size: 64px;
-            margin-bottom: 45px;
+            margin-bottom: 45px; 
             @media #{$md}{
                 font-size: 32px;
             }
@@ -40,8 +40,7 @@
                 font-size: 32px;
             }
            
-            span{
-                   
+            span{ 
                 background-position: 5px 58px;
               background-repeat: no-repeat;
               background-size: contain;
@@ -366,6 +365,8 @@
         }
         @media #{$xs}{
            width:83% !important;
+           transform: translate3d(0px, 0px, 0px) !important;
+           
         }
     }
     & div{

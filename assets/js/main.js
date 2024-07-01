@@ -84,7 +84,7 @@ $(document).ready(function () {
       {
         scrollTop: $(target).offset().top - offset,
       },
-      1000
+      0
     ); // 1000 milliseconds for the scroll effect duration
   });
 
@@ -266,14 +266,15 @@ $(document).ready(function () {
 
     BasicSlider.slick({
       autoplay: true,
+      infinite: true,
       autoplaySpeed: 3000,
       slidesToShow: 4,
-      centerPadding: "15px",
+      slidesToScroll: 1,
       dots: false,
       fade: false,
-      touchMove: false,
-      draggable: false,
+      draggable: true,
       swipe: true,
+      touchMove: true,
       slidesPerView: 4,
       arrows: true,
       customPaging: function (slider, i) {
@@ -291,6 +292,9 @@ $(document).ready(function () {
             slidesPerView: 3,
             dots: false,
             arrows: true,
+            draggable: true,
+            swipe: true,
+            touchMove: true,
           },
         },
         {
@@ -300,18 +304,23 @@ $(document).ready(function () {
             slidesToShow: 2,
             dots: false,
             arrows: true,
+            draggable: true,
+            swipe: true,
+            touchMove: true,
           },
         },
         {
-          breakpoint: 575,
+          breakpoint: 480,
           settings: {
             slidesPerView: 1,
             slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
             dots: true,
             arrows: false,
-            touchMove: true,
             draggable: true,
             swipe: true,
+            touchMove: true,
           },
         },
       ],
@@ -373,12 +382,14 @@ $(document).ready(function () {
   $(".donar-class").slick({
     dots: false,
     infinite: true,
-    speed: 200,
-    autoPlay: true,
+    speed: 400,
+    autoplay: true,
     slidesToShow: 4,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     autoplaySpeed: 1000,
     draggable: true,
+    swipe: true,
+    touchMove: true,
     centerPadding: "111px",
     arrows: false,
     responsive: [
@@ -386,9 +397,10 @@ $(document).ready(function () {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           infinite: true,
           dots: true,
+          autoplay: true,
         },
       },
       {
@@ -396,11 +408,13 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
+          autoplay: true,
         },
       },
       {
         breakpoint: 480,
         settings: {
+          autoplay: true,
           slidesToShow: 3,
           slidesToScroll: 1,
         },
@@ -415,7 +429,6 @@ $(document).ready(function () {
     autoplaySpeed: 1000,
     slidesToShow: 2,
     slidesToScroll: 1,
-    draggable: true,
     centerPadding: "111px",
     arrows: false,
     responsive: [

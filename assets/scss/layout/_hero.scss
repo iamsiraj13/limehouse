@@ -253,7 +253,7 @@
                     background-position: 100% 90%;
                     background-size:contain; 
                     font-size: inherit;
-                    text-transform: lowercase !important;
+                    text-transform: capitalize !important;
 
                 }
             }
@@ -535,13 +535,15 @@
         }
         @media #{$sm}{
             font-size: 12px;
-            width:100%
+            width:100%;
+            line-height: 18px;
         }
         @media #{$xs}{
             font-size: 12px;
             width:100%;
             padding-left: 15px;
             padding-right: 15px;
+            line-height: 18px;
         }
         }
          
@@ -570,6 +572,7 @@
          height:550px;
          background-color: #fff;
          border-radius:30px;
+         margin:0 auto;
 
        
         & .service__content{

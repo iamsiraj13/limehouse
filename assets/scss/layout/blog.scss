@@ -158,7 +158,16 @@
         }
     }
 }
+.blog__details-content{
+    @media #{$sm}{
+        padding:0 15px;
+    }
+    @media #{$xs}{
+        padding:0 15px;
+    }
+}
 
+ 
 .hero__blog__mobile{
    & .hero__mobile-content{
         padding:0 67px;

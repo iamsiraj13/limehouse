@@ -30,9 +30,11 @@
             }
             @media #{$sm}{
                 font-size: 32px;
+                padding:0 50px;
             }
             @media #{$xs}{
                 font-size: 32px;
+                padding:0 50px;
             }
         }
       & span{
