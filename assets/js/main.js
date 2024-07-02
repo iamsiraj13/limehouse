@@ -156,94 +156,6 @@ $(document).ready(function () {
     $(this).css("background-color", $(this).attr("data-bg-color"));
   });
 
-  // mainSlider
-  // function mainSlider() {
-  //   var BasicSlider = $(".slider-active");
-  //   BasicSlider.on("init", function (e, slick) {
-  //     var $firstAnimatingElements = $(".single-slider:first-child").find(
-  //       "[data-animation]"
-  //     );
-  //     doAnimations($firstAnimatingElements);
-  //   });
-  //   BasicSlider.on(
-  //     "beforeChange",
-  //     function (e, slick, currentSlide, nextSlide) {
-  //       var $animatingElements = $(
-  //         '.single-slider[data-slick-index="' + nextSlide + '"]'
-  //       ).find("[data-animation]");
-  //       doAnimations($animatingElements);
-  //     }
-  //   );
-  //   BasicSlider.slick({
-  //     autoplay: true,
-  //     autoplaySpeed: 3000,
-  //     slidesToShow: 4,
-  //     centerPadding: "15px",
-  //     dots: false,
-  //     fade: false,
-  //     touchMove: true,
-  //     draggable: true,
-  //     swipe: true,
-  //     sliderPerView: 4,
-  //     arrows: true,
-  //     customPaging: function (slider, i) {
-  //       return '<button class="custom-dot"></button>';
-  //     },
-  //     prevArrow:
-  //       '<button type="button" class="slick-prev d-none"><i class="fa-sharp fa-light fa-circle-arrow-left"></i></button>',
-  //     nextArrow:
-  //       '<button type="button" class="slick-next"><i class="fa-regular fa-angle-right"></i></button>',
-  //     responsive: [
-  //       {
-  //         breakpoint: 1400,
-  //         settings: {
-  //           slidesToShow: 3,
-  //           sliderPerView: 3,
-  //           dots: false,
-  //           arrows: true,
-  //         },
-  //       },
-  //       {
-  //         breakpoint: 1000,
-  //         settings: {
-  //           sliderPerView: 2,
-  //           slidesToShow: 2,
-  //           dots: false,
-  //           arrows: true,
-  //         },
-  //       },
-  //       {
-  //         breakpoint: 575,
-  //         settings: {
-  //           sliderPerView: 1,
-  //           slidesToShow: 1,
-
-  //           dots: true,
-  //           arrows: false,
-  //         },
-  //       },
-  //     ],
-  //   });
-
-  //   function doAnimations(elements) {
-  //     var animationEndEvents =
-  //       "webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend";
-  //     elements.each(function () {
-  //       var $this = $(this);
-  //       var $animationDelay = $this.data("delay");
-  //       var $animationType = "animated " + $this.data("animation");
-  //       $this.css({
-  //         "animation-delay": $animationDelay,
-  //         "-webkit-animation-delay": $animationDelay,
-  //       });
-  //       $this.addClass($animationType).one(animationEndEvents, function () {
-  //         $this.removeClass($animationType);
-  //       });
-  //     });
-  //   }
-  // }
-  // mainSlider();
-
   function mainSlider() {
     var BasicSlider = $(".slider-active");
 
@@ -315,7 +227,7 @@ $(document).ready(function () {
             slidesPerView: 1,
             slidesToShow: 1,
             slidesToScroll: 1,
-            autoplay: false,
+            autoplay: true,
             dots: true,
             arrows: false,
             draggable: true,

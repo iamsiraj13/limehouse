@@ -171,6 +171,9 @@
 .hero__blog__mobile{
    & .hero__mobile-content{
         padding:0 67px;
+        @media #{$sx}{
+            padding:0 50px;
+        }
         & h2{
             & span{
                 text-transform: capitalize !important;

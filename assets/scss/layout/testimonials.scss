@@ -69,12 +69,12 @@
             font-size: 64px;
             @media #{$xs}{
                 font-size: 32px;
-                background-size: 65%;
+                background-size: 58% 19%;
                 padding:4px 0;
               }
             @media #{$sm}{
                 font-size: 32px;
-                background-size: 65%;
+                background-size: 50% 65%;
                 padding:4px 0;
               }
         }

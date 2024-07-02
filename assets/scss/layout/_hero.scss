@@ -553,6 +553,13 @@
            @media #{$lg}{
             padding-left: 0;
            }
+
+           &::after{
+            @media #{$xs}{
+                width:0px;
+            }
+           }
+
            & .slick-list{
             
                & .slick-track{
@@ -703,9 +710,11 @@
          }
          @media #{$sm}{
             background:none;
+            width:0px;
          }
          @media #{$xs}{
             background:none;
+            width:0px;
          }
 
     }

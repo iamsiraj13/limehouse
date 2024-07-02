@@ -314,105 +314,104 @@
         }
     }
     & .slider-nav{ 
-    text-align: center;
-    
-    margin-right: auto;
-    width: 100%;
-    display:flex; 
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-bottom: 52px;
-    @media #{$md}{
-        width:100%;
-        margin-left: 0;
-        margin-right: 0;
-        text-align: left;
-        margin-bottom: 25px;
-    }
-    @media #{$sm}{
-        width:100%;
-        margin-left: 0;
-        margin-right: 0;
-        text-align: left;
-        margin-bottom: 25px;
-    }
-    @media #{$xs}{
-        width:100%;
-        margin-left: 0;
-        margin-right: 0;
-        text-align: left;
-        margin-bottom: 25px;
-    }
-
-    & .slick-list{
-        width:100%;
-    }
-
-    & .slick-track{
-        width:28% !important;
-        display: flex;
+        text-align: center;
+        
+        margin-right: auto;
+        width: 100%;
+        display:flex; 
         justify-content: center;
-        gap: 8px;
-        @media #{$xl}{
-           width:32% !important;
-        }
+        align-items: center;
+        margin-left: auto;
+        margin-bottom: 52px;
         @media #{$md}{
-           width:83% !important;
+            width:100%;
+            margin-left: 0;
+            margin-right: 0;
+            text-align: left;
+            margin-bottom: 25px;
         }
         @media #{$sm}{
-           width:83% !important;
+            width:100%;
+            margin-left: 0;
+            margin-right: 0;
+            text-align: left;
+            margin-bottom: 25px;
         }
         @media #{$xs}{
-           width:83% !important;
-           transform: translate3d(0px, 0px, 0px) !important;
-           
+            width:100%;
+            margin-left: 0;
+            margin-right: 0;
+            text-align: left;
+            margin-bottom: 25px;
         }
-    }
-    & div{
-        & .slide__tab{
-            font-size:36px;
-            transition:all 0.3s; 
-            text-align: center;
-            color:#fff;
-            width:100% !important;
-            height:100%; 
-            // border:1px solid red;
 
-            cursor:pointer;
-            @media #{$md}{ 
-                font-size: 16px;
+        & .slick-list{
+            width:100%;
+        }
+
+        & .slick-track{
+            width:28% !important;
+            display: flex;
+            justify-content: center;
+            transform: translate3d(0px, 0px, 0px) !important;
+            gap: 8px;
+            @media #{$xl}{
+            width:32% !important;
             }
-            @media #{$sm}{ 
-                font-size: 16px;
+            @media #{$md}{
+            width:83% !important;
             }
+            @media #{$sm}{
+            width:83% !important;
+            }
+            @media #{$xs}{
+            width:83% !important;
+            transform: translate3d(0px, 0px, 0px) !important;
+            
+            }
+
+            & .slick-current{ 
+                font-size: 48px  !important; 
+                transition:all 0.3s; 
+                text-align: center;
+                color:#fff; 
+                height:100%; 
+                // border:1px solid red;
+
+                cursor:pointer;
+                @media #{$md}{ 
+                    font-size: 16px;
+                }
+                @media #{$sm}{ 
+                    font-size: 24px;
+                }
+                @media #{$xs}{ 
+                    font-size: 24px !important;
+                }
+            }
+        }
+        & .slide__tab{ 
+            font-size: 36px;
+            color:#fff;
+            width:0;
+            // border:1px solid red;
+            text-align: center;
             @media #{$xs}{ 
                 font-size: 16px;
             }
 
+        }
         
-        }
-    }
-        & .slick-current{
-            & div{
-                & .slide__tab{
-                    font-size: 48px;
-                    @media #{$md}{
-                        font-size: 24px;
-                    }
-                    @media #{$sm}{
-                        font-size: 24px;
-                    }
-                    @media #{$xs}{
-                        font-size: 24px;
-                    }
-                }
-            }
-        }
+        
+        
+        
+        
+       
         & .slick-slide {
             margin-right:0; 
             min-height:20px;
             margin-top: 20px; 
+            
             & div {
                 & div{
                     @media #{$sm}{
@@ -443,6 +442,11 @@
             }
           }
     }
+
+
+
+
+
     & .slider-for{
         
 
